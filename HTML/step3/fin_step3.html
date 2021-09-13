@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지정한 부분으로 보내는 anchor</title>
+    <style>
+    /*style 태그는 head 안에 마지막에 넣어야함*/
+    /*px이 가장 기본적인 단위, 한 화면에 찍혀있는 가장 작은 점을 말함(사진 픽셀 생각해)
+    반응형 페이지라면 PX 보다는 %를 주로 사용함. 반응형에 적합한 단위가 존재함 
+    선택하는 방법에는 div, */
+        html{height: 100%;}
+        body{height: 100%; margin: 0;}
+        /*margin을 0으로 두어야 웹브라우저 전체를 채울 수 있음*/
+    div{height: 100%;
+        /*height를 100%로 해도 꽉차지 않는 이유는 안의 글자(기준이 되는 바디값)가 함께 조정되어야 하므로 
+        위의 바디값도 함께 조절해야 함*/
+    }
+    ol{
+        /*겹치지 않게 오른쪽으로 보낸거/*/
+        position: fixed;
+        right: 0; top: 0;
+    }
+    #page1{background-color: green;}
+    #page2{background-color: blanchedalmond;}
+    #page3{background-color: skyblue;}
+    #page4{background-color: yellow}
+    
+    </style>
+</head>
+<body>
+    <ol>
+        <li><a href="#page1">페이지 바로가기</a></li>
+        <li><a href="#page2">페이지 바로가기</a></li>
+        <li><a href="#page3">페이지 바로가기</a></li>
+        <li><a href="#page4">페이지 바로가기</a></li>
+        <li><a href="1_hyperlink.html#target" target="_blank">목록가기</a></li>
+    </ol>
+    <!-- shift+alt+방향키로 복사 가능 -->
+    <div id="page1">
+        페이지 1입니다
+    </div>
+    <div id="page2">
+        페이지 2입니다
+    </div>
+    <div id="page3">
+        페이지 3입니다
+    </div>
+    <div id="page4">
+        페이지 4입니다
+    </div>
+</body>
+</html>

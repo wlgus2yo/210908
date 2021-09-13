@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 구조</title>
+    
+</head>
+<body>
+    <!-- 간단한 표를 만들어 봅시다 -->
+    <table>
+        <caption>
+            month / savings
+        </caption>
+        <!-- 테이블이 시작하자마자 와야 한다 
+            접근성 준수를 위해 해당 테이블이 어떤 데이터를 표현하는지 알려주는 태그-->
+        <colgroup>
+            <col width="300px" style="background-color:red;">
+            <col width="150px" style="background-color: blue;">
+        </colgroup>
+        <thead>
+            <!-- tr이 thead의 자식 태그 / th 자체는 가운데 정렬리 되고, 글자가 두꺼워짐 -->
+            <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            </tr>
+        </thead>
+        <!-- thead는 데이터의 분류를 표기할때 사용, 최상단에 위치 -->
+        <tfoot>
+            <!-- tfoot은 위치가 어디에 있더라도 제일 마지막에 감 
+                테이블의 하단부를 의미하며 데이터의 총합, 통계 등을 표기할 때 사용
+                원칙적으로는 위치상 thead 다음으로 온다(밑에 썼다고 해서 에러가 나진 않음)-->
+            <tr>
+                <td>총 합</td>
+                <td>$300</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <!-- 실질적 데이터들이 들어가는 공간
+                thead, tbody tfoot 없이 작성할 경우 자동으로 tbody 생성되므로 생략 가능함 -->
+            <tr>
+                <td>1월</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>2월</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
