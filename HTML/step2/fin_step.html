@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product information</title>
+</head>
+<body>
+    <!-- h1을 한줄에 넣지 않는 이유는? 띄어씀으로서 띄어쓰기 한 칸으로 인식할 수 있음 -->
+    <h1>
+        product name
+    </h1>
+    <!-- div는 공간분리를 위함, h1과 같은 라인에 위치함으로써 h1과 다음을 분리하겠다 -->
+    <div>
+        <h2>
+            model name
+        </h2>
+        <!-- h2랑 같은 항렬에 있으면서 H2에 따른 이미지-->
+        <img src="images/product.png" alt="물티슈이미지" width="400">
+        <div>
+            <h3>specifications</h3>
+            <ul>
+                <li>spec list</li>
+                <li>spec list</li>
+                <li>spec list</li>
+            </ul>
+        </div>
+        <!-- 밑에 detail은 위의 제품 특징과 동급(같은항렬)로 말하고자 하므로 영역나누고 같은 항렬로 -->
+        <div>
+            <h3>detail</h3>
+            <iframe src="제품영상" frameborder="0"></iframe>
+        </div>
+        <div>
+            <h3>review</h3>
+            <ul>
+                <li>review content</li>
+                <li>review content</li>
+                <li>review content</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크</title>
+    <style>
+        /* id는 #으로 표시됨 */
+        #target{
+            background-color: beige;
+            width: 500px;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 절대경로
+        - 해당 서버의 ROOT(최상단)부터 훑고 내려온다.
+            ->live server의 경우, 현재 위치의 연 기준 폴더
+            ->로컬에서 열 경우 해당 드라이브(C,D,USB)
+        
+        상대경로
+        -현재 html 파일부터 역으로 훑기 시작
+            ->./ 또는 아무것도 없을 경우 현재 위치
+            ->../ 현 위치의 상위폴더, 현재 폴더에서 역으로 올라가 상위폴더를 열어줌
+        
+        실제 사이트에서는 절대경로를 더 많이 사용-->
+    
+    <h1>
+        포털사이트 목록
+    </h1>
+    <p>
+        하이퍼링크를 이용하여 원하는 URL 및 URL 내의 위치로 이동하는 법, 
+            파일 다운로드 링크 및 메일 링크 등을 배워봅시다.
+    </p>
+    <ul>
+        <!-- 원하는 영역으로 이동하려면 li 하이퍼링크를 li가 시작하는 맨 앞에 두어야 함 
+        #target을 하면 style에 지정된 형식으로 인식함/-->
+        <li>
+            <a href="#target">타켓으로</a>
+        </li>
+        <li>
+            <a href="https://www.naver.com/">네이버 바로가기</a>
+            <!-- a 태그는 기본적으로 링크 이동을 담당
+            href 라는 속성으로 불러올 URL 또는 TYPE을 결정 -->
+        </li>
+        <!-- target _blank는 현재 사이트가 아닌 새로운 창에서 해당 하이퍼링크 열림 -->
+        <li>
+            <a href="https://www.daum.net/" target="_blank">다음 바로가기</a>
+            <!-- TARGET이라는 속성값으로 어떻게 불러올지 결정
+                _self 또는 아무것도 X-> 현재 탭에서 열림
+                _blank 는 새로운 탭에서 열림 -->
+        </li>
+        <li>
+            <!-- /절대경로로 시작했다가 경로가 변경될 경우, 태그가 실행 안될 수도 있음 -->
+            <a href="../step2/images/product.png" download>이미지</a>
+            <!-- download 속성을 부여함으로써 클릭 시 다운로드
+                href에 해당 경로에 맞는 파일이름과 확장명까지 적어야함 -->
+        </li>
+        <li>
+            <a href="tel:+8212345678">전화걸기</a>
+            <!-- tel: 로 선언할 경우 전화걸기 가능
+                모바일에서는 다이얼패드가 열림 -->
+            <li>
+                <a href="mailto:wlgus2yo@github.com"></a>
+            </li>
+        </li>
+    </ul>
+    <div id="target">
+        목표지점
+    </div>
+</body>
+</html>

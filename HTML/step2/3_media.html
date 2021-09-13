@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<body>
+    <iframe width="500" height="200" src="https://www.youtube.com/embed/HrTK1wVd3sg" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+    <embed src="https://www.youtube.com/embed/HrTK1wVd3sg" width="600" height="250">
+    <p>
+        html 4.01 , xhtml 에서는 iframe을 사용하고,
+        html5 일 경우 embed 사용 권장
+    </p>
+
+    <video src="media/SampleVideo_1280x720_1mb.mp4"
+    controls loop autoplay muted poster="images/SamplePNGImage_100kbmb.png">
+    </video>
+    <p>
+        <!-- 
+            mp4는 사파리, IE9 이상, 아이폰, 아이패드 등 => 최신 브라우저 전부 가능
+            webM FireFox4 이상, 오페라, 크롬 등
+            ogv FireFox 구버전,
+            3g 모바일 장치 지원 
+        -->
+        <ul>
+            <li>autoplay : video, audio 동일, 자동 재생(muted 필수)</li>
+            <li>controls : video, audio 동일, 재생영역에 제어버튼 활성화</li>
+            <li>loop : video, audio 동일, 반복 재생 활성화</li>
+            <li>muted : 음소거 활성화</li>
+            <li>src : 경로 설정</li>
+            <li>width, height : 너비, 높이</li>
+            <li>poster : video 전용 속성, video를 불러오지 못할 때, 대체 이미지 출력</li>
+        </ul> 
+    </p>
+    <audio src="media/SampleAudio_0.4mb.mp3" autoplay controls></audio>
+    <audio src="/210908/HTML/step2/media/SampleAudio_0.4mb.mp3"></audio>
+</body>
+</html>
