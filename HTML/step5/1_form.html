@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- action은 개발자가 추후 채울 부분이고, 웹퍼블리셔는 
+    형태를 만들어 주는 것 / ###을 넣는 이유는 추후 변동될 예정 -->
+    <form action="###">
+        <!-- 
+            form 태그는 input 내 데이터를 담아서 전송하는 역할
+            감싸는 위치는 input과 가장 가까운 공간 태그 / 
+            폼 내부에 폼 중복 안됨
+        -->
+        <fieldset>
+            <!--form 내부에서 그룹화 하는 태그
+                fieldset은 기본적으로 박스형으로 구분해줌-->
+            <legend>HTML4 Input</legend>
+            <ul>
+                <li>
+                    <input type="text" name="" id="" 
+                    maxlength="" title="텍스트입력" placeholder="">
+                <!-- input text는 텍스트를 삽입할 때 사용하며
+                    maxlength로 최대 글자수를 제어.
+                    title로 접근성 확보 
+                    placehoder로 임시메시지 작성가능
+                    id/이름 등에 사용-->
+                </li>
+                <li>
+                    <input type="password" title="비밀번호"
+                    maxlength="8">
+                </li>
+                <li>
+                    <input type="radio" name="rdo_group" id="btn_rdo1" value="1" checked> 
+                    <!-- checked는 초반에 항목하나를 선택하게 만들어줌 -->
+                    <label for="btn_rdo1">항목1</label>
+                    <input type="radio" name="rdo_group" id="btn_rdo2" value="2">
+                    <label for="btn_rdo2">항목2</label>
+                    <input type="radio" name="rdo_group" id="btn_rdo3" value="3">
+                    <label for="btn_rdo3">항목3</label>
+                    <input type="radio" name="rdo_group" id="btn_rdo4" value="4">
+                    <label for="btn_rdo4">항목4</label>
+                    <!-- input:radio는 라디오 버튼이며, name으로 여러 항목을 지정시 그룹화
+                        또한, label을 이용하여, 대상과 버튼을 연결해줄 수 있다. 
+                        label type 안에서 name 끼리 그룹화되며, id는 lable for에 영향을 준다
+                        위의 코드 실행시 하나 선택하면 다른 항목 중복선택 불가
+                        value로 서버에 전달할 값을 넣어둘 수는 있지만, 비워두어도 상관없음
+                        name 중 하나만 선택 가능-->
+                </li>
+
+                <li>
+                    <input type="checkbox" id="btn_check1">
+                    <lable for="btn_check1">체크1</lable>
+                    
+                    <input type="checkbox" id="btn_check2">
+                    <lable for="btn_check2">체크1</lable>
+                    
+                    <input type="checkbox" id="btn_check3">
+                    <lable for="btn_check3">체크1</lable>
+                    
+                    <input type="checkbox" id="btn_check4">
+                    <lable for="btn_check4">체크1</lable>
+
+                    <!-- input:checkbox는 다중 선택을 지원하는 input이며, lable을 이용하여
+                    대상과 버튼을 연결할 수 있다. value 값은 위와 동일하게 없어도 됨.
+                    checked 또한 radiio와 동일 -->
+                </li>
+                <li>
+                    <!-- cols는 가로 너비, rows는 세로너비 / 폰트에 따라 값은 정확하지 않을 수 있음
+                        textarea는 여러줄을 입력할 수 있는 텍스트 상자이다
+                        초기 데이터 삽입시 <pre>태그와 마찬가지로 있는 그대로를 보여주므로 공백 주의-->
+                    <textarea cols="30" rows="10" placeholder="플레이스홀더"></textarea>
+                    <!-- input 내 placeholder 는 임시 문구이지만, 
+                        textarea 내 placeholder 는 적혀있는 문구 -->
+                </li>
+                <li>
+                    <select name="job" id="">
+                        <option value="" disabled selected>직업선택</option>
+                        <option value="1">무직</option>
+                        <option value="2">학생</option>
+                        <option value="3">전문직</option>
+                        <option value="4">공무원</option>
+                    <!-- select는 선택항목을 목록형의 단축메뉴 형식으로 생성.
+                        항목 수만큰 option을 생성, value로 서버에 값을 전달
+                        disabled로 선택 불가하게 만들고, selected로 초기선택값 설정(radio, checked와 동일) 
+                    
+                        optgroup으로 필요시 그룹화 가능(현재는 잘 안쓰는 기능)-->
+                    </select>
+                </li>
+                <li>
+                    <input type="image" src=../step2/images/product.png" alt="물티슈 이미지" width="150">
+                    <input type="button" value="확인">
+                    <input type="file" value="찾아보기">
+                    <input type="submit" value="제출하기">
+                    <input type="reset" value="리셋하기">
+                    <!-- 버튼으로 사용할 수 있는 input: image, button, file, submit, reset이 있다
+                        1. image : 웹사이트 디자인에 맞게 디자인된 버튼으로 사용
+                        2. button : (우편번호, 검색 등) 확인이나 되돌리기가 아닌 나머지 기능에 사용
+                        3. file : 파일 찾아보기 버튼
+                        4. submit : 해당 폼 완성 후 완료 및 전송 시 사용
+                        5. reset : 해당폼의 모든 양식 내용을 초기화 시킬 때 사용-->
+
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
