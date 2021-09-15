@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- action은 개발자가 추후 채울 부분이고, 웹퍼블리셔는 
-    형태를 만들어 주는 것 / ###을 넣는 이유는 추후 변동될 예정 -->
+    형태를 만들어 주는 것 / ###을 넣는 이유는 추후 변동될 예정/ -->
     <form action="###">
         <!-- 
             form 태그는 input 내 데이터를 담아서 전송하는 역할
@@ -109,6 +109,63 @@
         </fieldset>
         <fieldset>
             <legend>HTML5 Input</legend>
+            <!-- input을 생성할 때, id 가 필수 값일 때는 required 코드를 넣어주면,
+            필수값 미입력시 안내해줌-->
+            <label for="userName">이름 : </label>
+            <input type="text" name="" id="userName" placeholder="8글자 미만" required 
+            readonly maxlength="8">
+            <!-- required 필수 입력 필드
+                 maxlength : 최대 글자 제한
+                readonly: 읽기전용(이미 입력받은 회원정보, 또는 회원정보 수정 등에서 금지)-->
+
+            <input type="email" name="" id="" placeholder="wlgus2yo@github.com">
+            <!-- input :email은 모바일에서 focus가 되었을때 (모바일에서) 키보드를 열면서
+                영문과 @ 버튼이 생긴다 -->
+
+            <input type="url" name="" id="userurl" placeholder="">
+            <!-- input:url 은 모바일에서 focus가 되었을때, 키보드를 열면서 영문과 .com 버튼이 생김 -->
+
+            <input type="number" name="" id="" min="10" max="100" step="10" value="0">
+            <!-- input:number 은 상·하 버튼으로 숫자를 기입하는 박스를 생성한다
+                min: 최소값
+                max : 최대값
+                step :상승/하강값, 갭
+                value : 초기값
+             -->
+
+            <input type="date" name="" id="">
+            <!-- 
+                연도, 월, 날짜 선택
+                ie10 이하 지원 불가(브라우저마다 같은 화면이라도 지원방식이 다르므로) 
+             -->
+            <input type="month" name="" id="">
+            <!-- 
+                연도, 월 선택
+                ie10 이하 지원 불가(브라우저마다 같은 화면이라도 지원방식이 다르므로) 
+             -->
+            <input type="week" name="" id="">
+            <!-- 
+                연도, 주 선택
+                ie10 이하 지원 불가(브라우저마다 같은 화면이라도 지원방식이 다르므로) 
+             -->
+            <input type="time" name="" id="">
+            <!-- 
+                시간 입력
+                ie10 이하 지원 불가(브라우저마다 같은 화면이라도 지원방식이 다르므로) 
+             -->
+
+             <input type="search" name="" id="" placeholder="검색어를 입력하세요"
+             autocomplete="on">
+             <!-- 
+                 input:search 는 글자가 입력되었을때, 우측에 X버튼이 생기며,
+                 autocomplete을 on으로 입력하면 자동완성기능이 설정된다.
+              -->
+
+              <input type="color" name="" id="">
+              <!-- input:color 는 컬러피커창 생성(explore에서 안됨) 
+                지원안되는데가 많음. 그래서 실제로는 #000000 값을 더 많이 씀
+                실제 실무에서는 잘 안써-->
+
         </fieldset>
     </form>
 </body>
