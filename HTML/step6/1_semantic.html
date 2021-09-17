@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        1. 페이지 상단 로고, 네비게이션 등이 들어가는 header <br />
+        2. 혹은 header의 상단부분(제목, 설명)도 들어갈 수 있다. <br />
+        3. 텍스트로 제목을 넣을 때는 h태그를 활용하도록 한다. (h1~h6)<br />
+        4. 사이트의 로고 등이 이곳에 적합하다. (global 요소)
+    </header>
+    <nav>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+        1. 네비게이션이 들어가는 nav. 
+        2. 독립적으로 사용 가능하지만, 
+        3. (header, section, footer, aside) 에 넣어서 사용 가능.
+    </nav>
+    <section>
+        <h2>section에는 머릿글을 넣어줘야한다.</h2>
+        <!-- 태그들은 기본적으로 block 속성을 가지고 있어서 해당 공간 모두를 차지해서 자동 엔터가 되는거 -->
+        일반적인 컨텐츠 그룹(명확하게 내용이 구분되는 그룹)이 들어간다.
+        <article>
+            <h3>
+                4. 그 자체로 이해될 수 있고, 독립적으로 취급되는 문서가 들어간다. <br />
+                머릿글을 넣어줘야한다. 
+            </h3>
+            <ul>
+                <li>신문기사</li>
+                <li>블로그 게시글</li>
+                <li>포럼 게시글</li>
+            </ul>
+        </article>
+        <figure>
+            <img src="###" alt="###">
+            <figcaption>
+                img를 설명하는 태그로,###으로 표기되었을 경우 아직 정의되지 않은 이미지<br />
+                1. figure는 이미지(img)와 설명글(figcaption)을 담을수 있는 태그
+                2. figcaption은 이미지의 설명글을 담는 역할
+            </figcaption>
+        </figure>
+        <aside>
+            1. 전체적으로 사용하는 글로벌 요소 <br />
+            2. 좌측이나 우측에 있는 메뉴, 배너 등의 전반적인 컨텐츠가 들어감(선택적 global 요소)
+        </aside>
+        <footer>
+            1. 저작권정보<br />
+            2. 회사주소<br />
+            3. 개인정보 취급방침 요소(global 요소)
+        </footer>
+    </section>
+</body>
+</html>
