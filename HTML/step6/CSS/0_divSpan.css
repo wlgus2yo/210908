@@ -1,0 +1,57 @@
+.header{
+    background-color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header > span{
+        margin-bottom:15px;
+        /* inline 속성은 margin-bottom을 가질 수 없다  */
+        display: block;
+}
+.header .nav{
+}
+.header .nav span{
+    color: #fff;
+    display: inline-block;
+    width:19%;
+    background-color: blue;
+}
+/* 
+    display 에는 총 3가지가 있음
+    -inline : 글씨 (너비와 높이 설정 불가능)
+    -block : 한줄을 다 가져가는 속성(너비와 높이 설정 가능)
+    -inline-block : block 인데, inline 처럼 사용가능
+                    (글씨처럼 한줄로 배열+높이 너비 설정 가능)
+*/
+
+.section{
+    background-color: red; margin-bottom: 15px; 
+}
+.section > *{
+    /* .section >:직계 *:전체 */
+    height: 500px;
+    display:inline-block;
+}
+.section .article{
+    background-color: yellow;
+    display: inline-block;
+    width: 80%;
+    height: 500px;
+}
+.section .aside{
+    background-color: green;
+    display: inline-block;
+    width: 18%;
+    height: 500px;
+}
+/* 
+    text-align: 글 정렬을 위한 속성
+            - 부모에서 적용을하면 자식(글자) 정렬(left, center, right)
+            - 자식은 inline(그냥 글자) / inline block(너비와 높이를 가질 수 있는 글자)
+*/
+
+.footer{
+    background-color: tomato;
+    text-align: center;
+}
