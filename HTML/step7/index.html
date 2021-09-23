@@ -15,28 +15,29 @@
         <!-- 로고를 누르면 보통 홈으로 돌아가니까 링크 연결 필요 -->
         <nav>
             <ul>
-                <li><a href="###">About</a></li>
-                <li><a href="###">Hello</a></li>
-                <li><a href="###">Service</a></li>
-                <li><a href="###">Potofolio</a></li>
-                <li><a href="###">Team</a></li>
-                <li><a href="###">Blog</a></li>
-                <li><a href="###">Contact</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#potofolio">Potofolio</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="sec_01">
+    <section class="sec_01" id="Hello">
         <h3>WE ARE CODE CAFE</h3>
         <p>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br />
             praesentium voluptatum 
         </p>
-        <a href="###" class="btn">next</a>
+        <a href="###" class="btn_down">next</a>
     </section>
 
-    <section>
-        <!-- div의 사용이 단순히 공간을 분할 하기 위함인지, 혹은 하나의 틀안에 들어가는지 생각해서 -->
+    <section class="sec_02" id="Service">
+        <!-- div의 사용이 단순히 공간을 분할 하기 위함인지, 혹은 하나의 틀안에 들어가는지 생각해서
+            sec 03 으로 입력할 경우, sec와 03을 별도로 인식하므로 띄어쓰기 주의 -->
         <div>
             <h3>THIS IS BOUNCY</h3>
             <p>
@@ -47,13 +48,118 @@
                 animi, id est laborum et dolorum fuga. Et harum quidem rerum<br />
                 facilis est et expedita distinctio.   
             </p>
-            <h3><a href="###">Read More</a>></h3>
+            <h3><a href="###" class="btn_more">Read More</a></h3>
         </div>
         <div>
             <img src="###" alt="">
         </div>
+    </section>
 
-
+    <section class="sec_03">
+        <div>
+            <h3>DETAILS ABOUT BOUNCY</h3>
+            <p>At vero eos accusamus et iusto odio dignissimos ducimus qui<br />
+                <!-- 여기서 줄바꿈이 되어있지만, 고려할 건 원래는 한줄인데 영역설정으로 잘린건 아닐까를 
+                디자이너랑 이야기해보면서 조절 -->
+               blanditiis praesentium</p>
+            <ul>
+                <li><a href="###">heart</a></li>
+                <li><a href="###">mouse</a></li>
+                <li><a href="###">bulb</a></li>
+            </ul> 
+        </div>
+        <div>
+            <h4>Creative ideas</h4>
+        </div>
+        <div>
+            <p>
+                At <b>vero</b> eos et accusamus et iusto odio<br />
+                <!-- b태그 말고 span도 가능 -->
+               dignissimos <b>ducimus</b> qui blanditiis<br /> 
+               praesentium voloptatum deleniti atque<br />
+               corrupti quos dolores
+            </p>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui bian-<br />
+                ditiis praesentium voloptatum deleniti atque <b>corrupti quos</b> dolores et<br />
+                quas molestias <b>excepturi</b> siny occaecati cupiditate non probident, <b>simi-<br/>
+                lique</b> sunt in culpa qui officia deserunt mollotia animi, id est laborum et<br />
+                dolorum fuga. Et harum quidem r
+            </p>
+        </div>
+    </section>
+    <section class="sec_04">
+        <div>
+            <h3>FEATURED PROJECTS</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui<br />blanditiis praesentium</p>
+            <ul>
+                <li><a href="###">Work</a></li>
+                <li><a href="###">Vintage</a></li>
+                <li><a href="###">Branding</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis</p>
+            <a href="###" class="btn_submit">Submit Now</a>
+            <!-- 디자인을 보고 양식을 제출하는 것인지 단순히 링크이동인것인지 확인 후 작업 -->
+        </div>
+    </section>
+    <section class="sec_05" id="service">
+        <div>
+            <h3>OUR SERVICES</h3>
+            <p>At vero eos et accusamus et iusto dignissimos ducimus qui<br />
+            blanditiis praesentium</p>
+            <div>
+                <ul>
+                    <li><a href="###">repair</a></li>
+                    <li><a href="###">design</a></li>
+                    <li><a href="###">play</a></li>
+                    <li><a href="###">piug</a></li>
+                </ul>
+                <article>
+                    <h4>Graphic Design</h4>
+                    <p>At vero eos et accusamus et <b>iusto</b> odio dignissi-<br />
+                        mos <b>ducimus</b> qui blanditiis praesentium volup-<br />
+                        tatum deleniti
+                    </p>
+                    <p> quos dolores et quas molestias excepturi sint occaecati<br />
+                        cupiditate non provident,<b>similique sunt</b> in culpa qui<br />
+                        officia deserunt mollotia animi, id est laborum et do-<br />
+                        lorum fuga
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <div>
+                        80%
+                    </div>
+                    <span>Branding</span>
+                </li>
+                <li>
+                    <div>
+                        75%
+                    </div>
+                    <span>Web Design</span>
+                </li>
+                <li>
+                    <div>
+                        60%
+                    </div>
+                    <span>UI/UX</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="sec_06">
+        <h3>Impressed ?</h3>
+        <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+        </p>
+        <strong>- Abdullah Noman</strong>
+        <span>Creatice Director, Code Cafe</span>
 
     </section>
 </body>
