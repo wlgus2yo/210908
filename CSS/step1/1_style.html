@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 작성방식</title>
+
+    <!-- 외부 스타일 선언방식으로 제일 중요한 방식 
+        (후순위 적용): CSS 파일에 style을 주더라도, head의 Style보다 후순위로 적용된다는 말
+        -->
+        <link rel="stylesheet" href="css/1_style.css">
+    <!-- 위의 href 경로 잘보기 -->
+
+    <!-- 내부 스타일 선언 방식 : 단일 페이지일 경우 사용 
+        or
+        공통된 레이아웃에서 해당 페이지에만 적용하고 싶을 때 사용 -->
+    <style>
+        div{
+            margin: 10px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- style을 줄 수 있는 방법은 3가지
+        1. <head>안에 style</head>을 주는 방법 
+        2. <body>안에서 div style을 주는 방법
+        3. head안에 link 사용 -->
+
+    <!-- 인라인선언방식: 작업완료 이후
+        or
+        유지보수 단계에서 사용
+        (최우선 적용, => 퍼블리셔는 사용 X)-->
+    <div style="margin: 0; color: black;">
+        CSS 사용방식에 대해서 알아보자
+    </div>
+</body>
+</html>

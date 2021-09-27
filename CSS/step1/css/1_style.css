@@ -1,0 +1,7 @@
+div{
+    margin: 100px;
+    /* color 만 작성시 글씨체 색 변경, ;으로 값 구분해줘야 인식함 */
+    color: bisque;
+    background-color: olive;
+
+}

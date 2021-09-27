@@ -1,0 +1,16 @@
+body{
+    /* body도 기본적으로 마진값 가지고 있음 */
+    margin: 0;
+}
+p{
+    /* p태그는 기본적으로 마진값을 가지고 있는데 그걸 0으로 내가 만들어준거 */
+    margin: 0;
+    color: orangered;
+}
+p.classEx1{
+    color: blue;
+    background-color: gray;
+}
+body .classEx1{
+    color: orangered;
+}
