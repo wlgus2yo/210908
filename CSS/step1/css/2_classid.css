@@ -14,3 +14,66 @@ p.classEx1{
 body .classEx1{
     color: orangered;
 }
+p{
+    margin:0;
+    color:red;
+}
+.btn{
+    border:1px solid red;
+    /* border-width:1px;
+    border-style:solid;
+    border-color:red; */
+    font-size:12px;
+    padding:10px 30px;
+    /* padding-top:10px;
+    padding-right:30px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding:10px 30px 10px 30px;
+    padding:10px(상) 30px(우) 10px(하) 30px(좌);
+    padding:10px(상) 30px(좌우) 10px(하);
+    padding:10px(상하) 30px(좌우);
+    padding:10px(상우하좌); */
+}
+.btn.create{
+    background-color:white;
+    color:black;
+    border-color:black;    
+}
+.btn.modify{
+    background-color:white;
+    border-color:gray;
+    border-style:dashed;
+    color:gray;
+}
+.btn.delete{
+    background-color:blue;
+    color:white;
+    border-color:blue;
+}
+.btn.confirm{
+    color:blue;
+    border-color:green;
+    background-color:lightcoral;
+}
+.btn.cancel{
+    color:white;
+    border-color:gray;
+    background-color:red;
+}
+
+#userID{
+    /* 외곽선: 1픽셀 점선 회색;
+    글자 사이즈 : 12픽셀;
+    패딩(내부로 뚱뚱해 지는것) : 5픽셀 15픽셀 5픽셀 15픽셀
+    글자 색: 초록색; */
+    border:1px dashed gray;
+    font-size:12px;
+    padding:5px 15px;
+    color:green;
+}
+/* 
+    퍼블리셔는 input - label을 연결하는 경우 외에는
+    아이디를 거의 사용하지 않는다.
+    클래스 사용 권장.
+*/

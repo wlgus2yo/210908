@@ -1,0 +1,39 @@
+body{
+    margin:0; padding:0;
+}
+h1{
+    font-size:14px;
+    /* color:red; */
+    /* color:#ff(r:red) 00(g:green) 00(b:blue);
+    f => 10진수:15;
+    color:rgb(255,0,0); */
+    color:#ff0000;
+}
+img{
+    width:250px;
+    height:80px;
+    border:5px solid #3f3;
+}
+/* 각각의 태그를 선택하여 스타일 지정 */
+
+ul, ol{
+    list-style:none;
+    color:blue;
+    font-size:12px;
+}
+/* ,를 통해 여러 대상에게 동일한 스타일 적용 가능 */
+
+ul li{
+    color:red;
+}
+ol li{
+    color:orange;
+}
+/* 하위 대상을 지목하여(특정화를 시켜서) 스타일 적용 가능 */
+
+dl dt,
+dl dd{font-size:35px;}
+/* 하위 대상 동시 그룹화 가능 */
+
+dl dt{color:#ff0000;}
+dl dd{color:#0000ff;}
