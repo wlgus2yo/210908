@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body{
+    margin: 0; padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* 나눔고딕을 먼저 넣고, 없다면 '산스 세리프'로 하겠다(구글 폰트에서 css 가져온거)=> */
+/* 구글 폰트에서 원하는 폰트를 고른 후, +Select this style 클릭>
+    클릭했을 때, 팝업이 보이고 link용,css용 별도로 존재 */
+
+h1{
+    font-size: 20px;
+    line-height: 25px;
+    color: blue;
+}
+h2{
+    font-size: 15px;
+    line-height: 20px;
+    color: blueviolet;
+}
+h3{
+    font-size: 30px;
+    line-height: 40px;
+    color: chocolate;
+}
+
+/* 기본적으로 폰트 사이즈(h1~h6)는 기본 값을 가지고 있음
+    폰트사이즈는 기본적으로 작을 수록 우선순위가 매겨지는데,
+    css를 적용하면 순서를 바꿀 수 있음 */
+
+p{
+    font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
+    /* 
+        한글폰트와 영어폰트가 다를 경우, 
+        font-familiy : '영어폰트','한글폰트', 혹시모를 기본폰트
+        - 한글폰트는 기본적으로 영어를 가지고 있지만, 
+        영어는 한글이 있는 부분에서 영어폰트를 사용하려고 하고, 
+        없으면 한글폰트를 사용하기 때문
+    */
+    font-size: 20px;
+}
+p.letter{
+    letter-spacing: 10px;
+    /* 자간효과 */
+}
+p.word{
+    word-spacing: 10px;
+    /* 단간(spacebar 기준) */
+}
+p.w_nomal{
+    width:100px;
+    line-height:24px; 
+    border:1px solid #000;
+    white-space:nomal;    
+}
+p.w_nowrap{
+    width: 100px;
+    line-height:20px; 
+    border:1px solid #000;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 
+    white-space, overflow, text-overflow는 
+    */
+}

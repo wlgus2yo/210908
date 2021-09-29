@@ -14,6 +14,7 @@ p.classEx1{
 body .classEx1{
     color: orangered;
 }
+/* 띄어쓰기는 바디에 있는 클래스 라는 식으로 표현 */
 p{
     margin:0;
     color:red;
@@ -35,6 +36,8 @@ p{
     padding:10px(상하) 30px(좌우);
     padding:10px(상우하좌); */
 }
+/* 공통된 태그를 통해서 하나의 형식을 만든 후, 아래와 같이 
+또한번 별도로 스타일 적용 가능 */
 .btn.create{
     background-color:white;
     color:black;

@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+.wrap{
+    background-color: cornflowerblue;
+    height: 100%;
+    /* 
+        브라우저의 높이를 꽉채우는 height:100%를 사용하는
+        부모의 높이값이 정해져있어야 한다. 
+        (html, body{height:100%}가 선행되어야 함)
+    */
+}
+.warp p{
+    margin: 0;
+    background-color: crimson;
+    padding: 15px;
+    box-sizing: border-box ;
+    /* box-sizing :
+            -**border-box:
+                border를 포함한 전체를 '정해진' 너비안에 꾸겨 넣는다 
+            -content-box:
+                defalut 값, 너비에 패딩이 가산됨*/
+    border: 10px solid yellow;
+    margin: 0 15px;
+    margin-bottom:30px;
+    width: 100%;
+}
