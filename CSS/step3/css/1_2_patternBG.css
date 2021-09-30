@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+}
+body, p{
+    margin: 0;
+}
+.wrap{
+    height: 100%;
+    background-image: url(../images/pt.gif);
+    /* 
+        background-image: 
+            -기본적으로 repeat 속성이 적용되어있음
+    */
+}
+.wrap p{
+    background-color: #152;
+    margin:0 0 20px 0;
+    padding: 20px;
+}
