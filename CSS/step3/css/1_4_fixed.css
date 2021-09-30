@@ -1,0 +1,28 @@
+*{
+    /* 별모양은 모든 태그를 지칭 */
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    background: url("../images/example.jpg") no-repeat center / cover fixed;
+    /* background-image: url(../images/example.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    /* attachment는 이미지의 크기가 웹브라우저와 다를 경우 잘릴 수 있는데
+    그러한 잘림을 방지, 온전히 뒷배경을 채울 수 있게끔 함
+    백그라운드가 스크롤을 따라 움직일 수 있게!*/
+}
+div{
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+div h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
