@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background-image: url("../images/BackgroundFront.png"), url("../images/BackgroundBack.png");
+    background-repeat: no-repeat;
+    /* 
+        background-repeat:
+        -no-repeat: 반복 없음
+        -repeat-x : x축만 반복
+        -repeat-y : y축만 반복
+        -repeat: 기본값
+    */
+    background-size: contain;
+    /* 
+        background-size: cover는 공간을 채우는 것을 우선시 함.(웹의 빈공간이 보이지 않도록)
+                        contain은 img의 최대값을 우선시 함.(이미지의 전체가 보일 수 있도록)
+                        둘 다 이미지의 기본비율(종횡비)를 유지함
+                        -X축 Y축 값: 값 지정
+                        -auto: 이미지의 기본 사이즈(기본값)
+    */
+    background-position: right bottom;
+    /* 
+        background-position
+        - center, top, left, bottom (오른쪽 아래에 하고 싶으면 right 
+        - X축값 Y축값
+
+    */
+    background-attachment: fixed;
+}
+p{
+    height: 2000px;
+}
