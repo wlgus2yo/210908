@@ -1,0 +1,58 @@
+*{
+    margin: 0; padding: 0;
+}
+h1{
+    text-align: center;
+    /* 
+        text-align:
+            -left, right, center
+    */
+}
+ul{
+    width: 640px;
+    margin: 0 auto;
+    /* 부모의 높이는 자식의 영향을 받음, margin 0 auto 하면 중앙으로 옴 */
+    background: lightgreen;
+}
+ul::after{
+    content: ''; display: block; clear: both;
+}
+ul li{
+    float: left; list-style: none;
+    width: 160px; height: 140px;
+    /* 
+    list에서 disc 등의 표현을 없애고 싶다면, 
+    -display:block 또는 list-style:none
+    */
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+}
+ul li span{
+    background-color: rgb(0,0,0,0.5);
+    font-weight: 600px;
+}
+ul li.caption{
+    background-position: ;
+}
+ul li.wolverine{
+    background-position: ;
+}
+ul li.thor{
+    background-position: ;
+}
+ul li.ironman{
+    background-position: ;
+}
+ul li.spiderman{
+    background-position: ;
+}
+ul li.superman{
+    background-position: ;
+}
+ul li.rangerRed{
+    background-position: ;
+}
+ul li.rangerBlue{
+    background-position: ;
+}
+

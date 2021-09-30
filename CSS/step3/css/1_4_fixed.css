@@ -9,6 +9,13 @@ html, body{
 }
 body{
     background: url("../images/example.jpg") no-repeat center / cover fixed;
+    /* 
+        background short hand
+        background: image repeat position / size attachment 순으로!
+        /(슬래쉬) 뒤의 내용까지 한번에 쓰려면 내용을 채워줘야 함
+        short hand 사용시, 기재하지 않은 값은 기본값으로 설정되며,
+        short hand 를 뒤에 적으면, 앞에 적은 css 속성들이 모조리 사라짐
+    */
     /* background-image: url(../images/example.jpg);
     background-position: center;
     background-repeat: no-repeat;
