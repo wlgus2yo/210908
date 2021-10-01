@@ -35,24 +35,24 @@ ul li.caption{
     background-position: ;
 }
 ul li.wolverine{
-    background-position: ;
+    background-position: -160px 0;
 }
 ul li.thor{
-    background-position: ;
+    background-position: -320px 0;
 }
 ul li.ironman{
-    background-position: ;
+    background-position: -480px 0;
 }
 ul li.spiderman{
-    background-position: ;
+    background-position: 0 -140px;
 }
 ul li.superman{
-    background-position: ;
+    background-position: -160px -140px;
 }
 ul li.rangerRed{
-    background-position: ;
+    background-position: -320px -140px;
 }
 ul li.rangerBlue{
-    background-position: ;
+    background-position: -480px -140px;
 }
 
