@@ -1,0 +1,45 @@
+ul{
+    list-style-image: url("../images/bul_li.gif");
+    list-style-position: inside;
+
+}
+    /* 
+        리스트스타일 포지션의 기본값은 아웃사이드 
+        블릿을 직접 제작하여 활용할 수 있다. 
+        -list-style-postion을 이용하여 문단 내로 넣을 것인지(inside)
+        문단 밖으로(outside) 나오게 할것인지 설정 가능
+    */
+
+    ul li.circle{
+        list-style: circle;
+    
+    }
+
+    ul li.disc{
+        list-style: disc;
+
+    }
+    ul li.square{
+        list-style: square;
+    }
+    ol li.decimal{
+        list-style: demical;
+    }
+    ol li.lower-alpha{
+        list-style: lower-alpha;
+    }
+    ol li.upper-alpha{
+        list-style: upper-alpha;
+    }
+    ol li.lower-roman{
+        list-style: lower-roman;
+    }
+    ol li.upper-roman{
+        list-style: upper-roman;
+    }
+    ol li.none{
+        list-style: none;
+    }
+    /* 
+        ul과 ol의 리스트 스타일은 혼용가능하다
+    */
