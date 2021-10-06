@@ -1,0 +1,56 @@
+#wrap{
+    width:300px; height:200px;
+    margin:0 auto;
+    background-color:#666;
+    position:relative;
+    overflow:auto;
+    /* 
+        overflow : 부모의 사이즈가 정해져 있을때
+            - visible : 자식이 부모를 뚫고 나가도 상관X.
+            - scroll : 자식이 부모를 뚫고 나가든 안나가든 스크롤바가 일단 생성.
+            - auto : 자식이 부모를 뚫고 나갈 때에만 스크롤바 생성.
+            - hidden : 자식이 부모를 뚫고 나간다면 안보이게 함.
+    */
+}
+#wrap div{
+    width:150px; height:150px;
+    position:absolute;
+}
+#wrap .redBox{
+    background-color:#f00;
+    left:10px; top:10px;
+}
+#wrap .greenBox{
+    background-color:#0c0;
+    left:50px; top:50px;
+}
+#wrap .blueBox{
+    background-color:#00f;
+    left:90px; top:90px;
+}
+#wrap .skyblueBox{
+    background-color:skyblue;
+    left:0; top:0;
+    right:0; bottom:0;
+    /* 
+        left: 0
+         부모(relative)의 좌측과 대상(absolute)의 좌측의 거리가 0;
+        top: 0
+         부모(relative)의 상단과 대상(absolute)의 상단의 거리가 0;
+        left, right가 동시선언시 먼저 사용된 속성 우선
+        top, bottom도 마찬가지이다.
+    */
+}
+/* 
+    position :
+        - relative : 상대좌표
+        - absolute : 절대좌표
+        - fixed : 고정좌표
+        - static : 기본값(position 값이 없음)
+        relative와 absolute가 같이 사용될 때 가장 안정성 있음.
+    좌표의 기준이 될 객체에 position:relative;
+    그것을 기준으로 움직일 자식 객체에 position:absolute;
+    부모위치(relative)를 기준으로 자식객체가 움직이게 됨.
+    부모객체의 높이를 정해주면 자식객체가 부모객체를 뚫고
+    나오는 현상을 방지 할 수 있다.(overflow를 이용)
+*/
