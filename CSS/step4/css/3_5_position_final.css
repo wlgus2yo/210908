@@ -1,3 +1,7 @@
+*{
+    margin: 0; padding: 0;
+}
+
 body{
     height:2000px;
 }
@@ -9,20 +13,66 @@ div{
 }
 .wrap{
     border:1px solid #000;
+    position: relative;
+    height: 350px;
 }
 .box_1{
     background-color: palevioletred;
     width:500px; height:200px;
+    position: absolute; 
+    
 }
-.box_1 div{
+.box_1 div ,.box_2 div{
     width:50px; height:50px;
 }
-.box_1 .box_1_1{background-color:red;}
-.box_1 .box_1_2{background-color:blue;}
-.box_1 .box_1_3{background-color:purple;}
-.box_1 .box_1_4{background-color:hotpink;}
+.box_1 .box_1_1{
+    background-color:red;
+    position: absolute;
+    left: 0; top: 0;
+}
+.box_1 .box_1_2{
+    background-color:blue;
+    position: absolute;
+    right: -50px; top: 0px;
+}
+.box_1 .box_1_3{
+    background-color:purple;
+    position: absolute;
+    right: 0; top: 50px;
+}
+.box_1 .box_1_4{
+    background-color:hotpink;
+    position: absolute;
+    left: 350px; top: 230px;
+}
 
 .box_2{
     width:350px; height:150px;
     border:1px solid #000;
+    position: relative;
+    left: 0px; top: 200px;
+}
+
+
+.box_2 .box_2_1{
+    background-color: black;
+    position: absolute;
+    left: 0px; top: 0px; 
+
+}
+.box_2 .box_2_2_1{
+    background-color:blue;
+    position: absolute;
+    left: 130px; top: 100px;
+}
+.box_2 .box_2_3{
+    background-color: orange;
+    position: absolute;
+    left: 230px; top: 0px;
+
+}
+.box_2 .box_2_2_2{
+    background-color: blue;
+    position: absolute;
+    left: 80px; top:150px;
 }
