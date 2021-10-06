@@ -1,0 +1,19 @@
+html,body,.wrap{
+    height:100%;
+}
+body, ul, h2{
+    margin:0;
+}
+.wrap aside ul{
+    padding:0;
+    list-style: none;
+}
+.wrap aside{
+    height:100%; width:250px;
+    position:fixed; left:0; top:0;
+    background-color:#09f;
+}
+.wrap .content{
+    height:2000px; padding-left:270px;
+    background-color:#f60;
+}
