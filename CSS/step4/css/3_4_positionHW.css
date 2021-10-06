@@ -1,0 +1,56 @@
+*{
+    margin:0; padding:0;
+}
+body{
+    padding-top:200px;
+}
+header{
+    background-color:red;
+    color:white;
+    height:200px; width:100%;
+    position:fixed;
+    z-index: 1;
+    top:0; left:0;
+    /* 
+        z-index:0부터 시작(default);
+            숫자가 높아질수록, 우리 눈에 보인다.
+    */
+}
+section{
+    background-color:black;
+    height:1200px;
+    position:relative;
+    padding-top:200px;
+}
+section aside{
+    background-color:green;
+    position:absolute;
+    left:0; top:0;
+    width:20%;
+    height:100%;
+    /* 
+        calc() : 계산기
+                단위가 달라도 계산 가능(%, px, rem, em, vw, vh)
+                **값과 값, 부호 사이에 띄어쓰기가 꼭 있어야 함**
+    */
+}
+section article{
+    background-color:blue;
+    position:absolute;
+    right:0; top:0;
+    width:70%;
+    height:100%;
+}
+/* 
+    absolute 특성
+        - 부모에게서 relative를 탐색.
+        if(relative > 0){
+            부모를 기준으로 움직인다.
+        }else{
+            부모의 부모에게서 relative 탐색합니다.
+        }
+*/
+footer{
+    background-color:orange;
+    padding:30px 0; text-align: center;
+}
