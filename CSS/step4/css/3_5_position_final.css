@@ -5,6 +5,7 @@
 body{
     height:2000px;
 }
+
 div{
     line-height:50px;
     text-align:center;
@@ -22,28 +23,37 @@ div{
     position: absolute; 
     
 }
-.box_1 div ,.box_2 div{
+.box_1 div, 
+.box_2 div,
+.box_3 div,
+.box_4 div{
     width:50px; height:50px;
+    position: absolute;
 }
+
 .box_1 .box_1_1{
     background-color:red;
-    position: absolute;
+    /* position: absolute; */
     left: 0; top: 0;
 }
 .box_1 .box_1_2{
     background-color:blue;
-    position: absolute;
-    right: -50px; top: 0px;
+    /* position: absolute; */
+    /* right: -50px; top: 0px; */
+    top: 0; left: 100%;
+    /* px로 표기시 부모의 PX이 변하면 바꿔줘야하므로, %로 표시 */
 }
 .box_1 .box_1_3{
     background-color:purple;
-    position: absolute;
-    right: 0; top: 50px;
+    /* position: absolute; */
+    /* right: 0; top: 50px; */
+    top: 50px; right: 0;
 }
 .box_1 .box_1_4{
     background-color:hotpink;
-    position: absolute;
-    left: 350px; top: 230px;
+    /* position: absolute; */
+    /* left: 350px; top: 230px; */
+    top: 120%; right: 20%;
 }
 
 .box_2{
@@ -53,26 +63,69 @@ div{
     left: 0px; top: 200px;
 }
 
-
 .box_2 .box_2_1{
     background-color: black;
-    position: absolute;
-    left: 0px; top: 0px; 
+    /* position: absolute; */
+    left: 0; top: 0; 
 
 }
 .box_2 .box_2_2_1{
     background-color:blue;
-    position: absolute;
+    /* position: absolute; */
     left: 130px; top: 100px;
+    /* bottom: 0; left: 100px; */
 }
 .box_2 .box_2_3{
-    background-color: orange;
-    position: absolute;
+    background-color: brown;
+    /* position: absolute; */
     left: 230px; top: 0px;
 
 }
 .box_2 .box_2_2_2{
     background-color: blue;
-    position: absolute;
+    /* position: absolute; */
     left: 80px; top:150px;
+    /* top: 100%; left: 100px; */
+}
+
+.box_3{
+    background-color: pink;
+    width: 50px; height: 50px;
+    position: fixed;
+    right: 0; top: 0;
+}
+.box_3 div{
+    background-color: pink;
+    /* background color는 부모에게 상속받지 못함. 
+    상속받는 CSS: color(글자색), font-size(글자크기), line-height(글자높이) 등 
+    글꼴에 관한 내용을 상속받음*/
+    border: 1px solid white;
+}
+.box_3 .box_3_1{
+    right: 0; top: 0;
+}
+
+.box_3 .box_3_2{
+    /* background-color: pink; */
+    right: 0; top: 50px;
+}
+.box_3 .box_3_3{
+    /* background-color: pink; */
+    right: 0; top: 100px;
+}
+
+.box_4{}
+.box_4 div{
+    background-color: tomato;
+    left: 0;
+    position: absolute;
+}
+.box_4 .box_4_1{
+    left: 0; top: 100px;
+}
+.box_4 .box_4_2{
+    left: 0; top: 150px;
+}
+.box_4 .box_4_3{
+    left: 0; top: 200px;
 }
