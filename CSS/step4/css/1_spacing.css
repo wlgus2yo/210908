@@ -1,0 +1,83 @@
+/* 
+    margin : 대상을 기준으로 바깥으로 밀어내는 힘.
+    padding : 대상을 기준으로 안쪽으로 밀어내는 힘.
+*/
+
+body{
+    margin:0; padding:0;
+}
+.firstDiv{
+    margin-top:10px;
+    /* body 입장에서 padding이기 때문에 잘못된 CASE */
+    margin-right:10px;
+    /* body 입장에서 padding이기 때문에 잘못된 CASE */
+    margin-bottom:10px;
+    margin-left:10px;
+    /* body 입장에서 padding이기 때문에 잘못된 CASE */
+
+    background:#555;
+}
+.firstDiv article{
+    background-color:#039;
+}
+.secondDiv{
+    background-color:#ddd;
+    margin:20px 15px;
+    padding-bottom:1px;
+}
+/* 
+    firstDiv 의 margin-bottom:10px 상쇄.
+    secondDiv의 margin-top이 더 크기 때문에.
+    (display:block 요소 끼리 상쇄)
+*/
+.secondDiv article{
+    background-color:#930;
+    margin:10px;
+}
+/* 
+    margin-bottom이 적용되지 X.
+    이런 경우에는 부모요소에 padding을 사용하는 것이 바람직.
+*/
+
+.centerDiv{
+    width:300px;
+    text-align: center;
+    padding:10px;
+    border:5px solid red;
+    /* 
+        padding은 내부로 밀어내기 때문에 크기에 가산이 된다.
+        border도 마찬가지.
+    */
+    margin:10px auto;
+    /* 
+        margin:0(상하) auto(좌우) =>
+        브라우저가 자신의 (width - 대상의 width)/2 를 통해 공통 마진을 부여.
+        가운데 위치 할 수 있음.
+    */
+    background-color:#33f;
+}
+.centerDiv article{
+    background-color:#f33;
+    margin:0 10px;
+    /* margin은 부모의 padding과 섞이지 않는다. */
+}
+
+.paddingDiv{
+    background-color:#ff3;
+    width:300px;
+    padding:10px;
+    border:5px solid #ddd;
+    margin:10px auto;
+    box-sizing:border-box;
+    /* 
+        box-sizing : border-box
+        padding과 border의 사이즈가 width에 가산되지 않음.
+        정해진 너비에 padding과 border를 꾸겨 넣음.
+        box-sizing : content-box
+        padding과 border의 사이즈가 width에 가산 됨(default);
+    */
+}
+.paddingDiv article{
+    background-color:#039;
+    margin:0 10px;
+}
