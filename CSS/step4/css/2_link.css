@@ -1,0 +1,23 @@
+a{
+    font-size:20px;
+    border:1px solid #000;
+    display:inline-block;
+    text-decoration: none;
+    /* 
+        text-decoration:
+            -line-through : 삭제선
+            -underline : 밑줄(a 태그의 기본값)
+    */
+}
+a:link{color:#f00;}
+a:hover{color:blueviolet;}
+a:visited{color:brown;}
+a:active{color:cornflowerblue;}
+a:focus{color:yellow; background-color:black ;}
+/* 
+    :link : href속성이 있는지 체크해서 css 입력(평상시)
+    :hover : 마우스가 올라가 있는 상태(마우스 오버)
+    :visited : 방문한 적이 있는 상태.
+    :active : 마우스 일 경우에 버튼을 누르고 있는(활성화된) 상태
+    :focus : 대상이 focusing 된 상태.(tab으로 이동할 때)
+*/
