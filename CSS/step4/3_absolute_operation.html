@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height:500px; border:1px solid #000; position:Relative;">
+        <div style="position:absolute; width:50px; height:50px; background-color:#000; color:#fff;">box_1</div>
+        <div style="position:absolute; width:50px; height:50px; background-color:#000; color:#fff;">box_2</div>
+        <div style="position:absolute; width:50px; height:50px; background-color:#000; color:#fff;">box_3</div>
+        <div style="position:absolute; width:50px; height:50px; background-color:#000; color:#fff;">box_4</div>
+    </div>
+    <div style="height:500px;">
+        <div>
+            <div>
+                <div>
+                    <div style="position:absolute; color:#000; background:red;">box_5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+        absolute 된 대상은
+            1. 자기 자신의 위치에 떠있음.
+            2. 만약에 위칫값을 지정한다면
+                2-1. 직계 부모에게 relative가 있는가?
+                    2-1-1. 있다면 => 부모를 기준으로 움직임
+                    2-1-2. 없다면 => 부모의 부모를 탐색
+                2-2. 직계 부모의 부모에게 relative가 있는가?
+                    2-2-1. 있다면 => 부모를 기준으로 움직임
+                    2-2-2. 없다면 => 부모의 부모를 탐색
+                2-3...
+                2-4...
+                2-n. 직계 부모의 부모의.... 부모(body)에게 relative가 있는가?
+                    2-n-1 body는 relative가 있다. body를 기준으로 움직임.
+     -->
+</body>
+</html>
