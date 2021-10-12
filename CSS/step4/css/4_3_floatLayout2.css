@@ -1,0 +1,45 @@
+*{
+    margin:0; padding:0;
+}
+.wrap{
+    width:960px; margin:0 auto;
+}
+header{
+    background-color:darkgoldenrod;
+}
+header:after{
+    clear:left; display:block; content:'';
+}
+header h1{
+    background-color:red;
+    width:15%; line-height:55px;
+    color:#fff; text-align:center;
+    float:left;
+    /* 수평 정렬이 될 대상 */
+}
+header nav{
+    background-color:blue;
+    width:85%;
+    float:left;
+    /* 수평 정렬이 될 대상 */
+}
+header nav ul{
+    text-align:center;
+}
+header nav ul li{
+    display:inline-block;
+}
+header nav ul li a{
+    color:#fff; line-height:55px;
+}
+/* 
+    :after는 수평정렬 대상의 직계 부모에게 부여;
+    float는 수평정렬이 될 대상에게 부여;
+    section
+        - 각각의 article을 수평정렬
+    section h2 
+        - background-color:#0cf;
+    article h3 
+        - background-color:#000;
+    footer 
+        - background-color:blue; */
