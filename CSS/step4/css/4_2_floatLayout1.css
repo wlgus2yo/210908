@@ -1,7 +1,17 @@
+
 body{
     background-color:#ffc;
     width:960px; margin:0 auto;
+    /* body 전체로 영역을 줄 때 주의해야할 점 이미지가 배경 전체를 감쌀때는 
+        영역 차이가 날 수 있음=body wrapping
+        body wrapping 시 주의 점
+            1. *전체 페이지*에서 브라우저의 너비 전체를 쓰는 경우가 없어야 함*/
 }
+/* body는 웹 브라우저의 처음과 끝을 말하는 건데, 
+    부모의 높이는 자식의 높이를 따르지만, 배경색은 웹 브라우저
+    전체를 채움(실제 영역과 다르게 브라우저 전체에 background color 적용됨 */
+
+
 header{
     background-color:skyblue;
 }
@@ -17,17 +27,29 @@ header nav{
         숨기기 위한 값;
         쉽게 생각하면 숨기기 위해서 강제로 높이를 지정.
     */
+    background-color: red;
 }
 .wrap:after{
-    content:''; 
-    display:block; clear:left;
-    /* 컨텐츠가 필요함 */
+    /* float 속성사용 시, 오른쪽 하단 꼭지점이 살짝 떠서
+        영역을 모두 채울 수 없게 됨, 영역을 다 채워주기 위해서는 
+        div style 클리어를 플롯 속성과 일치시키게 만들어야하나 번거로우니
+        CSS에서 만들어준것. */
+    content:''; display:block; clear:left;
+    /* 부모높이의 끝점 확인시켜주는 역할
+        <div style="clear:left;"></div> 와 동일 
+            div는 display:block; 빈 content가 있기 때문*/
 }
+/* 
+    float는 수평으로 정렬할 대상한테,
+    :after는 정렬할 대상의 부모한테,
+*/
 
 .wrap aside{
     height: 800px; width:200px;
     background-color:tomato;
     float:left;
+    /* aside는 기본적으로 block 속성이기때문에 줄바꿈을 강제로 일으켜서
+        여백까지 하나로 영역을 가져감 */
 }
 .wrap section{
     height:800px; width:760px;
