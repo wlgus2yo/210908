@@ -43,3 +43,41 @@ header nav ul li a{
         - background-color:#000;
     footer 
         - background-color:blue; */
+    
+section h2{
+    background-color: #0cf;
+}
+
+section:after{
+    content: ''; display: block; clear: both;
+}
+
+section article{
+    border: 1px solid black;
+    float: left; width: 33.33%;
+    /* 
+        -3분할 : 33.33%
+        -4분할: 25%
+        -5분할: 20%
+        -6분할: 16.66%
+    */
+    box-sizing: border-box;
+}
+
+section h3{
+    background-color: black;
+    color: white;
+}
+
+section ul li{
+    line-height: 30px; font-size: 14px
+    list-style: none;
+}
+
+footer{
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    /* 한줄이라서 라인하이트를 쓰지만, 여러줄 일 경우에는 padding 값으로 조절! */
+}

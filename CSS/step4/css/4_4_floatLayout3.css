@@ -1,0 +1,54 @@
+*{
+    margin: 0; padding: 0;
+    /* 
+        * => 전체 선택자
+        ex1) header * => header 내부의 전체
+        ex2) section * * => header 내부의 전체
+        ex1) header * => header 내부의 전체
+    */
+}
+header{
+    background-color: #ffc;
+    position: relative;
+}
+
+header h1{
+    /* display:inline-block */
+    background-color: blue;
+    width: 300px; 
+    color: white; font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 20px;
+
+    /* 
+        가운데 정렬
+        -text-align; center:
+         부모에게 부여해서 글씨(display:inline or lnline block)인 자식을 중앙배치 시킬때
+        -margin: 0 auto; (display:block;)
+         해당 대상에서 부여해서, 부모의 너비와 대상의 너비를 비교 후 중앙으로 배치
+    */
+}
+
+header form{
+    position: absolute;
+    right: 0; top: 0;
+
+}
+header nav{
+    background-color: violet ;
+}
+
+header nav ul{
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul il a{
+    color: black;
+    text-decoration: none;
+}
