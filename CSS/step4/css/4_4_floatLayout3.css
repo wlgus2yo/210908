@@ -3,8 +3,8 @@
     /* 
         * => 전체 선택자
         ex1) header * => header 내부의 전체
-        ex2) section * * => header 내부의 전체
-        ex1) header * => header 내부의 전체
+        ex2) section * * => section 내부의 전체
+        ex1) * => 모든 태기
     */
 }
 header{
@@ -42,13 +42,92 @@ header nav{
 
 header nav ul{
     text-align: center;
+    font-size: 0;
 }
 
 header nav ul li{
     display: inline-block;
+    font-size: 16px;
+    width: 20%;
+    /* 
+        inline-block 에서 100%를 채우고 싶을 경우,
+        부모에서 글자크기를 0으로 함으로써  
+    */
 }
 
-header nav ul il a{
+header nav ul li a{
     color: black;
     text-decoration: none;
+
+    /* 
+        a 태그는 기본적으로 display:inline, 
+        크기를 가질 수 없다.
+    */
+    display: block;
+}
+
+header nav ul li a:hover{
+    color: white
+}
+
+
+
+    /* 
+        div .content = div 안에 있는 content라는 클래스를 가진 태그를 지목
+        div.content = content 
+        .content = content 라는 클래스를 가진 태그를 지목
+    */
+
+div.content div img{
+    width: 100%;
+}
+
+div.content div{
+    margin-bottom: 50px;
+}
+
+div.content{
+    margin-bottom: 50px;
+}
+
+div.content:after{
+    content: ''; display: block; clear: both;
+}
+
+div.content ul{
+    border: 1px solid black;
+    float: left; width: 30%;
+    box-sizing: border-box;
+    /* 
+        box-sizing:border-box => border를 포함해서 정한 너비에 꾸겨넣는다
+        30%에서 좌측 1픽셀 우측1픽셀 총 2픽셀을 보더로 나눠준다
+    */
+    list-style: none;
+}
+
+.content ul:not(:last-of-type){margin-right:5%;}
+    /* 
+        - child
+            :first-child => 첫번쨰 자식
+            :last-child => 마지막 자식
+            :nth-child => n번쨰 자식
+            순서가 먼저 정해지고, 순서에 맞는 태그를 조합
+        - of-type
+            :first-of-type => 첫번째 대상
+            대상 중에서 몇번째인지를 조합
+        - not()
+            선택자:not(:class) => 선택자 중 해당 클래스가 아닌 대상 
+            선택자:not(#id)
+            선택자:not(:nth-child)
+            선택자:not(:nth-of-type) 
+
+            .list:not(.test):not(:first-of-type)
+            1. .list를 찾는다.
+            2. 1의 결과값중  
+    */
+
+footer{
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 20px 0;
 }
