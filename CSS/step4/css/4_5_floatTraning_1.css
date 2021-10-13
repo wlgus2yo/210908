@@ -1,0 +1,22 @@
+div{
+    background-color: burlywood;
+}
+ul li{
+    float: left; width: 33.33%;
+}
+
+ul:after{
+    content: ''; display: block; clear: both;
+}
+
+ul li figure img{
+    float: left;
+}
+
+ul li figure:after{
+    content: ''; display: block; clear: both;
+}
+
+footer{
+    background-color: chartreuse;
+}
