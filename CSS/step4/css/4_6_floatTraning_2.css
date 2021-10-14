@@ -1,0 +1,48 @@
+*{
+    margin:0; padding: 0;
+}
+
+ul li{
+    border: 1px solid lightgray;
+    float:left; width: 33.33%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+ul::after,
+ul li::after{
+    content: ''; display: block; clear: both;
+}
+/* 
+    1. img => float: left;
+    2. figure => 글씨만으로 높이를 측정 => figure 높이가 줄어듬
+    3. li의 높이가 줄어듬
+    4. li::after clear:both 부여
+    5. li 끝부분을 정확하게 측정 
+*/
+
+ul li figure img{
+    float: left;
+    width:49% 
+    margin-right: 2%;
+}
+
+ul li figure figcaption{
+    border-bottom: 1px solid #000;
+    float: left;
+    width:49%
+}
+
+ul li figure figcaption dl dt{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+ul li figure figcaption dl dd{
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+
+
