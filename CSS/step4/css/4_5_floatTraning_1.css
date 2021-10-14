@@ -1,8 +1,17 @@
 div{
     background-color: burlywood;
 }
+
+ul:after{
+    content: ''; display: block; clear: left; 
+}
+
 ul li{
     float: left; width: 33.33%;
+    /* 
+        li를 3등분하려면 width 값을 33.33% 줘야함
+    */
+    list-style: none;
 }
 
 ul:after{
@@ -12,11 +21,24 @@ ul:after{
 ul li figure img{
     float: left;
 }
+    /* 
+        float가 된 대상은 부모의 높이에 영향을 끼치지 못하므로, 
+        img에만 float를 주면 figure,li의 영역이 작아짐
+        따라서 동일한 영역으로 인식할 수 있도록 아래와 같이 지정해줘야함
+        그래야 더 높은 값을 높이로 인식함
+    */
 
 ul li figure:after{
     content: ''; display: block; clear: both;
 }
+    /* 
+        after의 용도는 float 사용 시 float 설정된 태그의 기준점을 
+        올바르게 잡을 수 있도록 마침표를 잡아주는 것.
+    */
+
 
 footer{
     background-color: chartreuse;
+    text-align: center;
+    padding: 10px;
 }
