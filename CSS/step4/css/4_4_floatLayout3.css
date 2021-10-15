@@ -3,13 +3,14 @@
     /* 
         * => 전체 선택자
         ex1) header * => header 내부의 전체
-        ex2) section * * => section 내부의 전체
-        ex1) * => 모든 태기
+        ex2) section * => section 내부의 전체
+        ex1) * => html * => 모든 태그
     */
 }
 header{
     background-color: #ffc;
     position: relative;
+    /* position:absolute의 기준점 역할 */
 }
 
 header h1{
@@ -33,6 +34,7 @@ header h1{
 
 header form{
     position: absolute;
+    /* position:relative를 기준으로 이동 */
     right: 0; top: 0;
 
 }
@@ -51,7 +53,8 @@ header nav ul li{
     width: 20%;
     /* 
         inline-block 에서 100%를 채우고 싶을 경우,
-        부모에서 글자크기를 0으로 함으로써  
+        부모에서 글자크기를 0으로 함으로써
+        띄어쓰기(엔터키)를 안보이게 할 수 있다.   
     */
 }
 
@@ -70,13 +73,14 @@ header nav ul li a:hover{
     color: white
 }
 
-
+div .content{
 
     /* 
         div .content = div 안에 있는 content라는 클래스를 가진 태그를 지목
         div.content = content 
         .content = content 라는 클래스를 가진 태그를 지목
     */
+}
 
 div.content div img{
     width: 100%;
@@ -107,23 +111,26 @@ div.content ul{
 
 .content ul:not(:last-of-type){margin-right:5%;}
     /* 
-        - child
-            :first-child => 첫번쨰 자식
-            :last-child => 마지막 자식
-            :nth-child => n번쨰 자식
-            순서가 먼저 정해지고, 순서에 맞는 태그를 조합
-        - of-type
-            :first-of-type => 첫번째 대상
-            대상 중에서 몇번째인지를 조합
-        - not()
-            선택자:not(:class) => 선택자 중 해당 클래스가 아닌 대상 
-            선택자:not(#id)
-            선택자:not(:nth-child)
-            선택자:not(:nth-of-type) 
-
-            .list:not(.test):not(:first-of-type)
+     - child
+        :first-child => 첫번째 자식
+        :last-child => 마지막 자식
+        :nth-child(n) => n번째 자식
+        순서가 먼저 정해지고, 순서에 맞는 태그를 조합.
+     - of-type
+        :first-of-type => 첫번째 대상
+        :last-of-type => 마지막 대상
+        :nth-of-type(n) => n번째 대상
+        대상 중에서 몇번째인지를 조합.
+     - :not()
+        선택자:not(.class) => 선택자 중 해당 클래스가 아닌 대상
+        선택자:not(#id) => 선택자 중 해당 아이디가 아닌 대상
+        선택자:not(:nth-child) => 선택자 중 해당 child가 아닌 대상
+        선택자:not(:nth-of-type) => 선택자 중 해당 of-type가 아닌 대상
+        .list:not(.test):not(:first-of-type){
+            background:red;
             1. .list를 찾는다.
-            2. 1의 결과값중  
+            2. 1의 결과값 중 .test라는 클래스를 제외한 나머지를 지목.
+            3. 2의 결과값 중 .first-of-type을 제외한 나머지를 지목.
     */
 
 footer{
