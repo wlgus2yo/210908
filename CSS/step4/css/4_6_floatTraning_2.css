@@ -23,7 +23,7 @@ ul li::after{
 
 ul li figure img{
     float: left;
-    width:49% 
+    width:49%;
     margin-right: 2%;
 }
 
@@ -31,6 +31,10 @@ ul li figure figcaption{
     border-bottom: 1px solid #000;
     float: left;
     width:49%
+}
+
+ul li figure figcaption dl{
+    padding: 20px 0;
 }
 
 ul li figure figcaption dl dt{
@@ -42,6 +46,9 @@ ul li figure figcaption dl dt{
 ul li figure figcaption dl dd{
     font-size: 13px;
     padding-left: 15px;
+}
+ul li p{
+    padding-bottom: 15px;
 }
 
 
