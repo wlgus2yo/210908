@@ -1,0 +1,104 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0; height: 100%;
+}
+
+.wrap{
+    background-color: black;
+    width: 100%; height: 100%;
+    position: relative;
+}
+
+.wrap .loginBox{
+    background-color: #262626;
+    width: 50%; height: 50%;
+    position: absolute;
+    left: 25%; top: 25%;
+    /* left: 50%; top: 50%; 
+        transform:translateX(-50%) translateY(-50%); */
+    color: #fff;
+}
+
+.wrap .loginBox nav ul{
+    margin: 0; padding: 0;
+}
+
+.wrap .loginBox nav ul:after{
+    content:''; display:block; clear: both;
+}
+.wrap .loginBox nav ul li{
+    list-style: none;
+    float: left; width: 25%;
+    background-color: #3b3b3b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.wrap .loginBox nav ul li a{
+    color: #ea0e52;
+    text-decoration: none;
+    padding: 8px 0; display: block;
+    font-size: 12x;
+}
+.wrap .loginBox nav ul li:hover a{
+    color: #fff;
+    /* li가 마우스에 오버된 상태에서 글자색변경 */
+    background-color: #ea0e52;
+}
+/* li a 가 block으로 설정되어야 해당 영역을 눌렀을 때 전체적으로
+변경됨  */
+
+.wrap h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+form fieldset{
+    border-style: none;
+    padding: 0;
+}
+
+form fieldset ul{
+    list-style: none;   
+    margin: 0; padding: 0 30px;
+
+}
+
+form fieldset ul li{
+    margin-bottom: 20px;
+}
+
+form fieldset ul li::after{
+    content: ''; display: block; clear: both;
+}
+
+form label{
+    background-color:#ea0e52;
+    display: block;
+    float: left; width: 20%;
+    color: #fff;
+    text-align: center;
+}
+
+form label::after{
+    content: ''; display: block; clear: both;
+}
+
+form input[type="text"]{
+    width: 80%;
+    box-sizing: border-box; display: block;
+    float: left;
+}
+
+form input[name="userID"]{
+    
+}
+
+form input[maxlength="8"]{}
+form input[type="submit"]{
+    background-color: #3b3b3b;
+    color: #ea0e52;
+
+}

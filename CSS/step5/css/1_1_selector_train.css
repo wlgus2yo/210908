@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+article{
+    margin-bottom: 20px;
+}
+
+article > *{
+    background-color: brown;
+}
+
+article::after{
+    content: ''; display: block; clear:both;
+}
+
+article > *:first-child{
+    float: left; width: 150px; line-height: 110px;
+    font-size: 100; margin: 0 20px 0 0;
+    background-color: gray; color: white;
+    text-align: center;
+}
+
+article p{
+    margin: 0; font-size: 14px;
+}
+
+article p > *{
+    color: tomato;
+    background-color: transparent;
+}
+
+article p > *:not(mark){
+    text-decoration: underline;
+}
+
+    /* 
+        '>' 는 직계 자식
+        * : 전체 선택자 
+        article > * : article의 직계자식 전체를 지목
+
+        not() :()안의 내용 제외(#id, .class, tag)
+        
+    */
