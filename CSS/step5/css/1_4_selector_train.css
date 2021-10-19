@@ -1,0 +1,70 @@
+body > div{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div form fieldset{
+    border:1px solid blue;
+    margin:0 0 25px 0 ;
+
+}
+
+div form fieldset:last-child{
+    margin-bottom: 0;
+}
+/* 
+    같은 양식인데, 다르게 쓰기
+    div form fieldset:not(:last-child){
+        margin: 0 0 25px 0}
+    
+    div form fieldset:last-child{
+        margin:0}
+*/
+
+div fieldset input{
+    vertical-align: middle;
+}
+/* vertical-align은 display:inline-block 에만 적용됨,  */
+
+div fieldset lable{
+    font-size: 13px;
+    display: inline-block;
+}
+
+div fieldset textarea{
+    resize: none;
+    border:1px solid blue;
+    width: 100%; padding: 10px 2%;
+    box-sizing: border-box;
+    /* paddong 값이 정해지면서 텍스트에어리어가 필드셋 영역을 벗어나므로, 
+        안에 위치시키기 위해서 box-sizing:border-box로 영역 설정
+    */
+    display: block; margin: 20px auto 0;
+    height: 150px; overflow-y: scroll;
+    transition-duration: 0.5s;
+}
+
+/* 
+    부모의 margin, padding, textarea의 width의 관계
+    - 1. 부모(fieldset) 자식(texarea)의 기본 css를 확인
+    - 2. textarea의 스크롤바(overflow-y) 및 width % 간섭 수정(box-sizing)
+    - 3. 이후 부모의 간섭요소(margin, padding, border .....etc)를 제거하여
+        부모자식간 산섭을 없앤다.
+
+    resize: textarea에만 적용되는 css로, 사용자가 임의 크기조절 불가
+    transition-duratio : 모든 변화하는 값에 대응을 한다.
+    (단, on-off에는 동작X EX)display:none-block)
+*/
+
+div fieldset input[type="checkbox"]:checked + textarea{
+    height: 0; padding: 0 2%;
+    /* padding 값은 transition-duration을 준 영역의 값과 동일해야 
+        자연스러운 연결이 가능  */
+}
+/* 
+    input
+        - [type=""] :attribution을 선택
+        - :checked : 체크된 상태를 선택
+        - +         : 바로 뒤에 있는 대상을 선택
+*/
