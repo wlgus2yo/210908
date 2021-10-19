@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0; height: 100%;
+}
+
+body > div{
+    background-color:black;
+    width: 100%; height: 100%;
+    position: relative;
+}
+
+body > div > div{
+    background-color: #262626;
+    width: 50%; height: 50%;
+    position: absolute;
+    left: 25%; top: 25%;
+    color: #fff;
+}
+
+div > div > nav ul{
+    margin: 0; padding: 0;
+}
+
+div > div > nav > ul::after{
+    content:''; display:block; clear: both;
+}
+
+div > div > nav ul li{
+    margin: 0; padding: 0;
+    list-style: none;
+    float: left; 
+    background-color: #3b3b3b;
+    color: white;
+
+}
+
+div > nav > ul > li::after{
+    content: ''; display: block; clear: both;
+}
+
+
