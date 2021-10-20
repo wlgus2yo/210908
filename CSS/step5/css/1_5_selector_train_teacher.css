@@ -1,0 +1,104 @@
+fieldset{
+    width: 100%; max-width: 460px;
+    margin: 0 auto;
+    border-color: darkblue;
+    border-radius: 10px;
+}
+
+fieldset legend{
+    background-color: darkblue;
+    color: white;
+    font-size: 14px;
+    padding: 0 10px; line-height: 30px;
+    /* 패딩값만으로 글자를 가운데 오게 해도 되지만, 
+        한 줄일 경우에는 line-height로 주는것도 굿  */
+    border-radius: 5px;
+}
+
+fieldset ul{
+    padding-left: 0; list-style: none;
+
+}
+
+fieldset ul li{
+    margin-bottom: 15px; font-size: 14px;
+    /* 
+        높이 조절하기
+        1. line-height :30px
+        2. padding:10px 0;
+        3. margin-bottom
+    
+    */
+}
+
+fieldset ul li:last-child{
+    text-align: right;
+}
+
+fieldset ul li label{
+    display: inline-block; width: 100px;
+    /* 요소 중 제일 긴 글자의 길이를 고려하여 넓이 설정 
+        inline-block으로 동일한 시작점에서 요소를 쌓을 수 있음*/
+}
+
+/* fieldset ul li input[type="text"],
+fieldset ul li input[type="date"],
+fieldset ul li select */
+
+
+fieldset ul li > *:nth-child(2):not(label){
+    /* fieldset의 ul의 li의 전체 직계 중 2번째 중 label이 아닌 것 */
+    padding:5px 10px; vertical-align: middle;
+    background-color: #fff;
+    transition-duration: 0.5s;
+    /* transition-duration은 꼭 기준이 되는 요소에 삽입(변화요소X) */
+}
+
+fieldset ul li:not(:last-child)> *:last-child:focus,
+fieldset ul li:not(:last-child)> *:last-child:hover{
+    /* fieldset의 ul의 li 중 마지막 아이를 제외한 요소의 직계 중 두번째 */
+    background-color: gray;
+}
+
+
+fieldset > div input{
+    width: 48%; display: block; float: left;
+    color: #fff; line-height: 35px;
+    border-style: none;
+}
+
+fieldset > div input[type="submit"]{
+    margin-right: 4%;
+    background-color: navy;
+}
+
+fieldset > div input[type="reset"]{
+    background-color: darkred;
+}
+
+label[for="replyMe"]{
+    font-size: 14px;
+    transition-duration: 0.5s;
+    padding: 5px 10px;   
+    /* width: auto; */
+}
+/* 위의 width를 줘도 되고 아래와 같이 해도 됨 */
+fieldset ul li label:last-child{
+    width:auto;
+    /* 
+        위의 요소 중에 lable width를 100px로 설정하여 글자가 
+        그 너비 안에 구겨져들어간것이므로 너비값을 자동적으로 조정
+    */
+}
+
+fieldset ul li input[type="checkbox"]:checked + label{
+    background-color: slateblue;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px; line-height: 30px;
+    padding: 3px 5px;   
+}
+/* 
+    transition-duration은 변화요소가 아닌 변화시키고 싶은 기본 요소에
+    넣어줘야 자연스럽게 변하고 돌아옴
+*/
