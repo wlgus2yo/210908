@@ -9,6 +9,7 @@ body > div{
 
 div fieldset{
     border: 3px solid #00008b;
+    border-radius: 10px;
     box-sizing: border-box;
     width: 50%;
     position: absolute;
@@ -24,13 +25,12 @@ div legend{
     height: 40px;
     width: 150px;
     font-size: 20px;
-    /* 글자센터로 오게하려면? */
+    /* 글자센터로 오게하려면?  position*/
 }
 
 div ul li{
     list-style: none;
     margin-left: 10px; margin-bottom: 20px;
-
 }
 
 div fieldset input[type="checkbox"]{
