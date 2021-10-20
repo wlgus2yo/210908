@@ -1,3 +1,5 @@
+/* 
+내가 한거
 *{
     margin: 0; padding: 0;
 }
@@ -17,15 +19,41 @@ ul li figure dl img {
     
 }
 ul li figure figcaption{
-
 }
 
 ul li figure figcaption dl{
     background-color: yellow;
     text-align: center;
+} */
+
+/* 선생님 답안 */
+*{
+    margin:0; padding:0; list-style: none;
+}
+ul:after{
+    content:''; display:block; clear:both; visibility: hidden;
+}
+ul li{
+    float:left;
+    width:16.66%;
+    border:2px solid #000;
+    box-sizing:border-box;
+}
+ul li figure{
+    font-size:0;
 }
 
-/* 
-    노란색으로 칠해진 영역 위아래로 패딩값을 주고 싶다면?
-
-*/
+ul li img{
+    width:100%; 
+    /* display:block; */
+    /* 
+        img 는 inline-block 속성이기 때문에 줄바꿈의 영향을 받는다.
+            - ** display:block; **
+            - 부모에 font-size:0; 대상에 font-size:원하는 값
+    */
+}
+ul li figcaption{
+    background-color:yellow;
+    text-align:center;
+    font-size:16px;
+}
