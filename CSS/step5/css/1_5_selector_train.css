@@ -1,0 +1,67 @@
+*{
+    margin: 0; padding:0;
+}
+
+body > div{
+    margin: 0 auto;
+    position: relative;
+}
+
+div fieldset{
+    border: 3px solid #00008b;
+    box-sizing: border-box;
+    width: 50%;
+    position: absolute;
+    left: 25%; top: 50%;
+    display: block;  
+}
+
+div legend{
+    margin-bottom: 10px;
+    background-color: #00008b;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    /* 글자센터로 오게하려면? */
+}
+
+div ul li{
+    list-style: none;
+    margin-left: 10px; margin-bottom: 20px;
+
+}
+
+div fieldset input[type="checkbox"]{
+    right: 0;
+
+}
+
+div fieldset input[type="submit"],
+div fieldset input[type="reset"]{
+    border-style: none;
+}
+
+div fieldset input[type="submit"]{
+    background-color: blue;
+    color: white;
+    width: 30%; height: 40px;
+}
+
+div fieldset input[type="submit"]:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+div fieldset input[type="reset"]{
+    background-color: red;
+    color: white;
+    width: 30%; height: 40px;
+}
+
+div fieldset input[type="reset"]:hover{
+    background-color: rgb(250, 125, 135);
+    color: black;
+}
+
