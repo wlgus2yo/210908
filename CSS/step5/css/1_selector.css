@@ -1,0 +1,8 @@
+.tagselector h1{color: steelblue; font-size: 16px;}
+.tagselector p{color: steelblue; font-size: 16px;}
+div.tagselector span{color: steelblue; font-size: 16px;}
+
+
+#paragraph1{font-size: 16px; text-decoration: underline;}
+p#paragraph2{color: springgreen; text-decoration: line-through;}
+.idSelector p#paragraph3{font-weight: 600; text-decoration: overline;}
