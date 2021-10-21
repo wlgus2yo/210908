@@ -195,3 +195,40 @@ div[class="attrSelector"] ul li input[type=radio]{
     2n (=nth-child(even))-> 짝수
 
 */
+
+.shapeSelector h3:nth-of-type(1){
+    background-color: red;
+}
+
+
+.shapeSelector h2:nth-of-type(2){
+    background-color: blue;
+}
+
+/* 
+    위의 양식과 결과값은 동일하나 다르게 써보기
+    1. .shapeSelector h2:not(:first-of-type)
+*/
+
+
+.shapeSelector h3:nth-child(4){
+    background-color: black; color: #fff;
+}
+
+.shapeSelector h1:nth-child(6){
+    background-color: yellow; color: tomato;
+}
+
+.shapeSelector2 div{
+    background-color: thistle;
+}
+
+.shapeSelector2 span{
+    display: block; background-color: #f0d;
+}
+
+/* 
+    nth-child는 보통 한가지 태그로만 자식이 이루어져 있을 때 사용(ul li)
+    nth-of-type는 보통 여러가지 태그가 섞여 있을때 사용
+*/
+
