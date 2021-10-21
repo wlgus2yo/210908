@@ -6,3 +6,192 @@ div.tagselector span{color:aqua; font-size: 14px;}
 #paragraph1{font-size: 16px; text-decoration: underline;}
 p#paragraph2{color: springgreen; text-decoration: line-through;}
 .idSelector p#paragraph3{font-weight: 600; text-decoration: overline;}
+
+.classSelector p.f_size{font-size: 20px;}
+.classSelector p.f_weight{font-weight: 600;}
+.classSelector p.f_color{color: #9cf;}
+/* 폰트 사이즈와 웨이트는 클래스로 하는 걸 추천 */
+
+.attriSelector fieldset{
+    border: 2px solid #555; background-color: #9cf;
+}
+
+.attriSelector fieldset legend{
+    border: 1px solid #555; background-color: #fff;
+}
+
+.attriSelector ul{
+    margin: 0; padding: 0; list-style: none;
+}
+
+.attriSelector ul li{
+    font-size: 14px; line-height: 30px; color: #444;
+}
+
+.attriSelector ul li label,
+.attriSelector ul li input{
+    vertical-align: middle;
+}
+
+.attriSelector ul li label{
+    display: inline-block; width: 110px;
+}
+
+.attriSelector ul li input[type="text"]{
+    background-color: #966; border: 2px solid #f00; color: #fff; 
+}
+
+.attriSelector ul li input[type="password"]{
+    background-color: #966; border: 2px solid yellow; color: #000; 
+}
+
+div[class="attrSelector"] ul li input[type=radio]{
+    background-color: #000;
+    border: 1px solid yellow; width: 25px; height: 50px;
+}
+
+/* 같은 태그라도 (input) 타입에 따라 (attr)를 선택할 수 있다 */
+
+.directSelector h1{
+    color: red;
+}
+
+.directSelector > h1{
+    font-size: 20px;
+}
+
+.directSelector div h1{
+    font-size: 14px;
+}
+
+.directSelector span{
+    font-size: 20px; display: block;
+}
+
+.directSelector > span{
+}
+
+/* 
+    구조적으로 다른 동일 태그를 제외하고.
+    직계 자손 객체 태그 스타일 적용 가능
+*/
+
+.stringAttrSelector img[src$="png"]{
+    width: 200px;
+}
+.stringAttrSelector img[src$="jpg"]{
+    width: 150px; border: 5px solid green;
+}
+.stringAttrSelector img[src$="png"]{
+    width: 100px; border: 3px solid blue;
+}
+
+/* 
+    문자열 선택자는 해당 문자열의 유형으로 분리적용 할 수 있다. 
+*/
+
+.sameSelector h1 + h2{
+    background-color: green;
+}
+
+.sameSelector h1 + h2 + h2{
+    background-color: green;
+}
+
+.sameSelector h1 ~ h3{
+    background-color: honeydew;
+}
+
+.sameSelector h1 ~ h2{
+    color: red; font-size: 40px;
+}
+
+/* 
+    동위 선택자
+    - A + B
+        + 선택자 : A 바로 뒤에 있는 B를 선택
+    - A ~ B
+        ~ 선택자 : A 뒤에 있는 B 모두를 선택
+*/
+
+.activeSelector h1:hover{
+    font-size: 35px; color:rosybrown; cursor: pointer;
+}
+
+.activeSelector h1:hover + h2{
+    color: royalblue; background-color: seagreen;
+}
+
+/* 반응선택자- 링크 수업 내용과 동일 */
+
+.statusSelector input[type="checkbox"] + label{
+    display: inline-block; height: 30px; vertical-align: middle;
+    overflow: hidden;
+    transition-duration: 0.7s;
+}
+
+.statusSelector input[type="checkbox"]:checked + label{
+    height: 0;
+}
+
+.statusSelector input[type="text"]:enabled{
+    background-color: sienna; color: silver;
+}
+.statusSelector input[type="text"]:disabled{
+    background-color: slateblue; color: springgreen;
+}
+
+/* 
+    input 상태에 따라 동작 시킬 수 있다. 
+    1. checkbox(or radio)의 상태가 checked 일 경우를 검출해서,
+        뒤의 label의 height:0;
+        :checked => check 된 상태
+        :focus -> focus 된 상태(초점이 맞춰진 상태)
+        :enabled -> 사용가능한 상태
+        :disabled -> 사용 불가능한 상태
+
+    2. label의 기본설정을 잡는다.
+        -height 값이 기본으로 들어가있어야 애니메이션 동작가능
+        -display 가 block 계열로 잡혀있어야 하며
+*/
+
+.nomalSelector{
+
+}
+
+.nomalSelector ul::after{
+    content: ''; display: block; clear: both;
+}
+
+.nomalSelector ul{
+    margin: 0; padding: 15px;
+    list-style: none; background: steelblue;
+    overflow: hidden;
+}
+
+.nomalSelector ul li{
+    float: left; padding: 15px;
+}
+
+.nomalSelector ul li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+
+.nomalSelector ul li:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nomalSelector ul li:nth-child(2n){
+    background-color: #444; color: white;
+}
+.nomalSelector ul li:nth-child(2n-1){
+    background-color: tomato;
+}
+
+/* 
+    :first-child :last-child
+    :nth-child()=> 간단한 수학식이 가능
+    2n-1(=nth-child(odd)) -> 홀수 
+    2n (=nth-child(even))-> 짝수
+
+*/
