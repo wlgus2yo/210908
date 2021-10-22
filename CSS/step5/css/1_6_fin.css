@@ -1,0 +1,73 @@
+body{
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1{
+    font-weight: 400; 
+    color: #a0a0a0;
+    font-size: 32px; 
+    position: relative;
+}
+
+h1 a{
+    font-size: 14px;
+    position: absolute;
+    right: 0; bottom: 0;
+}
+
+fieldset{
+    border-width: 2px 0 2px 0;
+    padding: 10px 0;
+    border-color: #a0a0a0;
+    position: relative;
+}
+
+form input[type="search"]{
+    background-color:#505050;
+    width: 20%;
+    border: 1px solid #a0a0a0;
+    color: white;
+}
+
+form input[type="button"]{
+    border: 2px solid blue;
+    box-sizing: border-box;
+    background-color: lightgray;
+
+}
+
+fieldset select{
+    position: absolute;
+    right: 0; top: 11px;
+    /* 11px인 이유는 select는 fieldset을 기준으로 움직이므로 */
+    vertical-align: middle;
+}
+
+h2{
+    color:#a0a0a0;
+}
+
+h2 span{
+    color: steelblue;
+    text-transform: uppercase;
+    /* 
+    text-transform:
+        -uppercase : 전부 대문자
+        -lowercase : 전부 소문자
+        -capitalize : 첫글자 대문자 
+    
+    */
+}
+
+ul{
+    margin: 0; padding: 0; list-style: none;
+}
+
+ul li{
+    border-bottom: 1px solid #000;
+}
+
+ul li:first-child{
+    border-top: ;
+}
