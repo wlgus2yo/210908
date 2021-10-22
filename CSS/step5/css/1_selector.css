@@ -232,3 +232,37 @@ div[class="attrSelector"] ul li input[type=radio]{
     nth-of-type는 보통 여러가지 태그가 섞여 있을때 사용
 */
 
+.textSelector h1::first-letter{
+    font-size: 50px; color: blanchedalmond;
+}
+
+.textSelector p::first-line{
+    color: blue; font-size: 14px; line-height: 30px;
+    text-decoration: underline;
+}
+
+.textSelector p span{
+    display: block;
+}
+
+.textSelector p span:first-child{
+    background-color: chocolate;
+}
+
+.backAndFrontSelector h1{
+    color: cornflowerblue; font-size: 40px;
+}
+
+.backAndFrontSelector h1::before{
+    content: 'before'; width: 500px; height: 500px;
+    display: block;  
+}
+
+.backAndFrontSelector h1::after{
+    content: 'after';
+}
+
+.backAndFrontSelector p::after{
+    content:"-" attr(date-numb) "number" "p";
+}
+
