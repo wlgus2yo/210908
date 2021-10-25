@@ -1,0 +1,64 @@
+*{
+    margin:0; padding: 0;
+    list-style: none; text-decoration: 0;
+}
+body{
+    width: 100%; max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+ul li:nth-child(2n){
+    background-color: #fff ;
+}
+ul li:nth-child(2n-1){
+    background-color: #e9e9e9;
+}
+
+ul li:first-child{
+    background-color: #505050;
+}
+
+ul li:first-child,
+ul li:last-child{
+    border-bottom: 5px solid #ee82ee;
+}
+
+ul li span{
+    color: #a69999;
+    float: left; display: block;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    text-transform: capitalize;
+}
+
+ul li:after{
+    content:''; display: block; clear: both;
+}
+
+ul li span:nth-child(1){
+    width:15%;
+    padding: 0 15px;
+}
+
+ul li span:nth-child(2){
+   color: #a1ecff; 
+   width:55%;
+}
+
+ul li span:nth-child(3){
+    width:15%;
+}
+
+ul li span:nth-child(4){
+    width:15%;
+}
+
+ul li:first-child span:nth-of-type(2){
+    color:#ee82ee;
+}
+
+ul li:not(first-child):hover{
+    background-color: #b5b2ff;
+}
+
