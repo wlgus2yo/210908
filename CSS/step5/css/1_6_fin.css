@@ -70,7 +70,7 @@ ul{
 ul li{
     border-bottom: 1px solid #000;
     padding: 10px 5px;
-    position: relative;
+    position: relative; font-size: 0;
 }
 
 ul li:first-child{
@@ -88,7 +88,34 @@ ul li:nth-child(2n-1){
 
 ul li span{
     vertical-align: middle;
-    display: inline-block; 
+    display: inline-block; font-size: 16px;
+    /* 
+        1. inline-block을 사용하는 방법, 
+        span은 inline 속성이라 너비를 가지지 못하는데, 
+        span을 감싸고 있는, li의 폰트사이즈를 0으로 만든후, 인라인블록이 된
+        span 값에 폰트사이즈 값주기 
+        2. float 사용하기
+        span에 float:left값을 주고 display를 블록으로 주기
+    */
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+ul li:first-child span{
+    font-weight: 600;
+}
+
+ul li span:nth-child(1){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 55%;
+}
+ul li span:nth-child(3){
+    width: 15%;
+}
+ul li span:nth-child(4){
+    width: 15%;
 }
 
 /* 글자 수직 정렬하는 방법? */
@@ -96,8 +123,8 @@ ul li span{
 
 ul li mark{
     background-color: darkred;
-    color: #fff; font-size: 10px;
-    text-align: center;
+    color: #fff; font-size: 12px;
+    text-align: center; height: 50%;
     vertical-align: middle;
     position: absolute;
     right: 0; top: 0;
@@ -113,6 +140,7 @@ ol li{
     margin-left: 10px;
 }
 
+
 ol li::after{
     content: ''; display: block; clear: both;
 }
@@ -123,5 +151,5 @@ ol li:hover a{
 
 ol li a{
     text-decoration: 0;
-
+    color: black;
 }
