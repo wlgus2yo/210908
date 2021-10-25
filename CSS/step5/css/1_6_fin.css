@@ -17,6 +17,9 @@ h1 a{
 }
 
 fieldset{
+    /* border:0;
+    border-top:2px solid #a0a0a0;
+    border-bottom:1px solid #a0a0a0; */
     border-width: 2px 0 2px 0;
     padding: 10px 0;
     border-color: #a0a0a0;
@@ -66,8 +69,59 @@ ul{
 
 ul li{
     border-bottom: 1px solid #000;
+    padding: 10px 5px;
+    position: relative;
 }
 
 ul li:first-child{
-    border-top: ;
+    border-top: 3px solid darkred;
+    padding: 20px 5px;
+}
+
+ul li:nth-child(2n){
+    background-color: #9a9a9a;
+}
+
+ul li:nth-child(2n-1){
+    background-color: #fff;
+}
+
+ul li span{
+    vertical-align: middle;
+    display: inline-block; 
+}
+
+/* 글자 수직 정렬하는 방법? */
+
+
+ul li mark{
+    background-color: darkred;
+    color: #fff; font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    right: 0; top: 0;
+}
+
+ol{
+    margin-left: 35%; 
+}
+
+ol li{
+    list-style: none;
+    float: left; 
+    margin-left: 10px;
+}
+
+ol li::after{
+    content: ''; display: block; clear: both;
+}
+
+ol li:hover a{
+    color: red;
+}
+
+ol li a{
+    text-decoration: 0;
+
 }
