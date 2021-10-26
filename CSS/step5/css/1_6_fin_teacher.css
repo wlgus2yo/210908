@@ -131,3 +131,6 @@ ol li a{
 ol li a:hover{
     color:#f00;
 }
+
+    /* display를 inline-block로 하고, font-size를 0으로 하는것 보다 float 쓰는게 
+    추후 수정이 덜 됨! */
