@@ -7,7 +7,9 @@ body{
     max-width:1350px;
     margin:0 auto;
 }
-ul{}
+ul{
+    margin-bottom:20px;
+}
 ul li{}
 ul li:nth-child(2n){
     background-color:#fff;
@@ -49,15 +51,40 @@ ul li:first-child span:nth-child(2){
     color:#ee82ee;
 }
 
-div{}
-div > a{}
-div ol{}
-div ol li{}
-div ol li a{}
-form{}
-form fieldset{}
-form fieldset input[type="search"]{}
-form fieldset input[type="submit"]{}
-form{
+div{
+    width:30%; margin:0 auto 20px;
+    position:relative;
+    padding:0 3%;
+}
+div > a{
+    position:absolute;
+}
+div > a:first-of-type{
+    left:0;
+}
+div > a:last-of-type{
+    right:0;
+}
+div ol{
 
+}
+div ol:after{
+    content:''; display:block; clear:both;
+}
+div ol li{
+    float:left; width:9%;
+    margin-left:1%; text-align: center;
+}
+div ol li a{
+    display:block;
+}
+form{}
+form fieldset{
+    border:none; text-align: center;
+}
+form fieldset input[type="search"]{
+    height:20px;
+}
+form fieldset input[type="submit"]{
+    width:22px; height:20px; border:1px solid #0094ff;
 }
