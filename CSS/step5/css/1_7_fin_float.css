@@ -3,63 +3,99 @@
     list-style: none; text-decoration: 0;
 }
 
-div{
-    background-color: #ee82ee;
-    width: 80%; 
+body{
+    width: 100%; max-width: 1350px;
     margin: 0 auto;
 }
 
-ul li{
-    width: 100%; line-height: 50px;
+ul li:nth-child(2n){
+    background-color: #fff;
 }
 
-ul li:hover{
+ul li:nth-child(2n-1){
+    background-color: grey;
+}
+
+ul li:first-child,
+ul li:last-child{
+    border-bottom: 5px solid palevioletred;
+}
+
+ul li::after{
+    content: ''; display: block; clear: both;
+}
+/* span 에 float를 줬는데 왜 li에 after을 주는거지? */
+
+ul li:not(:first-child):hover{
     background-color: #b5b2ff;
 }
 
-ul li:nth-child(2n){
-    background-color: #fff ;
+ul li span{
+    display: block;
+    float: left; padding: 15px 25px;
+    box-sizing: border-box;
+    color: papayawhip;
+    text-transform: capitalize;
 }
-ul li:nth-child(2n-1){
-    background-color: #d4d5d4;
-}
+
 
 ul li:first-child{
-    background-color: #505050;
-    margin-bottom: 5px;
-}
-
-ul li span{
-    color: #adb2be;
-    float: left;
-    box-sizing: border-box;
-}
-
-ul li:after{
-    content:''; display: block; clear: both;
+    background-color: darkslategray;
+    font-weight: 600;
 }
 
 ul li span:nth-child(1){
-    width:15%;
-    padding: 0 20px;
+    width: 15%;
 }
-
 ul li span:nth-child(2){
-   color: #a1ecff; 
-   width:55%;
+    width: 55%;
+    color: blue;
 }
-
 
 ul li span:nth-child(3){
-    width:15%;
+    width: 15%;
 }
 
 ul li span:nth-child(4){
-    width:15%;
+    width: 15%;
 }
 
 ul li:first-child span:nth-of-type(2){
-    color:#ee82ee;
+    color: palevioletred;
 }
 
 
+ol{
+    margin: 0 auto;
+    width: 100%; max-width: 460px;
+    padding: 15px 0;
+}
+
+ol::after{
+    content: ''; display: block; clear: both;
+}
+
+ol li{
+    float: left; width: 8.33%;
+    text-align: center;
+    position: relative;
+}
+
+ol li:hover a{
+    color: crimson;
+}
+
+form fieldset{
+    border: 0;
+    position: absolute;
+    left: 45%; 
+}
+form fieldset input[type="search"]{
+    border-color: lightgray;
+    border-style: solid;
+}
+
+form fieldset input[type="button"]{
+    border: 2px solid blue;
+    padding: 0 5px;
+}
