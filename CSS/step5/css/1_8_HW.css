@@ -1,0 +1,26 @@
+*{
+    margin: 0; padding: 0;
+    list-style: none; text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header::after{
+    content: ''; display: block; clear: both;
+}
+
+header nav{
+    background-color: #dbb296;
+
+}
+
+header nav li{
+    float: left; 
+    margin: 0 auto;
+}
+
+nav fieldset{
+    border: none;
+}
