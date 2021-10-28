@@ -77,17 +77,26 @@ header nav ul li:first-child a span{
 .main_sec_02{
     background-color:#efefef;
 }
-.main_sec_02 .inner{
+.main_sec_02 .inner,
+.main_sec_03 .inner{
     padding:50px 0 40px;
 }
-.main_sec_02 h3{
+
+.main_sec_02 h3,
+.main_sec_03 h3{
     text-align:center; font-size:22px; color:#3e3e3e;
     margin-bottom:25px; font-weight:400;
 }
-.main_sec_02 .tab_menu{
+.main_sec_02 .tab_menu,
+.main_sec_03 p{
     text-align:center;
     margin-bottom:10px;
 }
+
+.main_sec_03 p{
+    color: #757575;
+}
+
 .main_sec_02 .tab_menu li{
     display:inline-block;
 }
@@ -100,18 +109,25 @@ header nav ul li:first-child a span{
 }
 .main_sec_02 .tab_cont{
 }
+
+
 .main_sec_02 .tab_cont:after{
     content:''; display:block; clear:both;
 }
+
+
 .main_sec_02 .tab_cont li{
     float:left;
     width:23%;
     margin-right:2.66%;
     position:relative;
 }
+
+
 .main_sec_02 .tab_cont li:last-child{
     margin-right:0;
 }
+
 .main_sec_02 .tab_cont li img{
     display: block; width:100%;
 }
@@ -136,3 +152,13 @@ header nav ul li:first-child a span{
     color:#e1808e; margin-right:5px;
     text-decoration:line-through;
 }
+
+.main_sec_03 ul li{
+    float: left;
+    width: 23%;
+}
+
+.main_sec_03 ul li img{
+    display: block; width: 100%;
+}
+
