@@ -1,50 +1,23 @@
-*{
-    margin: 0; padding: 0;
-    list-style: none; text-decoration: none;
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
 }
 
-body{
-    font-family: "ROBOTO","NanumBarunGothic","serif";
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
 }
 
-
-header h1{
-    width: 88px; height: 137px;
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
 }
-
-header h1 a{
-
-}
-
-header h1 img{
-
-}
-
-header nav{
-    border-top: 1px solid #dbb296;
-    border-bottom: 1px solid #dbb296;
-}
-
-header nav::after{
-    content: ''; display: block; clear: both;
-}
-
-header nav ul{
-    float: left; width: 16.66%;
-}
-
-
-.inner{
-    width: 1261px; height: ;
-}
-
-.main_sec_01
-.main_sec_01 .main_visual
-.main_sec_01 .main_visual img
-.main_sec_01 ul
-
-.main_sec_02
-.main_sec_02 .inner
-.main_sec_02 h3
-.main_sec_02 .tab_menu
-.main_sec_02 .tab_cont
