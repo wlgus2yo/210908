@@ -1,0 +1,14 @@
+.redG{
+    background-color: red;
+    color: #fff; text-align: center;
+    background: linear-gradient(to right, #9e50 0%, #5862fd 40%, #2582ff 20%, #ff25 40%)
+}
+
+.blueG{
+    /* css gradient 홈페이지 이용하기  */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,87,75,1) 30%, rgba(9,9,121,1) 72%, rgba(5,207,205,1) 100%);
+    color: #fff; text-align: center;
+}
+
+/* box-shadow Generator 홈페이지 이용 */
