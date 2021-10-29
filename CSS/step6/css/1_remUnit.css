@@ -1,0 +1,48 @@
+html{
+    font-size:16px;
+}
+body, h1, h2, p{
+    margin:0; padding:0;
+}
+.remLayout{
+    width:75rem;
+    margin:0 auto;
+    background-color:#f9f9f9;
+}
+.remLayout header{
+    background-color:#ff6767;
+}
+
+.remLayout > *{
+    padding:2rem;
+}
+.remLayout > *:not(:last-child){
+    margin-bottom:2.5rem;
+}
+.remLayout > * > *:not(h1),
+.remLayout > * > *:not(h2){
+    font-size:0.75rem
+}
+.remLayout header h1{
+    font-size:2rem;
+}
+.remLayout article{
+    background-color:#5abb5a;
+}
+.remLayout article h2{
+    font-size:1.5rem;
+}
+.remLayout footer{
+    background-color:#7eff81; 
+    text-align:Center;
+}
+.remLayout footer{
+    text-decoration:none;
+}
+/* 
+    rem단위는 브라우저의 기본 font-size의 영향을 받는다. (html{font-size})
+    사용자가 브라우저 내에서 기본 폰트를 설정함에 따라서 전체 레이아웃과 폰트 사이즈가 변경되게 할 수 있다.
+    ex) 75% -> 100% 75가 되지만, 75rem -> 기본 폰트사이즈인 16*75 = 1200;
+    padding이나 font-size, margin-bottom 또한 브라우저 폰트 사이즈를 기준으로 해서 값이 넣어진다.
+    ex)padding-bottom:2rem; -> padding-bottom:32px;
+*/
