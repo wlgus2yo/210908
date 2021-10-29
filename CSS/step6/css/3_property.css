@@ -1,0 +1,103 @@
+*{
+    margin:0; padding:0;
+}
+.displayProperty span:first-child{
+    display:block; background-color:peru;
+    text-align:center; width:50%;
+}
+.displayProperty span:nth-child(2){
+    display:inline-block; background-color:plum;
+    width:25%; text-align:center;
+}
+.displayProperty span:nth-child(3){
+    display:inline; background-color:rebeccapurple;
+    width:80%;
+    /* text-align:right;
+    padding:30px; margin:30px; */
+    /* 
+        padding과 margin 둘 다 좌우는 영향O
+        margin은 상하로 영향 X
+        padding은 상하로 영향을 반만 끼친다.
+    */
+}
+.displayProperty span:nth-child(4){
+    display:none;
+}
+/* 
+    ?display 속성은 총 4가지(우리가 일반적으로 사용하는)
+    * block : width:100%를 갖는 위에서 아래로 나열되는 객체가 된다.
+    * inline-block : width, height를 가질 수 있고(block), 옆으로 나열되는(inline) 객체가 된다.
+    * inline : width, height 등 너비와 높이를 가질 수 없고, 옆으로는 나열되지만, 간격을 벌릴 수 없는 객체가 된다.
+    * none : 객체가 보이지 않는다.(랜더링 자체가 X)
+*/
+
+.visibilityProperty span{
+    background-color:orange;
+    display:block; border:1px solid #000;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:nth-child(2){
+    visibility: hidden;
+}
+.visibilityProperty input[type="checkbox"]:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse;
+    transition-duration:0.5s;
+}
+/* 
+    ?visibility 속성은 총 3가지
+    * visible : 보여주다.
+    * hidden : 숨기다(랜더링이 됨 == 영역이 보존됨)
+    * collapse : 테이블을 감추다.
+    visibility 는 ON/OFF 성질이기에 transition이 정상 작동X
+*/
+
+.opacityProperty ul{
+    display:block;
+}
+.opacityProperty ul:after{
+    content:''; display:block; clear:both; visibility: hidden;
+}
+.opacityProperty ul li{
+    float:left; width:33.33%; 
+    background-color:#000; position:relative;
+}
+.opacityProperty ul li img{
+    width:100%; opacity:0.3;/*30%*/
+    transition-duration:0.7s;
+}
+.opacityProperty ul li:hover img{
+    opacity:1;/*100%*/
+}
+.opacityProperty ul li dl{
+    display:block; position:absolute; width:33.33%;
+    left:33.33%;top:33.33%; background-color:red; color:#fff;
+    text-align:center;
+}
+
+.opacityProperty ul li dl dt{
+    font-size:18px; font-weight:bold;
+    margin-bottom:20px;
+    opacity:0; 
+    transition-duration:0.8s;
+}
+.opacityProperty ul li dl dd{
+    font-size:14px; color:#e6e6e6;
+    opacity:0;
+    transition:opacity 1.2s;
+}
+.opacityProperty ul li:hover dl dt,
+.opacityProperty ul li:hover dl dd{
+    opacity:1;
+    color:red;
+    background-color:yellow;
+}
+/* 
+    li에 마우스가 올라가면 
+    dt는 0.8초에 걸쳐서, 
+    dd는 1.2초에 걸쳐서 나타나게
+*/
