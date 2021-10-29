@@ -1,0 +1,94 @@
+body{margin:0;}
+.durationEX1{
+    background-color:darkgreen;
+    width:100px; height:100px;
+    /* default값을 선언 */
+
+    transition-duration:0.7s;
+    /* 
+        무언가가 변화를 한다면??
+        모든 속성값에 지속시간(지연시간)을 부여.
+    */
+}
+.durationEX1:hover{
+    width:200px; height:200px;
+    background-color:darkslateblue;
+}
+
+
+.durationEX2{
+    background-color:#ff5612;
+    width:200px; height:200px;
+    padding:30px;
+    transition-duration:2s;
+}
+.durationEX2:hover{
+    padding:10px;
+    font-size:12px;
+}
+.durationEX2:active{
+    padding:50px;
+    font-size:16px;
+}
+.durationEX3{
+    background-color:darkslategray;
+    height:30px;
+}
+.durationEX3 .moveSpan{
+    background-color:#000; height:100%;
+    display:block; width:3%;
+}
+
+.durationEX3{
+    position:relative;
+}
+.durationEX3 .moveSpan{
+    position:absolute;
+    left:0; top:0;
+    transition-duration:2s;
+}
+.durationEX3:hover .moveSpan{
+    left:97%;
+}
+
+.durationEX4{
+    background-color:darkslateblue;
+    height:30px;
+}
+.durationEX4 .moveSpan{
+    background-color:#000; height:100%;
+    display:block; width:3%;
+    transition-duration:1s;
+}
+
+.durationEX4:hover .moveSpan{
+    width:100%;
+    /* 
+        durationEX4 마우스가 올라가면
+        무브스펜을 div에 꽉 채워보세요
+    */
+}
+
+
+ul,ol{
+    margin:0; padding:0; list-style: none;
+}
+ul:after{
+    content:''; display:block; clear:both; visibility: hidden;
+}
+ul > li{
+    float:left;
+    position:relative;
+    width:25%; text-align:center; border:1px solid #000;
+    box-sizing: border-box;
+}
+ul ol{
+    position:absolute; 
+    left:0; top:100%; width:100%;
+    height:0; overflow:hidden;
+    transition-duration:0.7s;
+}
+ul > li:hover ol{
+    height:84px;
+}
+/* 실제 영역의 :hover와 transition의 조합 예제 */
