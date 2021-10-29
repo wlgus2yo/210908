@@ -1,0 +1,38 @@
+html{
+    font-size:15px;
+}
+body{margin:0;}
+.wrap{
+    width:75rem;
+    /* width:1125px; */
+    margin:0 auto;
+}
+
+.wrap header{
+    background-color:#c30;
+    line-height:3rem;
+}
+.wrap section:after{
+    content:''; display:block;
+    clear:both; visibility: hidden;
+}
+.wrap section > *{
+    float:left;
+    line-height:30rem;
+}
+.wrap section aside{
+    background-color:#0ff;
+    width:20rem;
+}
+.wrap section article{
+    background-color:#fc6;
+    width: 20px;;
+    /* 
+    article이 section을 꽉 채우기
+    위해서 필요한 width의 값은?
+     */
+}
+.wrap footer{
+    background-color:#3c6;
+    line-height:3rem;
+}
