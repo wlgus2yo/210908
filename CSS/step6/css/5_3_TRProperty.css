@@ -1,0 +1,47 @@
+*{
+    margin: 0; padding: 0;
+}
+
+div{
+    border: 2px solid #0a0aff;
+    width: 600px;
+    margin: 0 auto;
+}
+
+div span{
+    background-color: #00ccff;
+    width: 10px ; height: 50px; margin: 5px;
+    display: block;
+    /* span은 너비와 높이를 가질 수 없는 인라인 속성이니까 바꿔줘야함 */
+    transition-duration: 1s, 5s;
+    transition-property: background-color, witdh;
+}
+
+div:hover span:nth-child(1){
+    background-color: #55df;
+    width: 100px;
+}
+div:hover span:nth-child(2){
+    background-color: blanchedalmond;
+    width: 300px;
+}
+div:hover span:nth-child(3){
+    background-color: brown;
+    width: 500px;
+}
+div:hover span:nth-child(4){
+    background-color: cadetblue;
+    width: 300px;
+}
+div:hover span:nth-child(5){
+    background-color: chartreuse;
+    width: 100px;
+}
+
+/* 
+    background:#fff url(경로) no-repeat center/cover;
+    transition-duration: 1s, 5s;
+    transition-property: background-color, witdh;
+    *transition은 각각 다른 성질을 조절하기에 컴마로 구별
+     duration과 property는 원하는 순서를 맞춰줘야 한다.
+*/
