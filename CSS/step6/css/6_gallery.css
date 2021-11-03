@@ -1,68 +1,97 @@
 *{
-    margin: 0; padding: 0; list-style: none;
-    text-decoration: none;
-    color: #fff;
+    margin:0; padding:0; list-style:none;
 }
-
 body{
-    background-color: #2a2a2a;
+    background-color:#2a2a2a;
 }
-
 .wrap{
-    margin: 0 auto;
-    width: 80%; 
+    width:90%;
+    margin:0 auto;
+}
+header{
+    padding:10px 0;
+    margin-bottom:50px;
+}
+header:after{
+    content:''; display:block; clear:both;    
+}
+header h1{
+    float:left;
+}
+header a{
+    color:#fff; line-height:50px;
+    text-decoration: none;
+    display:block;
 }
 
-.wrap header::after{
-    content: ''; display: block; clear: both;
+header nav{
+    float:right;
 }
-
-.wrap header{
-    padding: 10px 0;
-    margin-bottom: 50px;
+header nav ul{
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
 }
-
-.wrap header h1{
-    color: #fff;
-    float: left;
+header nav ul:after{
+    content:''; display:block; clear:both;
 }
-
-.wrap header nav{
-    float: right; 
-
+header nav ul li{
+    float:left; padding:0 10px; position:relative;
 }
-.wrap header nav ul{
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding: 10px 0;
+header nav ul li:not(:last-child):after{
+    content:''; display:block; position:absolute;
+    width:1px; height:20px; background-color:#fff;
+    right:0; top:15px;
 }
-
-.wrap header nav ul::after{
-    content: ''; display: block; clear: both;
+/* 
+    content:''; (빈 컨텐츠 => 너비0 높이0)
+    display:block; (원하는 너비와 높이를 CSS로 설정이 가능)
+    position:absolute + 부모의 position:relative(실제 공간에 영향을 주지 않도록)
+*/
+section{
+    margin-bottom:80px;
 }
-
-.wrap header nav ul li{
-    float: left; 
-    padding: 0 10px;
-    position: relative;
+section ul:after{
+    content:''; display:block; clear:both;
 }
-
-.wrap header nav ul li:not(:last-child):after{
-    content: ''; display: block; position: absolute;
-    width: 1px; height: 20px; background-color: #fff;
-    right: 0; top: 3px;
+section ul li{
+    float:left;
+    width:32%;
+    box-sizing: border-box;
+    margin-bottom:20px;
 }
-
-.wrap section{}
-.wrap section ul{
-    content: ''; display: block; clear: both;
+section ul li:nth-last-child(1),
+section ul li:nth-last-child(2),
+section ul li:nth-last-child(3){
+    margin-bottom:0;
 }
-
-.wrap section ul li{
-    float: left; width: 33.33%;
+section ul li:not(:nth-child(3n)){
+    margin-right:2%;
 }
-
-.wrap section ul li:hover{
-    opacity: 100%;
+/* 
+    li의 너비가 32%, 총 3개가 한줄. 총 합 96%;
+    전체 100% - 96% = 남은 공간 4%;
+    3개가 한 줄이니까, 여백은 2칸에만 적용.
+    남은 공간4% / 여백2칸 = 2%;
+    section ul li:not(:nth-child(3n)){margin-right:2%;}
+*/
+section ul li img{
+    width:100%; display: block;
+    transition:opacity 1s;
+    opacity:0.3;
+}
+section ul li:hover img{
+    opacity:1;
+}
+/* 
+    opacity(투명도)를 조절.
+        1. 기존의 값이 투명하고
+        2. :hover시에 불투명(투명도가 낮다)
+        3. => 기존 img에 opacity:0.3, :hover img opacity 1;
+         - opacity : 0(0%) => 완전 투명, opacity : 1(100%) => 완전 불투명
+         - opacity : 0.55(55%);
+*/
+footer{
+    color:#ffffff; text-align:center;
+    padding:50px 0;
 }
 
