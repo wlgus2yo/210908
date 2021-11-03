@@ -1,0 +1,56 @@
+*{
+    margin:0; padding:0;
+}
+.circle{
+    width:200px; height:200px; line-height:200px;
+    background-color:coral; text-align: center;
+    border-radius:100px; color:#0ff;
+    position:absolute;
+    animation-name: moveCircle;
+    animation-duration : 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+.circle:hover{
+    animation-play-state:paused;
+}
+/* 
+    ? animation
+    * 1. moveCircle이라는 이름의 keyframes을 생성.
+    * 2. 해당 keyframes를 원하는 위치에서 호출.
+    * 3. duration으로 지속시간 설정.
+    * 4. timing-function으로 가속도 설정.
+    * 5. direction으로 재생 방향.
+        - normal : 표준재생 ( 0% => 100%)
+        - reverse : 역방향 재생 (100% => 0%)
+        - alternate : 왕복재생 (0% => 100% => 0%)
+        - alternate-reverse : (100% => 0% => 100%)
+    * 6. iteration-count로 무한/반복횟수(숫자) 설정
+    * 7. play-state로 재생여부 설정
+        - paused : 일시정지
+        - running : 재생
+*/
+@keyframes moveCircle{
+    from{
+        left:0px;
+        transform:rotate(0);
+    }
+    to{
+        left:500px;
+        transform:rotate(360deg);
+    }
+    /* 0%{
+        left:0px;
+    }
+    100%{
+        left:500px;
+    } */
+}
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이의 소수점을 포함해서 입력 가능.
+    * 시작 ~ 끝 개념이라면 시작점 = from/종료점 = to로 입력이 가능
+    * 또는 %로 입력 가능하다.
+    * transform:rotate(각도deg) = 회전 속성. degree는 각도를 의미.
+*/
