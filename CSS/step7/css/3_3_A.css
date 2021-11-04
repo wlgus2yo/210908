@@ -27,11 +27,13 @@ div span:nth-child(1){
 }
 div span:nth-child(2){
     background-color:blue;
-    transform: rotateY(-45deg);
-    transform-origin: right;
+    transform: rotateY(-60deg);
+    transform-origin: right top;
+    /* 돌고 있는 기준점을 말함 */
+    width: 100%;
 }
 div span:nth-child(3){
     background-color:green;
     transform: rotateY(90deg);
-    transform-origin: left top;
+    transform-origin: right top;
 }
