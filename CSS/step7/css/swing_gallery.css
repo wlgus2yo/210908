@@ -17,6 +17,7 @@ section .moveMent{
     left: 0; top: 20%;
     /* body의 시작점, 부모인 섹션의 탑 */
     animation: rotater 5s infinite alternate ease-in-out;
+    transform-style: preserve-3d;
 }
 
 @keyframes rotater{
@@ -31,6 +32,7 @@ section .moveMent{
 section .moveMent .pic{
     position: absolute;
     top: 0;
+    transform-style: preserve-3d;
 }
 section .moveMent .pic:nth-child(1){
      left: 0;
