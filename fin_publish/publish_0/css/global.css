@@ -1,0 +1,54 @@
+/* 
+    global 에는 공통 요소
+        - header
+        - footer
+        - global 요소
+*/
+
+header{
+    border-top:10px solid #2ecc71;
+    background:url("../images/bg_header.png") no-repeat center center/cover;
+    /* background-image:url("../images/bg_header.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover; */
+    height:600px;
+    position:relative;
+}
+header > div{
+    position:absolute;
+    left:20%; top:24%;
+}
+header > div h1{
+    margin-bottom:25px;
+}
+header > div p{
+    font-size:24px; color:#fff; line-height:36px;
+    margin-bottom:30px;
+    width:70%;
+}
+/* header Fin */
+
+footer{
+    background-color:#e3e3e3;
+    padding:50px 0;
+}
+footer ul{
+    text-align:center;
+}
+footer ul li{
+    display:inline-block;
+    padding:0 14px;
+    /* position:relative; */
+}
+/* footer ul li:not(:last-child):after{
+    content:''; display:block; position: absolute;
+    width:1px; height:10px; right:0; top:50%; 
+    transform:translateY(-50%); background:#000;
+} */
+footer ul li a{
+    color:#848484; font-size:16px;
+    padding:10px 0; display:block;
+}
+
+

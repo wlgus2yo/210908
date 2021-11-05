@@ -1,0 +1,45 @@
+/* 
+    그 외의 CSS
+*/
+
+.feature{
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+.feature ul{
+    padding: 60px 0;
+}
+
+.feature ul::after{
+    content: ''; display: block; clear: both; 
+}
+
+.feature ul li{
+    float: left; width: 27%;
+    /* li 하나당 너비가 333px/ 전체 너비 1200px 중 333px니까, 
+    333/1200=27%/ 27*3=81% /전체는 100%니까 100-81=19/ 19/2(사잇값)=9.5%*/
+    margin-right: 9.5%;
+}
+
+.feature ul li:last-child{
+    margin-right: 0;
+}
+
+.feature ul li dl{
+    text-align: center;
+}
+
+.feature ul li dl dt{
+    font-weight: 600; color: #222222; font-size: 22px;
+    margin-bottom: 25px;
+
+}
+
+.feature ul li dl dd{
+    color: #848484; font-size: 16px; line-height: 26px;
+}
+
+.notified{
+    background-color: #e3e3e3;
+}
