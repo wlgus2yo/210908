@@ -22,10 +22,10 @@ section .moveMent{
 
 @keyframes rotater{
     0%{
-        transform: rotateX(10deg);
+        transform: rotateX(-20deg);
     }
     100%{
-        transform: rotateX(30deg);
+        transform: rotateX(20deg);
     }
 }
 
@@ -64,5 +64,5 @@ section .moveMent .pic .cell{
 
 section .moveMent .pic .cell:hover{
     opacity: 1;
-    transform: rotateZ(0) translateZ(50px) scaleX(1.2) scaleY(1.2);  
+    transform: rotateZ(0) translateZ(100px) scaleX(1.2) scaleY(1.2);  
 }
