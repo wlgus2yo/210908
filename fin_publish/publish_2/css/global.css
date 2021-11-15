@@ -1,0 +1,17 @@
+/* 
+    global 에는 공통 요소
+        - header
+        - footer
+        - global 요소
+*/
+
+header{
+
+}
+
+header ol{
+    content: ''; display: block; clear: both;
+}
+header ol li{
+    float: left; 
+}
