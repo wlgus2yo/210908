@@ -1,0 +1,16 @@
+#home{
+    background: url(../images/bg_01.png) no-repeat center center/cover;
+}
+
+#home .inner{
+    padding: 220px 0 ;
+}
+
+#home ul li{}
+#home ul li h3{}
+#home ul li p{}
+#home ul li a{}
+#home ol{}
+#home ol li{}
+
+
