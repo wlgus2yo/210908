@@ -1,16 +1,81 @@
 #home{
     background: url(../images/bg_01.png) no-repeat center center/cover;
+    height: 670px;
 }
+
 
 #home .inner{
     padding: 220px 0 ;
+    color: #fff;
+    text-align: center;
 }
 
-#home ul li{}
-#home ul li h3{}
-#home ul li p{}
-#home ul li a{}
+#home ul li{
+    margin: 0 auto;
+}
+
+#home ul li::after{
+
+}
+
+#home ul li h3{
+   font-weight: 600;
+   margin-bottom: 29px;
+   font-size: 33px;
+}
+
+#home ul li p::after{
+    content: ''; display: block; width: 9%; height: 1px;
+    left: 45%; top: 0%; position: absolute; 
+    background-color: #00e0d0;
+}
+
+
+#home ul li p{
+    margin-bottom: 23px;
+    position: relative;
+    padding: 30px 0;
+    font-size: 14px; line-height: 24px;
+}
+
+.btn_more{
+    border: 1px solid #00e0d0;
+    border-radius: 5px 5px;
+    color:#00e0d0;
+}
 #home ol{}
 #home ol li{}
 
+
+#about > div{
+    padding: 70px 330px;
+    max-width: 960px; width: 100%;
+    margin: 0 auto;
+}
+#about > div > div::after{
+    content: ''; display: block; clear: both;
+}
+#about > div > div .left_area{
+    float: left;
+    width: 40%; margin-right: 4%;
+}
+#about .left_area img{
+
+}
+#about .right_area{
+    width: 56%;
+}
+#about .right_area h3{
+    font-size: 22px;
+}
+#about .right_area p{
+    font-size: 14px; line-height: 22px;
+    font-weight: 400;
+    padding: 30px 0;
+}
+#about .right_area p:nth-of-type(2){
+    padding: 0 0 30px 0 ;
+
+}
+#about .right_area a{}
 
