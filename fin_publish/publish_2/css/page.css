@@ -52,16 +52,21 @@
     max-width: 960px; width: 100%;
     margin: 0 auto;
 }
-#about > div > div::after{
+#about > div::after{
     content: ''; display: block; clear: both;
 }
-#about > div > div .left_area{
+#about > div > div{
     float: left;
+}
+
+#about .left_area{
     width: 40%; margin-right: 4%;
+
 }
 #about .left_area img{
 
 }
+
 #about .right_area{
     width: 56%;
 }
@@ -75,7 +80,6 @@
 }
 #about .right_area p:nth-of-type(2){
     padding: 0 0 30px 0 ;
-
 }
 #about .right_area a{}
 
