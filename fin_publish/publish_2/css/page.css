@@ -1,85 +1,129 @@
+/* font */
+#home ul li h3,
+#about .right_area h3{
+    font-family: 'Playfair Display', serif;
+}
+#home ul li p,
+#about .right_area p,
+.videoArea > p{
+    font-family: 'Roboto', sans-serif;
+}
+
 #home{
-    background: url(../images/bg_01.png) no-repeat center center/cover;
-    height: 670px;
+    /* background-image: url("../images/bg_01.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center; */
+    background:url("../images/bg_01.png") no-repeat center center/cover;
+    padding:220px 0 200px;
+    text-align:center; /*자손들이 물려받음*/
+    position:relative;
 }
 
-
-#home .inner{
-    padding: 220px 0 ;
-    color: #fff;
-    text-align: center;
-}
-
-#home ul li{
-    margin: 0 auto;
-}
-
-#home ul li::after{
-
+#home ul li:not(:first-child){
+    display:none;
 }
 
 #home ul li h3{
-   font-weight: 600;
-   margin-bottom: 29px;
-   font-size: 33px;
+    font-size:32px; color:#fff;
+    position:relative;
+    padding-bottom:25px;
+    margin-bottom:25px;
+    font-weight:900;
 }
-
-#home ul li p::after{
-    content: ''; display: block; width: 9%; height: 1px;
-    left: 45%; top: 0%; position: absolute; 
-    background-color: #00e0d0;
+#home ul li h3:after{
+    content:''; 
+    display:block; width:50px; height:1px;
+    position:absolute; bottom:0;
+    left:50%; transform:translateX(-50%);
+    background-color:#00e0d0;
 }
-
-
 #home ul li p{
-    margin-bottom: 23px;
-    position: relative;
-    padding: 30px 0;
-    font-size: 14px; line-height: 24px;
+    font-size:14px; color:#fff; 
+    line-height:24px; width:80%;
+    margin:0 auto 40px;
+    font-weight:300;
 }
-
 .btn_more{
-    border: 1px solid #00e0d0;
-    border-radius: 5px 5px;
-    color:#00e0d0;
+    font-size:16px; color:#00e0d0; border:1px solid #00e0d0;
+    padding:14px 15px;
+    display:inline-block; 
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing:1.6px;
 }
-#home ol{}
-#home ol li{}
+#home ol{
+    position:absolute;
+    left:0; bottom:70px;
+    max-width:none;
+}
+#home ol li{
+    text-indent:-9999px;
+    display:inline-block;
+    width:10px; height:10px;
+    border:1px solid #fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+#home ol li.active{
+    background-color: #00e0d0;
+    border-color:#00e0d0;
+}
 
 
+#about{
+    padding:70px 10px;
+}
+#about:after{
+    content:''; display:block; clear:both;
+}
 #about > div{
-    padding: 70px 330px;
-    max-width: 960px; width: 100%;
-    margin: 0 auto;
+    float:left;
 }
-#about > div::after{
-    content: ''; display: block; clear: both;
-}
-#about > div > div{
-    float: left;
-}
-
 #about .left_area{
-    width: 40%; margin-right: 4%;
-
+    width:40%;
+    margin-right:5%;
+    text-align: center;
 }
 #about .left_area img{
-
+    max-width:100%;
 }
-
 #about .right_area{
-    width: 56%;
+    width:55%;
 }
 #about .right_area h3{
-    font-size: 22px;
+    color:#413d4b;
+    font-size:22px;
+    margin-bottom:25px;
+    font-weight:700;
 }
 #about .right_area p{
-    font-size: 14px; line-height: 22px;
-    font-weight: 400;
-    padding: 30px 0;
+    color:#413d4b;
+    font-size:14px; line-height:22px;
+    margin-bottom:30px;
+    font-weight:300;
 }
-#about .right_area p:nth-of-type(2){
-    padding: 0 0 30px 0 ;
+#about .right_area p a{
+
 }
-#about .right_area a{}
+
+.videoArea{
+    background:url("../images/bg_02.png") no-repeat center / cover;
+    padding:200px 0;
+    text-align:center;
+}
+.videoArea > a{
+    width:100px;
+    height:100px;
+    display:inline-block;
+    text-indent: -9999px;
+    background: url("../images/btn_play.png") no-repeat center/cover;
+    border:3px solid #fff;
+    border-radius:50%;
+    margin-bottom:30px;
+}
+.videoArea > p{
+    color:#fff;
+    font-weight:900; font-size:16px;
+    text-transform: uppercase;
+}
 

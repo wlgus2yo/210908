@@ -13,6 +13,10 @@ header{
     position: absolute;
     left: 0; top: 0;
     width: 100%;
+    z-index: 10;
+    /* 아래 position으로 인해, 헤더가 가려지므로
+        z축으로 떠오르게 해야 보임    
+    */
 }
 .inner{
     max-width: 960px;
