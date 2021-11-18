@@ -126,4 +126,135 @@
     font-weight:900; font-size:16px;
     text-transform: uppercase;
 }
+/* #videoArea Finish */
 
+#expertise{
+    text-align: center;
+    padding:70px 0;
+}
+#expertise h3{
+    font-weight:700;
+    color:#413d4b;
+    font-size:22px;
+    margin-bottom:15px;
+}
+#expertise p{
+    font-weight:400;
+    color:#2f2d35; opacity:0.75;
+    font-size:14px;
+    padding-bottom:20px;
+    margin-bottom:50px;
+}
+#expertise ul{
+
+}
+#expertise ul li{
+    float:left;
+    width:33.33%;
+    padding:30px 0;
+    box-sizing: border-box;
+}
+#expertise ul li dl{
+    box-sizing: border-box;
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position:center top;
+    padding:80px 10px 0;
+}
+/* #expertise ul li:not(:nth-child(3n-2)){
+    border-left:1px solid #ebebeb;
+} */
+/* 3n-2 => 1, 4, 7 ~.... 을 제외*/
+/* #expertise ul li:not(:nth-child(3n)){
+    border-right:1px solid #ebebeb;
+} */
+/* 3n => 3, 6, 9 ~....을 제외 */
+#expertise ul li:nth-child(3n-1){
+    border-color:#ebebeb;
+    border-style:solid;
+    border-width:0 1px;
+}
+/* 3n-1 => 2, 5, 8 ~..을 선택 */
+
+/* #expertise ul li:nth-child(3) ~ li{
+    border-top:1px solid #ebebeb;
+} */
+/* nth-child(3) 이후의 모든 li */
+
+#expertise ul li:nth-child(n+1):nth-child(-n+3){
+    border-bottom:1px solid #ebebeb;
+}
+/* 1번부터 3번까지(공식) */
+#expertise ul li:nth-child(1) dl{background-image:url("../images/exp_01.png");}
+#expertise ul li:nth-child(2) dl{background-image:url("../images/exp_02.png");}
+#expertise ul li:nth-child(3) dl{background-image:url("../images/exp_03.png");}
+#expertise ul li:nth-child(4) dl{background-image:url("../images/exp_04.png");}
+#expertise ul li:nth-child(5) dl{background-image:url("../images/exp_05.png");}
+#expertise ul li:nth-child(6) dl{background-image:url("../images/exp_06.png");}
+#expertise ul li dl dt{
+    color:#413d4b; font-size:14px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+#expertise ul li dl dd{
+    color:rgba(51, 51, 51, 0.75);
+    font-size:14px; line-height:22px;
+    font-weight:300;
+}
+/* #expertise Finish */
+
+#teams{
+    padding:70px 0;
+    /* background: url("../images/bg_03.png") no-repeat center/cover; */
+    background:url("../images/bg_03.png") center no-repeat;
+    text-align:center;
+}
+#teams h3{
+    font-size:22px; color:#fff; font-weight:700;
+    margin-bottom:15px;
+}
+#teams p{
+    font-size:14px; color:#fff;
+}
+/* #teams p:first-of-type{
+    margin-bottom:20px;   
+} */
+#teams h3 + p{
+    margin-bottom:20px;
+}
+#teams hr{
+    background:rgba(255, 255, 255, 0.2);
+    border:none;
+    width:50px;
+    height:2px;
+    margin:0 auto 50px;
+}
+#teams ul{
+
+}
+#teams ul li{
+    width:23%; float:left;
+}
+#teams ul li:not(:last-child){
+    margin-right:2.66%;
+}
+#teams ul li figure{
+    padding-top:230px;
+    background:url("https://via.placeholder.com/200x230") no-repeat;
+    background-size:100% 230px;
+}
+#teams ul li figure figcaption{
+    border:1px solid rgba(215, 215, 215, 0.5);
+}
+#teams ul li figure figcaption dl{
+    padding:20px 0 25px;
+}
+#teams ul li figure figcaption dl dt{
+    font-weight:900;
+    color:rgb(255, 255, 255);
+    margin-bottom:10px;
+}
+#teams ul li figure figcaption dl dd{
+    font-weight:300;
+    color:rgba(255, 255, 255, 0.7);
+}
