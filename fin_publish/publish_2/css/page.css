@@ -1,13 +1,30 @@
 /* font */
 #home ul li h3,
-#about .right_area h3{
+#about .right_area h3,
+#expertise h3,
+#expertise p,
+#teams h3,
+#teams p,
+#works h3 span{
     font-family: 'Playfair Display', serif;
 }
 #home ul li p,
 #about .right_area p,
-.videoArea > p{
+.videoArea > p,
+#expertise ul,
+#teams ul li figure figcaption dl,
+#works h3 a{
     font-family: 'Roboto', sans-serif;
 }
+
+#about:after,
+#expertise ul:after,
+#teams ul:after,
+#works ul:after{
+    content:''; display:block; clear:both;
+}
+/* sub_global */
+
 
 #home{
     /* background-image: url("../images/bg_01.png");
@@ -68,7 +85,7 @@
     background-color: #00e0d0;
     border-color:#00e0d0;
 }
-
+/* home Fin */
 
 #about{
     padding:70px 10px;
@@ -205,8 +222,7 @@
 
 #teams{
     padding:70px 0;
-    /* background: url("../images/bg_03.png") no-repeat center/cover; */
-    background:url("../images/bg_03.png") center no-repeat;
+    background: url("../images/bg_03.png") no-repeat center/cover;
     text-align:center;
 }
 #teams h3{
@@ -230,7 +246,7 @@
     margin:0 auto 50px;
 }
 #teams ul{
-
+    margin-bottom:70px;
 }
 #teams ul li{
     width:23%; float:left;
@@ -258,3 +274,53 @@
     font-weight:300;
     color:rgba(255, 255, 255, 0.7);
 }
+#teams .inner > p:nth-of-type(2){
+    margin-bottom:25px;
+}
+/* #teams Finish */
+
+#works{
+    padding:70px 0;
+    text-align: center;
+}
+#works h3{
+    text-align:left; margin-bottom:70px;
+    color:#413d4b;
+}
+#works h3 span{
+    font-weight:700;
+    font-size:22px;
+    text-transform: uppercase;
+}
+#works h3 a{
+    float:right;
+    font-weight:300;
+    font-size:14px;
+    color:inherit;
+}
+#works ul{
+    margin-bottom:70px;
+}
+#works ul li{
+    float:left;
+    width:16.66%;
+}
+#works ul li img{
+    display:block; width:100%;
+}
+#works .btn_more{
+
+}
+#people{}
+#people > img{}
+#people p{}
+#people dl{}
+#people dl dt{}
+#people dl dd{}
+#people .inner div{}
+#people .inner div > a:first-of-type{}
+#people .inner div > a:last-of-type{}
+#people ul{}
+#people ul li{}
+#people ul li a{}
+#people ul li a img{}
