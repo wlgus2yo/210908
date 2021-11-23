@@ -5,42 +5,55 @@
 #expertise p,
 #teams h3,
 #teams p,
-#works h3 span{
-    font-family: 'Playfair Display', serif;
+#works h3 span,
+#people p,
+#contact .inner h3{
+font-family: 'Playfair Display', serif;
 }
 #home ul li p,
 #about .right_area p,
 .videoArea > p,
 #expertise ul,
 #teams ul li figure figcaption dl,
-#works h3 a{
-    font-family: 'Roboto', sans-serif;
+#works h3 a,
+#people dl,
+#contact .inner .leftArea form{
+font-family: 'Roboto', sans-serif;
 }
 
 #about:after,
 #expertise ul:after,
 #teams ul:after,
-#works ul:after{
-    content:''; display:block; clear:both;
+#works ul:after,
+#contact .inner:after,
+#contact .inner .rightArea ul:after{
+content:''; display:block; clear:both;
 }
+
 /* sub_global */
-
-
+@media screen and (max-width:1023px){
 #home{
     /* background-image: url("../images/bg_01.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center; */
     background:url("../images/bg_01.png") no-repeat center center/cover;
-    padding:220px 0 200px;
+    padding:150px 0;
     text-align:center; /*자손들이 물려받음*/
     position:relative;
 }
+#home .inner{
+    
+}
+#home ul{
 
+}
+#home ul li{
+
+}
 #home ul li:not(:first-child){
     display:none;
 }
-
 #home ul li h3{
     font-size:32px; color:#fff;
     position:relative;
@@ -67,6 +80,7 @@
     display:inline-block; 
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing:1.6px;
+    min-width:120px;
 }
 #home ol{
     position:absolute;
@@ -85,13 +99,8 @@
     background-color: #00e0d0;
     border-color:#00e0d0;
 }
-/* home Fin */
-
 #about{
     padding:70px 10px;
-}
-#about:after{
-    content:''; display:block; clear:both;
 }
 #about > div{
     float:left;
@@ -311,16 +320,532 @@
 #works .btn_more{
 
 }
-#people{}
-#people > img{}
-#people p{}
-#people dl{}
-#people dl dt{}
-#people dl dd{}
-#people .inner div{}
-#people .inner div > a:first-of-type{}
-#people .inner div > a:last-of-type{}
-#people ul{}
-#people ul li{}
-#people ul li a{}
-#people ul li a img{}
+#people{
+    padding:70px 0;
+    background: url("../images/bg_04.png") no-repeat center/cover;
+    text-align:center;
+}
+#people .inner > img{
+    margin-bottom:35px;
+}
+#people p{
+    color:#fff; font-size:16px;
+    line-height:26px;
+    width:85%;
+    margin:0 auto 45px;
+}
+#people dl{
+    margin-bottom:45px;
+}
+#people dl dt{
+    color:#fff; font-size:14px;
+    margin-bottom:10px; font-weight:900;
+}
+#people dl dd{
+    color:#fff; font-size:13px;
+    font-weight:300;;
+}
+#people .inner div{
+    font-size:0;
+}
+#people .inner div > a{
+    color:#fff; font-size:20px;
+    vertical-align: middle;
+}
+#people .inner div > a:first-of-type{
+    
+}
+#people .inner div > a:last-of-type{
+
+}
+#people ul{
+    display: inline-block;
+    margin:0 30px;
+}
+#people ul li{
+    display:inline-block;
+    vertical-align: middle;
+    /* margin-right:15px; */
+}
+#people ul li:last-child{
+    /* margin-right:0; */
+}
+#people ul li:not(:last-child){
+    margin-right:15px;
+}
+#people ul li a{
+    display: block;
+}
+#people ul li a img{
+    display: block;
+}
+#contact{
+    padding:70px 0;
+}
+#contact .inner{
+
+}
+#contact .inner .leftArea{
+    float:left;
+    width:50%;
+    margin-right:10%;
+}
+#contact .inner h3{
+    font-size:22px;
+    color:#413d4b;
+    margin-bottom:30px;
+
+}
+#contact .inner .leftArea form{
+
+}
+#contact .inner .leftArea form input:not([type="submit"]),
+#contact .inner .leftArea form textarea{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #e5e5e5;
+    margin-bottom:20px;
+    font-family:inherit;
+}
+#contact .inner .leftArea form input:not([type="submit"]){
+    padding:15px 20px;
+}
+#contact .inner .leftArea form textarea{
+    padding:20px 20px;
+    height:200px;
+    resize: none;
+}
+#contact .inner .leftArea form .btn_more{
+    background-color:#fff;
+}
+#contact .inner .rightArea{
+    float:left;
+    width:40%;
+}
+#contact .inner .rightArea ul{
+
+}
+#contact .inner .rightArea ul li {
+    float:left; margin-bottom:10px;
+    width:42%;
+}
+#contact .inner .rightArea ul li:nth-child(2n-1){
+    margin-right:16%;
+}
+#contact .inner .rightArea ul li a{
+    display:block;
+}
+#contact .inner .rightArea ul li a img{
+    display: block;
+    width: 100%;
+}
+}
+@media screen and (min-width:1024px){
+#home{
+    /* background-image: url("../images/bg_01.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center; */
+    background:url("../images/bg_01.png") no-repeat center center/cover;
+    padding:220px 0 200px;
+    text-align:center; /*자손들이 물려받음*/
+    position:relative;
+}
+#home .inner{
+    
+}
+#home ul{
+
+}
+#home ul li{
+
+}
+#home ul li:not(:first-child){
+    display:none;
+}
+#home ul li h3{
+    font-size:32px; color:#fff;
+    position:relative;
+    padding-bottom:25px;
+    margin-bottom:25px;
+    font-weight:900;
+}
+#home ul li h3:after{
+    content:''; 
+    display:block; width:50px; height:1px;
+    position:absolute; bottom:0;
+    left:50%; transform:translateX(-50%);
+    background-color:#00e0d0;
+}
+#home ul li p{
+    font-size:14px; color:#fff; 
+    line-height:24px; width:80%;
+    margin:0 auto 40px;
+    font-weight:300;
+}
+.btn_more{
+    font-size:16px; color:#00e0d0; border:1px solid #00e0d0;
+    padding:14px 15px;
+    display:inline-block; 
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing:1.6px;
+    min-width:120px;
+}
+#home ol{
+    position:absolute;
+    left:0; bottom:70px;
+    max-width:none;
+}
+#home ol li{
+    text-indent:-9999px;
+    display:inline-block;
+    width:10px; height:10px;
+    border:1px solid #fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+#home ol li.active{
+    background-color: #00e0d0;
+    border-color:#00e0d0;
+}
+#about{
+    padding:70px 10px;
+}
+#about > div{
+    float:left;
+}
+#about .left_area{
+    width:40%;
+    margin-right:5%;
+    text-align: center;
+}
+#about .left_area img{
+    max-width:100%;
+}
+#about .right_area{
+    width:55%;
+}
+#about .right_area h3{
+    color:#413d4b;
+    font-size:22px;
+    margin-bottom:25px;
+    font-weight:700;
+}
+#about .right_area p{
+    color:#413d4b;
+    font-size:14px; line-height:22px;
+    margin-bottom:30px;
+    font-weight:300;
+}
+#about .right_area p a{
+
+}
+
+.videoArea{
+    background:url("../images/bg_02.png") no-repeat center / cover;
+    padding:200px 0;
+    text-align:center;
+}
+.videoArea > a{
+    width:100px;
+    height:100px;
+    display:inline-block;
+    text-indent: -9999px;
+    background: url("../images/btn_play.png") no-repeat center/cover;
+    border:3px solid #fff;
+    border-radius:50%;
+    margin-bottom:30px;
+}
+.videoArea > p{
+    color:#fff;
+    font-weight:900; font-size:16px;
+    text-transform: uppercase;
+}
+/* #videoArea Finish */
+
+#expertise{
+    text-align: center;
+    padding:70px 0;
+}
+#expertise h3{
+    font-weight:700;
+    color:#413d4b;
+    font-size:22px;
+    margin-bottom:15px;
+}
+#expertise p{
+    font-weight:400;
+    color:#2f2d35; opacity:0.75;
+    font-size:14px;
+    padding-bottom:20px;
+    margin-bottom:50px;
+}
+#expertise ul{
+
+}
+#expertise ul li{
+    float:left;
+    width:33.33%;
+    padding:30px 0;
+    box-sizing: border-box;
+}
+#expertise ul li dl{
+    box-sizing: border-box;
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position:center top;
+    padding:80px 10px 0;
+}
+/* #expertise ul li:not(:nth-child(3n-2)){
+    border-left:1px solid #ebebeb;
+} */
+/* 3n-2 => 1, 4, 7 ~.... 을 제외*/
+/* #expertise ul li:not(:nth-child(3n)){
+    border-right:1px solid #ebebeb;
+} */
+/* 3n => 3, 6, 9 ~....을 제외 */
+#expertise ul li:nth-child(3n-1){
+    border-color:#ebebeb;
+    border-style:solid;
+    border-width:0 1px;
+}
+/* 3n-1 => 2, 5, 8 ~..을 선택 */
+
+/* #expertise ul li:nth-child(3) ~ li{
+    border-top:1px solid #ebebeb;
+} */
+/* nth-child(3) 이후의 모든 li */
+
+#expertise ul li:nth-child(n+1):nth-child(-n+3){
+    border-bottom:1px solid #ebebeb;
+}
+/* 1번부터 3번까지(공식) */
+#expertise ul li:nth-child(1) dl{background-image:url("../images/exp_01.png");}
+#expertise ul li:nth-child(2) dl{background-image:url("../images/exp_02.png");}
+#expertise ul li:nth-child(3) dl{background-image:url("../images/exp_03.png");}
+#expertise ul li:nth-child(4) dl{background-image:url("../images/exp_04.png");}
+#expertise ul li:nth-child(5) dl{background-image:url("../images/exp_05.png");}
+#expertise ul li:nth-child(6) dl{background-image:url("../images/exp_06.png");}
+#expertise ul li dl dt{
+    color:#413d4b; font-size:14px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+#expertise ul li dl dd{
+    color:rgba(51, 51, 51, 0.75);
+    font-size:14px; line-height:22px;
+    font-weight:300;
+}
+/* #expertise Finish */
+
+#teams{
+    padding:70px 0;
+    background: url("../images/bg_03.png") no-repeat center/cover;
+    text-align:center;
+}
+#teams h3{
+    font-size:22px; color:#fff; font-weight:700;
+    margin-bottom:15px;
+}
+#teams p{
+    font-size:14px; color:#fff;
+}
+/* #teams p:first-of-type{
+    margin-bottom:20px;   
+} */
+#teams h3 + p{
+    margin-bottom:20px;
+}
+#teams hr{
+    background:rgba(255, 255, 255, 0.2);
+    border:none;
+    width:50px;
+    height:2px;
+    margin:0 auto 50px;
+}
+#teams ul{
+    margin-bottom:70px;
+}
+#teams ul li{
+    width:23%; float:left;
+}
+#teams ul li:not(:last-child){
+    margin-right:2.66%;
+}
+#teams ul li figure{
+    padding-top:230px;
+    background:url("https://via.placeholder.com/200x230") no-repeat;
+    background-size:100% 230px;
+}
+#teams ul li figure figcaption{
+    border:1px solid rgba(215, 215, 215, 0.5);
+}
+#teams ul li figure figcaption dl{
+    padding:20px 0 25px;
+}
+#teams ul li figure figcaption dl dt{
+    font-weight:900;
+    color:rgb(255, 255, 255);
+    margin-bottom:10px;
+}
+#teams ul li figure figcaption dl dd{
+    font-weight:300;
+    color:rgba(255, 255, 255, 0.7);
+}
+#teams .inner > p:nth-of-type(2){
+    margin-bottom:25px;
+}
+/* #teams Finish */
+
+#works{
+    padding:70px 0;
+    text-align: center;
+}
+#works h3{
+    text-align:left; margin-bottom:70px;
+    color:#413d4b;
+}
+#works h3 span{
+    font-weight:700;
+    font-size:22px;
+    text-transform: uppercase;
+}
+#works h3 a{
+    float:right;
+    font-weight:300;
+    font-size:14px;
+    color:inherit;
+}
+#works ul{
+    margin-bottom:70px;
+}
+#works ul li{
+    float:left;
+    width:16.66%;
+}
+#works ul li img{
+    display:block; width:100%;
+}
+#works .btn_more{
+
+}
+#people{
+    padding:70px 0;
+    background: url("../images/bg_04.png") no-repeat center/cover;
+    text-align:center;
+}
+#people .inner > img{
+    margin-bottom:35px;
+}
+#people p{
+    color:#fff; font-size:16px;
+    line-height:26px;
+    width:85%;
+    margin:0 auto 45px;
+}
+#people dl{
+    margin-bottom:45px;
+}
+#people dl dt{
+    color:#fff; font-size:14px;
+    margin-bottom:10px; font-weight:900;
+}
+#people dl dd{
+    color:#fff; font-size:13px;
+    font-weight:300;;
+}
+#people .inner div{
+    font-size:0;
+}
+#people .inner div > a{
+    color:#fff; font-size:20px;
+    vertical-align: middle;
+}
+#people .inner div > a:first-of-type{
+    
+}
+#people .inner div > a:last-of-type{
+
+}
+#people ul{
+    display: inline-block;
+    margin:0 30px;
+}
+#people ul li{
+    display:inline-block;
+    vertical-align: middle;
+    /* margin-right:15px; */
+}
+#people ul li:last-child{
+    /* margin-right:0; */
+}
+#people ul li:not(:last-child){
+    margin-right:15px;
+}
+#people ul li a{
+    display: block;
+}
+#people ul li a img{
+    display: block;
+}
+#contact{
+    padding:70px 0;
+}
+#contact .inner{
+
+}
+#contact .inner .leftArea{
+    float:left;
+    width:50%;
+    margin-right:10%;
+}
+#contact .inner h3{
+    font-size:22px;
+    color:#413d4b;
+    margin-bottom:30px;
+
+}
+#contact .inner .leftArea form{
+
+}
+#contact .inner .leftArea form input:not([type="submit"]),
+#contact .inner .leftArea form textarea{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #e5e5e5;
+    margin-bottom:20px;
+    font-family:inherit;
+}
+#contact .inner .leftArea form input:not([type="submit"]){
+    padding:15px 20px;
+}
+#contact .inner .leftArea form textarea{
+    padding:20px 20px;
+    height:200px;
+    resize: none;
+}
+#contact .inner .leftArea form .btn_more{
+    background-color:#fff;
+}
+#contact .inner .rightArea{
+    float:left;
+    width:40%;
+}
+#contact .inner .rightArea ul{
+
+}
+#contact .inner .rightArea ul li {
+    float:left; margin-bottom:10px;
+    width:42%;
+}
+#contact .inner .rightArea ul li:nth-child(2n-1){
+    margin-right:16%;
+}
+#contact .inner .rightArea ul li a{
+    display:block;
+}
+#contact .inner .rightArea ul li a img{
+    display: block;
+    width: 100%;
+}
+}
