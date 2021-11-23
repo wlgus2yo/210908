@@ -88,9 +88,10 @@ footer .footer_bottom ul:after{
         margin-bottom:45px;
     }
     footer .footer_top > div{
-        float:left;
-        width: 31%;
         box-sizing: border-box;
+    }
+    footer .footer_top > div:not(:last-child){
+        margin-bottom: 30px;
     }
     footer .footer_top .left_area{
         padding-right:10px;
@@ -109,12 +110,11 @@ footer .footer_bottom ul:after{
         font-weight: 300;
     }
     footer .footer_top h3{
-        line-height:50px; font-weight:900;
-        margin-bottom:20px;
+        font-weight:900;
+        margin-bottom:15px;
     }
     footer .footer_top .center_area{
-        margin-right:7%;
-        padding-left:15px;
+
     }
     footer .footer_top .center_area p{
         font-size:14px; line-height:26px; font-weight:300;
@@ -173,7 +173,7 @@ footer .footer_bottom ul:after{
     }
     footer .footer_top .right_area ul li:nth-child(1){background-image:url("../images/sns_fb.png");}
     footer .footer_top .right_area ul li:nth-child(2){background-image:url("../images/sns_twit.png");}
-    footer .footer_top .right_area ul li:nth-child(3){background-image:url("../images/sns_drib.png");}
+    footer .footer_top .right_area ul li:nth-child(3){background-image:url("../images/sns_drip.png");}
     footer .footer_top .right_area ul li:nth-child(4){background-image:url("../images/sns_insta.png");}
     footer .footer_top .right_area ul li:nth-child(5){background-image:url("../images/sns_google.png");}
     footer .footer_top .right_area ul li:nth-child(6){background-image:url("../images/sns_youtube.png");}
@@ -187,7 +187,7 @@ footer .footer_bottom ul:after{
         float:left;
     }
     footer .footer_bottom ul li{
-        float:left; margin-right:30px;
+        float:left; margin-right:10px;
     }
     footer .footer_bottom ul li a{
         color:inherit; display:block;
