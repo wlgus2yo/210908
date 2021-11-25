@@ -43,6 +43,11 @@
     */
 }
 .flexContainer.alignItems{
+    /* 
+        align-items: stretch; 기본값 
+        flex-direction:row-reverse; 
+        justify-content: flex-end; 여백을 처음 혹은 끝에 몰아주는거
+    */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +63,71 @@
     */
 }
 
+.flexContainer.wrap{
+    flex-wrap: wrap;
+    /* 
+        ?flex-wrap
+        -flexContainer 와 flexItem들의 너비를 비교
+         flexItem의 전체 너비 > flexContainer 의 너비일경우,
+         한줄로 표현할 것인지, 줄바꿈을 일으킬건지에 대한 설정
+         
+         *nowarp :개행 X, 1행에 모두 배열(default) => Item 너비 자동축소
+         *wrap: width 초과 시 개행
+         *wrap-reverse: width 초과시 역순으로 개행
 
+    */
+}
 
+.flexContainer.wrap .flexItem{
+    width: 20%;
+}
+
+.flexContainer.flow{
+    /* 
+        ?flex-flow
+         flex-direction + flex wrap을 줄여쓸수 있다.(shorthand).
+         flex-flow: flex-direction flex wrap
+    */
+}
+
+.flexContainer.alignContent{
+    height:400px;
+    flex-flow:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    /* 
+        !justify-content, align-items 와 유사
+        ?align-content
+            * flexContainer의 crossAxis를 기준으로 수직정렬
+            * stretch : (flexItem 행 간격을 균등하게. cross Start에서 End까지 꽉찬 높이.)
+            * flex-start : (flexItem 행 간격 없이 (stack))
+            * flex-end : (flexContainer의 cross end 기준으로 행 간격 없이)
+            * center : (flexContainer의 cross axis 중앙 기준으로 행 간격 없이)
+            * space-between : (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준, 나머지 행 균등하게)
+            * space-around : (flexContainer 공간안에 모든 행 균등하게)
+    */
+
+}
+
+.flexContainer.alignContent .flexItem{
+    height: 800px;
+    flex-direction: column;
+}
+
+.flexContainer.flexShortHand{
+
+}
+
+.flexContainer.flexShortHand .flexItem{
+    margin: 0;
+    border: 1px solid #fff;
+}
+.flexContainer.flexShortHand .flexItem:first-child:not(:last-child){
+    flex-grow: 0;
+}
+.flexContainer.flexShortHand .flexItem:last-child{
+    flex-grow: 1;
+}
 body > div:not(:last-of-type){display: none;}
