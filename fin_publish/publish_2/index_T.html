@@ -9,18 +9,35 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/page.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("label").click(function(){
+        //         $(this).siblings("ul").slideToggle(1000);
+        //     });
+        // });
+    </script>
 </head>
 <body>
     <header>
         <div class="inner">
-            <h1><a href="###"><img src="images/logo.png" alt="tajam logo"></a></h1>
+            <h1>
+                <a href="###">
+                    <img src="images/logo.png" alt="tajam logo">
+                </a>
+            </h1>
             <nav>
+                <label for="mnav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="mnav">
                 <ul>
-                    <li class="on"><a href="###">HOME</a></li>
-                    <!-- 디자인 시안에 색이 다르다는건, 호버가 되거나 기존 색이 다르다는거 -->
+                    <li class="on"><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#expertise">EXPERTISE</a></li>
-                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#teams">TEAMS</a></li>
                     <li><a href="#works">WORKS</a></li>
                     <li><a href="#people">PEOPLE SAY</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -28,37 +45,23 @@
             </nav>
         </div>
     </header>
-    <!-- header Fin -->
-    
+    <!-- header Finish -->
+
     <section id="home">
-        <!-- id 지정되서 class 필요없음 -->
         <ul class="inner">
             <li>
                 <h3>We Are Awesome Creative Agency</h3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</br>
-                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a</br>
-                    sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                 <a href="###" class="btn_more">LEARN MORE</a>
             </li>
             <li>
                 <h3>We Are Awesome Creative Agency</h3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</br>
-                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a</br>
-                    sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                 <a href="###" class="btn_more">LEARN MORE</a>
             </li>
             <li>
                 <h3>We Are Awesome Creative Agency</h3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</br>
-                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a</br>
-                    sit amet mauris. Morbi accumsan ipsum velit.</p>
-                <a href="###" class="btn_more">LEARN MORE</a>
-            </li>
-            <li>
-                <h3>We Are Awesome Creative Agency</h3>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</br>
-                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a</br>
-                    sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
                 <a href="###" class="btn_more">LEARN MORE</a>
             </li>
         </ul>
@@ -66,10 +69,9 @@
             <li class="active">slide 1</li>
             <li>slide 2</li>
             <li>slide 3</li>
-            <li>slide 4</li>
         </ol>
     </section>
-    <!-- section#home Fin -->
+    <!-- section#home Finish -->
 
     <section id="about" class="inner">
         <div class="left_area">
@@ -99,46 +101,46 @@
     <!-- section.videoArea Finish -->
 
     <section id="expertise">
-        <h3>EXPERTISE</h3>
-        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-        <ul class="inner">
-            <li>
-                <dl>
-                    <dt>WEB DESIGN & DEVELOPMENT</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>BRANDING IDENTITY</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>MOBILE APP</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>SEARCH ENGINE OPTIMIZATION</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>GAME DEVELOPMENT</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-            <li>
-                <dl>
-                    <dt>MADE WITH LOVE</dt>
-                    <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
-                </dl>
-            </li>
-        </ul>
+            <h3>EXPERTISE</h3>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <ul class="inner">
+                <li>
+                    <dl>
+                        <dt>WEB DESIGN & DEVELOPMENT</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>BRANDING IDENTITY</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>MOBILE APP</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>SEARCH ENGINE OPTIMIZATION</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>GAME DEVELOPMENT</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>MADE WITH LOVE</dt>
+                        <dd>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</dd>
+                    </dl>
+                </li>
+            </ul>
     </section>
     <!-- section#expertise Finish -->
 
@@ -217,6 +219,7 @@
         <a href="###" class="btn_more">LOAD MORE</a>
     </section>
     <!-- section#works Finish -->
+
     <section id="people">
         <div class="inner">
             <img src="images/ico_quote.png" alt="quote icon">
@@ -238,7 +241,7 @@
             </div>
         </div>
     </section>
-    <!-- section#People Finish -->
+    <!-- section#people Finish -->
 
     <section id="contact">
         <div class="inner">
@@ -315,7 +318,5 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
 </body>
 </html>
