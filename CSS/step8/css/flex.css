@@ -1,0 +1,63 @@
+.flexContainer{
+    display:flex;
+    background-color:#a4a4a4;
+    margin:10px; padding:20px;
+}
+/* 
+    기본개념
+      1. 부모요소에 display:flex or inline-flex로 지정되어야 한다.
+      2. 자동으로 자식요소가 모두 flexItem이 된다.
+*/
+.flexItem{
+    margin:10px; padding:20px; color:#fff; background:#000;
+}
+
+.flexContainer.justify{
+    justify-content:space-evenly;
+
+    /* 
+        justify-content: 수평 정렬
+            -flex-container의 main-axis 기준으로 flexItem을 수평정렬
+            * flex-start : 시작점(X축기준 좌측) 기준 정렬
+            * flex-end : 종료점(X축기준 우측) 기준 정렬
+            * center : 중앙 기준 정렬
+            * space-around : 모두 좌우로 동일한 간격을 가져감.
+            * space-between : 첫번째 Item은 좌측기준, 마지막 Item은 우측기준, 
+                            나머지 동일한 간격 배치
+            * space-evenly : 모든 간격 동일
+    */
+}
+
+.flexContainer.direction{
+    height:500px;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    /* 
+        ?flex-direction : 
+            - flexContainer의 주 축(main-axis) 방향 설정
+            * row : left to right
+            * row-reverse : right to left
+            * column : top to bottom
+            * column-reverse : bottom to top
+        direction 이 바뀌었을 경우 => justify-content의 간격 방향도 같이 변경(main-axis를 기준으로 하기 때문)
+    */
+}
+.flexContainer.alignItems{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:600px;
+
+    /* 
+        ?align-items : 
+            - flexItem을 flexContainer의 main-axis의 수직방향으로 정렬
+            * stretch : cross Start - End (꽉 찬 높이:기본값)
+            * flex-start : cross Start 기준 정렬
+            * flex-end : cross End 기준 정렬
+            * center : flexContainer의 중앙 정렬
+    */
+}
+
+
+
+body > div:not(:last-of-type){display: none;}
