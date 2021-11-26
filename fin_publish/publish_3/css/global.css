@@ -1,0 +1,70 @@
+.inner{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    height: 90px;
+    border-bottom: 1px solid #f0f2f7;
+    box-sizing: border-box;
+}
+
+header .inner{
+    display: flex;
+    height: 100%;
+}
+header .inner label{
+    width: 5%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .inner label span{
+    background-color: #3e425a;
+    width: 20px; height: 2px;
+    margin-bottom: 4px;
+}
+header .inner .header_cont{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner .header_cont nav{
+    width: 50%;
+}
+header .inner .header_cont nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .inner .header_cont nav ul li{
+    font-weight: 600;
+    font-size: 14px; color: #343e5c;
+}
+
+header .header_cont div{
+    display: flex;
+    align-items: center;
+}
+header .header_cont div span{
+    background: url(../images/bul_cart.png) no-repeat left center;
+    padding-left: 25px;
+    font-size: 11px; color: #343e5c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header_cont div span a{
+    color: inherit;
+    background-color: #e3e8f0;
+    display: flex;
+    width: 24px; height: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 16px;
+}
+header .header_cont div > a{}

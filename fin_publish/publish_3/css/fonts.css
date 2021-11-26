@@ -1,0 +1,8 @@
+body{font-family: 'Montserrat', sans-serif;}
+/* body에 몬세라를 준 상태이므로 바디의 글꼴은 기본적으로 몬세라로 들어감 */
+
+.mont{font-family: 'Montserrat', sans-serif;}
+.crim{font-family: 'Crimson Text', serif;}
+.reg{font-weight: 400;}
+.black{font-weight: 900;}
+.italic{font-style: italic;}
