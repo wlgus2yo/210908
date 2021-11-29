@@ -1,4 +1,66 @@
 .slideArea{
-    height: 200px;
-    background-color: black;
+    height:200px;
+    background-color:#000;
+}
+
+.product_content{
+    background-color:#e4e5e7;
+    padding:50px 0;
+}
+.product_content .inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.product_content aside{
+    width:23%;
+}
+.product_content aside nav{
+
+}
+.product_content aside nav ul{
+
+}
+.product_content aside nav ul > li {
+
+}
+.product_content aside nav ul > li > a{
+    font-size:13px; color:#343e5c;
+    font-weight:600;
+    display:block; line-height:40px;
+    position:relative;
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_content aside nav ul > li > a:after{
+    content:''; display:block; 
+    width:10px; height:6px; background:url("../images/bg_arrow.png") no-repeat center/100% auto;
+    transform:rotate(-90deg);
+    transition-duration:0.5s;
+    /* position:absolute; right:20px; top:50%; transform:translateY(-50%); */
+}
+.product_content aside nav ul > li > a:hover:after{
+    transform:rotate(0);
+}
+.product_content aside nav ul ol{
+    overflow: hidden;
+    height:0;
+    transition-duration:0.7s;
+}
+.product_content aside nav ul > li:hover ol{
+    height:80px;
+}
+.product_content aside nav ul ol li{
+
+}
+.product_content aside nav ul ol li a{
+
+}
+.product_content .product_list{
+    width:74%;
+}
+.product_content .product_pagination{
+    width:100%;
 }

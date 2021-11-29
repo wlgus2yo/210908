@@ -1,70 +1,120 @@
 .inner{
-    width: 1170px;
-    margin: 0 auto;
+    width:1170px; 
+    margin:0 auto;
 }
-
+body{
+    min-width:1170px;
+}
 header{
-    height: 90px;
-    border-bottom: 1px solid #f0f2f7;
+    height:90px;
+    border-bottom:1px solid #f0f2f7;
     box-sizing: border-box;
+    
 }
-
 header .inner{
-    display: flex;
-    height: 100%;
+    display:flex; height:100%;
 }
-header .inner label{
-    width: 5%;
-    flex-grow: 0;
-    display: flex;
+header label{
+    flex-grow:0;
+    width:5%;
+    display:flex;
     flex-direction: column;
     justify-content: center;
 }
-header .inner label span{
-    background-color: #3e425a;
-    width: 20px; height: 2px;
-    margin-bottom: 4px;
+header label span{
+    background-color:#3e425a;
+    width:20px; height:2px;
+    margin-bottom:4px;
 }
-header .inner .header_cont{
-    flex-grow: 1;
-    display: flex;
+header .header_cont{
+    flex-grow:1;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }
-header .inner .header_cont nav{
-    width: 50%;
+header .header_cont nav{
+    width:50%;
 }
-header .inner .header_cont nav ul{
-    display: flex;
-    justify-content: space-evenly;
+header .header_cont nav ul{
+    display:flex;
+    justify-content: space-around;
 }
-
-header .inner .header_cont nav ul li{
-    font-weight: 600;
-    font-size: 14px; color: #343e5c;
+header .header_cont nav ul li{
+    font-weight:600;
+    font-size:14px; color:#343e5c;
 }
-
+header .header_cont nav ul li a{
+    color: inherit;
+}
 header .header_cont div{
-    display: flex;
+    display:flex;
     align-items: center;
 }
 header .header_cont div span{
-    background: url(../images/bul_cart.png) no-repeat left center;
-    padding-left: 25px;
-    font-size: 11px; color: #343e5c;
-    font-weight: 500;
-    display: flex;
+    background: url("../images/bul_cart.png") no-repeat left center;
+    padding-left:25px;
+    color:#343e5c;
+    font-size:11px;
+    font-weight:500;
+    display:flex;
     align-items: center;
-    justify-content: center;
 }
 header .header_cont div span a{
-    color: inherit;
-    background-color: #e3e8f0;
+    color:inherit;
+    background-color:#e3e8f0;
+    width:24px;
+    height:24px;
     display: flex;
-    width: 24px; height: 24px;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    margin-left: 16px;
+    border-radius:20px;
+    margin-left:16px;
 }
-header .header_cont div > a{}
+header .header_cont div > a{
+    border:2px solid #e3e8f0; border-radius:50px;
+    padding:5px 10px; margin-left:30px;
+    color:#343e5c; font-size:11px; font-weight:500;
+}
+
+body > nav{
+
+}
+body > nav .inner{
+    display:flex;
+    justify-content: space-between;
+}
+body > nav ul{
+
+}
+body > nav ul{
+    display:flex;
+    width:500px;
+    justify-content: space-between;
+    align-items: center;
+}
+body > nav ul li{
+}
+body > nav ul li a{
+    color:#b9bed1;
+    font-weight:600; font-size:11px;
+}
+body > nav ul li.active a{
+    color:#3e425a;
+}
+body > nav .inner div{
+    
+}
+body > nav .inner div a{
+    color:#b9bed1;
+    padding:0 30px;
+    font-size:11px;font-weight:600;
+}
+body > nav .inner div input{
+    height:55px;
+    border:1px solid #f0f2f7;
+    border-width:0 1px;
+    padding:0 40px;
+    box-sizing: border-box;
+    width:220px;
+    background:url("../images/bul_search.png") no-repeat 12px center/auto;
+}
