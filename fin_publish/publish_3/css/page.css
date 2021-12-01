@@ -176,8 +176,9 @@
 }
 .product_content .product_list ul li figcaption dl dt{
     color:#1c1e23;
-    font-size:16px;
+    font-size:16px; line-height:20px;
     margin-bottom:15px;
+    padding:0 20px;
 }
 .product_content .product_list ul li figcaption dl dd:nth-of-type(1){
     color:#b8bfd3;
@@ -195,6 +196,13 @@
     padding:20px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+.product_content .product_list ul li.ex figcaption dl{
+    text-align: left;
+}
+.product_content .product_list ul li.ex figcaption dl dt{
+    padding:0;
 }
 .product_content .product_list ul li.ex figcaption dl dd:nth-of-type(1){
     margin-bottom:0;
@@ -206,19 +214,70 @@
     color:#fff; font-size:12px;
     padding:5px 8px; border-radius:3px;
 }
+.product_content .product_list ul li.ex figcaption span{
+    display:flex;
+    border:2px solid #f0f2f7;
+    border-radius:20px;
+}
+.product_content .product_list ul li.ex figcaption span a{
+    line-height:30px; font-size:11px; color:#3a405b;
+    display:block; font-weight:600;
+    width:100px;
+}
+.product_content .product_list ul li.ex figcaption span a:first-child{
+    border-right:1px solid #f0f2f7;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.product_content .product_list ul li.ex2 figure,
+.product_content .product_list ul li.ex2 figure img{
+    height:100%;
+}
+.product_content .product_list ul li.ex2 figcaption{
+    position:absolute; top:0; left:0;
+    padding:35px 0 0;
+}
+.product_content .product_list ul li.ex2 figcaption dl dd:nth-of-type(1){
+    display:none;
+}
+.product_content .product_list ul li.ex2 figcaption dl dd:nth-of-type(2){
+    color:#1c1e23; opacity:0.5;
+}
 
 .product_content .product_pagination{
     width:100%;
+    display:flex;
+    background-color:#fff;
+}
+.product_content .product_pagination > a{
+    width:100px;
+    display: flex; justify-content: center; align-items: center; /* 텍스트를 정 가운데로 */
+}
+.product_content .product_pagination > a:first-of-type{
+    border-right:1px solid #f0f2f7;
+    order:1;
+}
+.product_content .product_pagination > a:last-of-type{
+    border-left:1px solid #f0f2f7;
+    order:3; 
+}
+.product_content .product_pagination ol{
+    order:2; flex-grow:1;/*flex-item으로서의 성질*/
+    display:flex;
+    justify-content: center;/*flex-box로서의 성질*/
+    padding:20px 0;
+}
+.product_content .product_pagination ol li{
+
+}
+.product_content .product_pagination ol li a{
+    width:50px; height:50px; /* 너비높이 지정 */
+    display:block; /* 너비높이가 지정될 수 있도록 */
+    line-height:50px; text-align: center;/* 글 높이 가운데로, 글 정렬 가운데로 */
+    font-size:14px; color:#3a405b; font-weight:600;
+    border-radius:50%;
+    transition-duration:0.3s;
+}
+.product_content .product_pagination ol li:hover a{
+    color:#b9bed1;
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.1);
 }
