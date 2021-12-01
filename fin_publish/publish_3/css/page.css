@@ -16,7 +16,7 @@
     width:23%;
 }
 .product_content aside nav{
-
+    border-radius:5px; overflow: hidden;
 }
 .product_content aside nav ul{
 
@@ -24,15 +24,28 @@
 .product_content aside nav ul > li {
 
 }
+.product_content aside nav ul > li label,
+.product_content aside nav ul > li a{
+    line-height:40px;
+    padding:0 20px;
+    height:40px;
+    box-sizing: border-box;
+}
+.product_content aside nav ul > li > label,
 .product_content aside nav ul > li > a{
     font-size:13px; color:#343e5c;
     font-weight:600;
-    display:block; line-height:40px;
+    display:block;
     position:relative;
+    background-color:#fff;
     
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+.product_content aside nav ul > li:not(:last-child) > label,
+.product_content aside nav ul > li:not(:last-child) > a{
+    border-bottom:1px solid #f0f2f7;
 }
 .product_content aside nav ul > li > a:after{
     content:''; display:block; 
@@ -50,17 +63,162 @@
     transition-duration:0.7s;
 }
 .product_content aside nav ul > li:hover ol{
-    height:80px;
+    height:200px;
 }
+/* .product_content aside nav ul > li input:checked ~ ol{
+    height:200px;
+} */
 .product_content aside nav ul ol li{
 
 }
 .product_content aside nav ul ol li a{
+    font-size:11px; background-color:#f0f2f7; color:#a1a7bd;
+    display:block;
+    border-bottom:1px solid #dfe4ee;
+    box-sizing: border-box;
+}
+
+.product_content aside nav,
+.product_content aside form fieldset:not(:last-child){
+    margin-bottom:30px;
+}
+.product_content aside form fieldset{
+    background-color:#fff;
+    border-radius:5px; overflow: hidden;
+}
+.product_content aside form fieldset p{
+    color:#343e5c; font-size:11px; padding:0 20px;
+    font-weight:600; border-bottom:1px solid #f0f2f7;
+    height:40px; line-height:40px;
+    display:flex; justify-content: space-between;
+}
+.product_content aside form fieldset p:not(:first-of-type){
+    border-top:1px solid #f0f2f7;
+}
+.product_content aside form fieldset p a{
+    color:#2754eb; 
+    text-decoration:underline;
+}
+.product_content aside form fieldset ul{
+    padding:10px 0;
+}
+.product_content aside form fieldset ul li{
 
 }
+.product_content aside form fieldset:last-child ul{
+    display:flex; padding:0;
+}
+.product_content aside form fieldset:last-child ul li{
+    width:50%;
+}
+.product_content aside form fieldset:last-child ul li:first-child{
+    border-right:1px solid #f0f2f7;
+}
+.product_content aside form fieldset:last-child ul li label{
+    line-height:50px;
+}
+.product_content aside form fieldset ul li input{
+    display:none;
+}
+.product_content aside form fieldset ul li input[type="checkbox"] + label{
+    background:url("../images/off_check.png") no-repeat 20px center; 
+    transition-duration: 0.2s;
+}
+.product_content aside form fieldset ul li input[type="checkbox"]:checked + label{
+    background-image:url("../images/on_check.png");
+}
+.product_content aside form fieldset ul li input[type="radio"] + label{
+    background:url("../images/off_radio.png") no-repeat 20px center;
+}
+.product_content aside form fieldset ul li input[type="radio"]:checked + label{
+    background-image:url("../images/on_radio.png");
+}
+.product_content aside form fieldset ul li label{
+    line-height:36px;
+    padding:0 20px 0 50px;
+    display:flex;
+    justify-content: space-between;
+    font-size:13px;
+    color:#343e5c; font-weight:500;
+    cursor:pointer;
+}
+.product_content aside form fieldset ul li label span{
+    color:#b8bfd3; font-size:11px;
+}
+
 .product_content .product_list{
     width:74%;
 }
+.product_content .product_list ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_content .product_list ul li{
+    background-color:#fff;
+    width:30%; border-radius:5px; overflow: hidden;
+    margin-bottom:5%;
+    position:relative;
+}
+.product_content .product_list ul li.ex{
+    width:65%;
+}
+.product_content .product_list ul li img{
+    width:100%;
+    display:block;
+}
+.product_content .product_list ul li figcaption{
+    padding:20px 0 35px;
+    text-align: center;
+}
+.product_content .product_list ul li figcaption dl{
+    font-weight:600;
+}
+.product_content .product_list ul li figcaption dl dt{
+    color:#1c1e23;
+    font-size:16px;
+    margin-bottom:15px;
+}
+.product_content .product_list ul li figcaption dl dd:nth-of-type(1){
+    color:#b8bfd3;
+    font-size:12px;
+    margin-bottom:15px;
+}
+.product_content .product_list ul li figcaption dl dd:nth-of-type(2){
+    color:#343e5c;
+    font-size:14px;
+}
+.product_content .product_list ul li.ex{
+    
+}
+.product_content .product_list ul li.ex figcaption{
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+}
+.product_content .product_list ul li.ex figcaption dl dd:nth-of-type(1){
+    margin-bottom:0;
+}
+.product_content .product_list ul li.ex figcaption dl dd:nth-of-type(2){
+    position:absolute;
+    top:15px; left:10px;
+    background-color:#1c1e23;
+    color:#fff; font-size:12px;
+    padding:5px 8px; border-radius:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .product_content .product_pagination{
     width:100%;
 }
