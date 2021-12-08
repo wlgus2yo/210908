@@ -124,3 +124,19 @@ function random(){
         $(this).css("top",top+"%");
     });
 }
+
+/* 
+    ?parse
+        - parseInt(value); = 정수형
+        - parseFloat(value); = 실수형
+    ?Number
+        - Number(value); = 실수형
+*/
+
+// case.6 문자를 숫자로 형변환
+function numbString(){
+    var test = "30";
+    var result = Math.round(test) + 10;
+    //Number, parseInt() : 소수점 버림, parseFloat, Math.round() : 소수점 반올림
+    console.log("result = "+result);
+}
