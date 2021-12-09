@@ -158,12 +158,51 @@ function userIDcheck(){
 // ID가 본인 이니셜, 패스워드가 1234를 판별해서
 // 접속 승인 / ID 또는 PW가 잘못되었습니다.
 function userInfo1(){
+    var userID = window.prompt("아이디를 입력해주세요.");
+    var userPW = window.prompt("비밀번호를 입력해주세요.");
     
+    (userID =="GY" && userPW =="1234")? alert("접속 승인") : alert("접속 실패");
+    /*
+    if(userID == "GY" && userPW == "1234"){
+        alert("접속을 승인합니다.");
+    }else{
+        alert("ID 또는 PW가 잘못되었습니다.");
+    }
+    */
+    /*
+    if(userID == "GY"){
+        if(userPW == "1234"){
+            alert("접속을 승인합니다.");    
+        }else{
+            alert("ID 또는 PW가 잘못되었습니다.");
+        }
+    }else{
+        alert("ID 또는 PW가 잘못되었습니다.");
+    }
+    */
+
 }
 // todo.4
-// 사용자 ID와 PW를 입력받고, ID가 본인 이니셜, 패스워드가 1234를 판별해서
+// 사용자 ID와 PW를 입력받고, ID가 본인 이니셜, 
+// 패스워드가 1234를 판별해서
 // 승인 / ID가 틀렸는지 / PW가 틀렸는지 / 둘다 틀렸는지 확인 후
-// "접속 승인!" / "ID가 틀렸습니다." / "PW가 틀렸습니다." / "잘못된 정보입니다."
-function userInfo1(){
-
+// "접속 승인!" / "ID가 틀렸습니다." / 
+// "PW가 틀렸습니다." / "잘못된 정보입니다."
+function userInfo2(){
+    var userID = window.prompt("아이디를 입력해주세요.");
+    var userPW = window.prompt("비밀번호를 입력해주세요.");
+    if(userID=="GY" && userPW=="1234"){
+        alert("접속 승인!");
+        // ID와 PW가 둘다 충족
+    }else if(userID == "GY"){
+        // ID or PW 중 최소한 하나는 불충족.
+        // ID는 충족? => PW가 틀렸다.
+        alert("PW가 틀렸습니다.");
+    }else if(userPW == "1234"){
+        // ID or PW 중 최소한 하나는 불충족.
+        // PW는 충족? => ID가 틀렸다.
+        alert("ID가 틀렸습니다.");
+    }else{
+        alert("잘못된 정보입니다.");
+    }
 }
