@@ -47,11 +47,19 @@ function sumNumb(){
     var result = 0;
     while(true){
         //입력을 받아서 변수에 저장(카운트)
-        if(/* 변수 값이 "end" */true){
+        var value = window.prompt(count+"번째 입력");
+        if(value=="end"){ // end일때 실행
             //종료
+            break;
+        }else if(isNaN(value) == true){ // 숫자가 아닐때 실행
+            alert("숫자만 입력하세요.");
+            continue; // 반복 재실행
         }
         // result = result + 입력값
+        result += Number(value);
         // 카운트++;
+        count++;
     }
+    console.log((count-1)+"까지의 합 : " + result);
     //결과값 출력
 }
