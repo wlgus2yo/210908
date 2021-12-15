@@ -4,7 +4,7 @@ $(document).ready(function(){
     // 단순 선언 및 실행
     var $divs = $("div");
     $divs.css("color","#f00"); 
-
+ 
     /*
         jQuery : fadeOut();
         vanilla Script : 
