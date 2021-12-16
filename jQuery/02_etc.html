@@ -7,7 +7,7 @@
     <title>etc2 - 대상 움직이기</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/02_etc.js"></script>
-    <style>  
+    <style>
         .circleWrap{
             width:430px;
             height:430px;
@@ -15,15 +15,20 @@
             margin:0 auto;
             position:relative;
         }
-        .circleWrap .circle{
+        .circleWrap [class^="circle"]{
             width:50px; height:50px;
             border-radius:25px;
             background-color:#000;
             position:absolute; left:0; top:0;
         }
-        .circleWrap #btnMoveCircle{
+        .circleWrap #btnMoveCircle,
+        .circleWrap fieldset{
             position:absolute;
             bottom:0; right:0;
+        }
+        .circleWrap fieldset label,
+        .circleWrap fieldset button{
+            display:block;
         }
     </style>
 </head>
@@ -31,6 +36,18 @@
     <div class="circleWrap">
         <div class="circle"></div>
         <button id="btnMoveCircle">움직이기</button>
+    </div>
+
+    <div class="circleWrap">
+        <div class="circleDetail"></div>
+        <fieldset>
+            <label for="xPos">x좌표 입력</label>
+            <input type="text" id="xPos">
+            <label for="yPos">y좌표 입력</label>
+            <input type="text" id="yPos">
+            <button id="btnDetailMove">움직이기</button>
+        </fieldset>
+        
     </div>
 </body>
 </html>
