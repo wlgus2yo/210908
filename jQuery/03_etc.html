@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab 메뉴</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/03_etc.js"></script>
+    <style>
+
+        .tabMenu{
+            display:flex; padding:0;
+            border:1px solid #000;
+        }
+        .tabMenu .tab{
+            width:33.33%; list-style: none;
+            text-align: center;
+            background-color:#000;
+            color:#fff; 
+            cursor:pointer;
+        }
+        .tabMenu .tab.active{
+            background-color:#fff;
+            color:#000;
+        }
+        .tabWrap{
+            border:1px solid black;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .tabWrap .tabPage{
+            display:none;
+        }
+        .tabWrap .tabPage.active{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabMenu">
+        <li data-tab="tab1" class="tab active">tab1</li>
+        <li data-tab="tab2" class="tab">tab2</li>
+        <li data-tab="tab3" class="tab">tab3</li>
+    </ul>
+    <div class="tabWrap">
+        <div id="tab1" class="tabPage active">
+            tabPage1
+        </div>
+        <div id="tab2" class="tabPage">
+            tabPage2
+        </div>
+        <div id="tab3" class="tabPage">
+            tabPage3
+        </div>
+    </div>
+</body>
+</html>
