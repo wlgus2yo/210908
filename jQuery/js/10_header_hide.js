@@ -1,7 +1,7 @@
 $(document).ready(function(){
     header_hide();
 });
-
+ 
 
 function header_hide(){
     var $top = 0;
