@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 정렬</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/04_etc.js"></script>
+    <style>
+        .imgWrap{
+            position:relative;
+            height:150px;
+        }
+        .imgMix{
+            position:relative;
+            height:200px;
+        }
+        .imgWrap img,
+        .imgMix img{
+            position:absolute; left:0; top:0;
+            transition-duration:0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgWrap">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/150" alt="DUMMY IMG">
+    </div>
+    <button class="horizontal">정렬!</button>
+    <button class="reset">원위치</button>
+
+    <div class="imgMix">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+        <img src="https://via.placeholder.com/200" alt="DUMMY IMG">
+    </div>
+    <button class="alignMix">정렬!</button>
+    <button class="resetMix">원위치</button>
+</body>
+</html>
