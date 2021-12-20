@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/basic_03.js"></script>
+</head>
+
+<body>
+    <div class="container type1">
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>기초 03</small></h1>
+        </header>
+
+        <!-- 문제 1 -->
+        <fieldset>
+            <legend><strong>Test 01</strong> .button01 클릭 시 .elem01을(를) 사라지게 하세요.</legend>
+            <button class="button01">버튼</button>
+            <div class="elem01">
+                <img src="https://picsum.photos/1000/200" alt="이미지">
+            </div>
+        </fieldset>
+
+        <!-- 문제 2 -->
+        <fieldset>
+            <legend><strong>Test 02</strong> .button02 클릭 시 .elem02을(를) 보이게 하세요.</legend>
+            <button class="button02">버튼</button>
+            <div class="elem02" style="display: none;">
+                <img src="https://picsum.photos/200/200" alt="이미지">
+            </div>
+        </fieldset>
+
+        <!-- 문제 3 -->
+        <fieldset>
+            <legend><strong>Test 03</strong> .button03 클릭 시 .elem03의 배경색을 '빨간색'으로, 글자색을 '노란색'으로, 너비를 '600px'로 바꾸세요.
+            </legend>
+            <button class="button03">버튼</button>
+            <div class="elem03">Proident proident proident qui aliquip incididunt duis ea. Exercitation officia esse
+                duis officia amet sit velit sunt sint nostrud velit pariatur. Irure duis labore non veniam anim nisi
+                dolor. Cupidatat voluptate veniam adipisicing deserunt ea do exercitation ullamco duis ut amet.</div>
+        </fieldset>
+
+        <!-- 문제 4 -->
+        <fieldset>
+            <legend><strong>Test 04</strong> .button04 클릭 시 .elem04의 '모든 자식 요소'의 글자 크기를 '20px'로 바꾸세요.</legend>
+            <button class="button04">버튼</button>
+            <ul class="elem04">
+                <li>Minim in adipisicing officia tempor id cillum nulla nulla.</li>
+                <li>Nostrud qui sint veniam est duis esse reprehenderit exercitation sint.</li>
+                <li>Sint consectetur irure ipsum dolor proident quis dolore nisi magna.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 5 -->
+        <fieldset>
+            <legend><strong>Test 05</strong> .button05 클릭 할 때마다 .elem05을(를) '토글' 방식으로 사라졌다가 보이게 하세요.</legend>
+            <button class="button05">버튼</button>
+            <div class="elem05" style="width: 100px; height: 100px; background-color: green;"></div>
+        </fieldset>
+
+        <!-- 문제 6 -->
+        <fieldset>
+            <legend><strong>Test 06</strong> .button06 클릭 시 .elem06을(를) '페이드아웃' 방식으로 사라지게 하세요.</legend>
+            <button class="button06">버튼</button>
+            <div class="elem06" style="width: 100px; height: 100px; background-color: blue;"></div>
+        </fieldset>
+
+        <!-- 문제 7 -->
+        <fieldset>
+            <legend><strong>Test 07</strong> .button07 클릭 시 .elem07을(를) '슬라이드' 방식으로 보이게 하세요.</legend>
+            <button class="button07">버튼</button>
+            <div class="elem07" style="width: 100px; height: 100px; background-color: red; display: none;"></div>
+        </fieldset>
+
+        <!-- 문제 8 -->
+        <fieldset>
+            <legend><strong>Test 08</strong> .button08 클릭 시 .elem08을(를) '애니메이트(속도: 700)' 방식으로 우측으로 '500px' 이동하며 배경색을
+                'pink'로 바꾸세요.</legend>
+            <button class="button08">버튼</button>
+            <div style="position: relative; height: 100px;">
+                <div class="elem08" style="width: 100px; height: 100px; background-color: yellow; position: absolute;">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- 문제 9 -->
+        <fieldset>
+            <legend><strong>Test 09</strong> .elem09의 'li' 요소를 각각 클릭하여 글자색을 '빨간색'으로 바꾸도록 하세요.</legend>
+            <ul class="elem09">
+                <li style="padding: .5rem; cursor: pointer;">Non adipisicing ullamco in Lorem anim duis quis
+                    consectetur.</li>
+                <li style="padding: .5rem; cursor: pointer;">Deserunt enim nostrud cupidatat velit nostrud adipisicing
+                    in et.</li>
+                <li style="padding: .5rem; cursor: pointer;">Ipsum sunt ex officia ad labore laborum voluptate.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 10 -->
+        <fieldset>
+            <legend><strong>Test 10</strong> .button10 클릭 시 .elem10의 '3번째 li'를 제거하세요.</legend>
+            <button class="button10">버튼</button>
+            <ul class="elem10">
+                <li>Voluptate duis laborum exercitation esse sunt ipsum aliqua et ea.</li>
+                <li>Tempor officia irure adipisicing ex dolore aliqua magna elit minim ex non.</li>
+                <li>Anim deserunt non sit occaecat reprehenderit Lorem proident eiusmod.</li>
+            </ul>
+        </fieldset>
+
+        <footer>
+            <button class="button-prev" onclick="buttonPrev('basic')">이전</button>
+            <button class="button-next" onclick="buttonNext('basic')">다음</button>
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/basic_01.js"></script>
+</head>
+
+<body>
+    <div class="container type1">
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>기초 01</small></h1>
+        </header>
+        
+        <!-- 문제 1 -->
+        <fieldset>
+            <legend><strong>Test 01</strong> .button01 클릭 시 .elem01의 width값과 height값을 콘솔창에 출력하세요.</legend>
+            <button class="button01">버튼</button>
+            <div class="elem01" style="width: 555px; height: 123px; background-color: darkkhaki;"></div>
+        </fieldset>
+
+        <!-- 문제 2 -->
+        <fieldset>
+            <legend><strong>Test 02</strong> .button02 클릭 시 .elem02의 padding값을 포함한 width값과 height값을 얼럿창에 출력하세요.</legend>
+            <button class="button02">버튼</button>
+            <div class="elem02" style="width: 100px; height: 100px; padding: 15px; background-color: gold;">Enim
+                excepteur occaecat ipsum.</div>
+        </fieldset>
+
+        <!-- 문제 3 -->
+        <fieldset>
+            <legend><strong>Test 03</strong> .button03 클릭 시 .elem03의 padding값과 border값을 포함한 width값과 height값을 얼럿창에 출력하세요.
+            </legend>
+            <button class="button03">버튼</button>
+            <div class="elem03"
+                style="width: 150px; height: 80px; padding: 20px; border: 5px solid black; background-color: gold;">
+                Consectetur ipsum irure nisi.</div>
+        </fieldset>
+
+        <!-- 문제 4 -->
+        <fieldset>
+            <legend><strong>Test 04</strong> .button04 클릭 시 .elem04의 '모든 부모 요소(class, id 선택자 사용불가)'의 배경색을 노란색으로 바꾸세요.
+            </legend>
+            <button class="button04">버튼</button>
+            <div style="padding: 20px; border: 1px solid #ccc; background-color: white;">
+                <div style="padding: 20px; border: 1px solid #ccc; background-color: white;">
+                    <div style="padding: 20px; border: 1px solid #ccc; background-color: white;">
+                        <div class="elem04" style="border: 1px solid #ccc; background-color: white;">Child</div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- 문제 5 -->
+        <fieldset>
+            <legend><strong>Test 05</strong> .button05 클릭 시 .elem05의 '모든 형제 요소(class, id 선택자 사용불가)'의 글자색을 빨간색으로 바꾸세요.
+            </legend>
+            <button class="button05">버튼</button>
+            <ul>
+                <li>Non dolor ex magna amet do eiusmod velit eu aute ipsum ea.</li>
+                <li>Dolor velit aliquip anim officia deserunt in.</li>
+                <li class="elem05">Consequat qui duis amet velit exercitation consectetur.</li>
+                <li>Sunt pariatur ex Lorem ad nostrud consectetur proident.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 6 -->
+        <fieldset>
+            <legend><strong>Test 06</strong> .button06 클릭 시 .elem06의 '자식 요소(class, id 선택자 사용불가)' 중 '마지막 요소'의 글자색을 파란색으로
+                바꾸세요.</legend>
+            <button class="button06">버튼</button>
+            <ul class="elem06">
+                <li>Deserunt esse laborum sit Lorem dolore consequat sit irure culpa ipsum aliquip eu.</li>
+                <li>Magna laboris exercitation aliquip exercitation consequat aliqua.</li>
+                <li>Et exercitation laborum quis consectetur adipisicing esse exercitation excepteur consectetur esse.
+                </li>
+                <li>Voluptate in sunt irure do deserunt occaecat exercitation irure laboris incididunt.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 7 -->
+        <fieldset>
+            <legend><strong>Test 07</strong> .button07 클릭 시 .elem07의 '자식 요소(class, id 선택자 사용불가)' 중 '2번째 요소'의 배경색을 초록색으로
+                바꾸세요.</legend>
+            <button class="button07">버튼</button>
+            <ul class="elem07">
+                <li>Ex velit culpa eiusmod nostrud laboris esse mollit consectetur dolor consequat dolore nulla.</li>
+                <li>Eu pariatur ullamco et incididunt dolore ad amet sit magna ipsum pariatur duis in.</li>
+                <li>Sit labore officia mollit consectetur velit.</li>
+                <li>Dolor adipisicing eiusmod officia mollit nostrud ex amet aute Lorem culpa aliqua nostrud culpa
+                    consequat.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 8 -->
+        <fieldset>
+            <legend><strong>Test 08</strong> .button08 클릭 시 .elem08의 '자식 요소(class, id 선택자 사용불가)' 중 'hello 클래스를 가진 요소'만
+                글자색을 빨간색으로 바꾸세요.</legend>
+            <button class="button08">버튼</button>
+            <ul class="elem08">
+                <li>Labore velit est adipisicing fugiat esse.</li>
+                <li>Sint ipsum quis laboris irure nulla commodo ut aliquip eiusmod.</li>
+                <li class="hello">Eiusmod nisi nostrud dolore deserunt laboris est laboris ea ullamco nostrud.</li>
+                <li>Occaecat labore nulla mollit esse ex eiusmod ex exercitation consequat culpa.</li>
+            </ul>
+        </fieldset>
+
+        <!-- 문제 9 -->
+        <fieldset>
+            <legend><strong>Test 09</strong> .button09 클릭 시 .elem09의 '자식 요소(class, id 선택자 사용불가)' 중 'child 클래스를 가진 요소'만
+                제외하고 글자색을 노란색으로 바꾸세요.</legend>
+            <button class="button09">버튼</button>
+            <ul class="elem09">
+                <li>Officia ut nulla aute ex ea fugiat excepteur nostrud dolor deserunt adipisicing laborum.</li>
+                <li class="child">Nulla reprehenderit anim qui ad pariatur amet.</li>
+                <li>Dolore aliquip nulla nostrud nostrud cupidatat.</li>
+                <li>Sit consequat labore sit nisi non officia.</li>
+            </ul>
+        </fieldset>
+
+        <footer>
+            <button class="button-next" onclick="buttonNext('basic')">다음</button>
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

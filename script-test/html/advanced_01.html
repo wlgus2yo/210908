@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/advanced_01.js"></script>
+</head>
+
+<body>
+    <div class="container type2">
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>심화 01</small></h1>
+        </header>
+        <fieldset>
+            <legend>메뉴</legend>
+            <div class="tab-nav">
+                <button class="on">Test 01</button>
+                <button>Test 02</button>
+                <button>Test 03</button>
+                <button>Test 04</button>
+                <button>Test 05</button>
+                <button>Test 06</button>
+                <button>Test 07</button>
+                <button>Test 08</button>
+                <button>Test 09</button>
+                <button>Test 10</button>
+            </div>
+        </fieldset>
+
+        <fieldset class="tab-content">
+            <legend>다음 요구사항을 해결하세요.</legend>
+            <div class="inner">
+
+                <!-- 문제 1 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 01</strong> .menu01의 각 버튼을 클릭 시 버튼명과 일치하는 타이틀을 가진 .cont-item만
+                        노출시키세요. </p>
+                    <ul class="menu01">
+                        <li><button>메뉴1</button></li>
+                        <li><button>메뉴2</button></li>
+                        <li><button>메뉴3</button></li>
+                    </ul>
+                    <div class="cont01">
+                        <div class="cont-item">
+                            <h5>메뉴1</h5>
+                            <img src="https://picsum.photos/200/300" alt="이미지">
+                        </div>
+                        <div class="cont-item">
+                            <h5>메뉴2</h5>
+                            <img src="https://picsum.photos/200/300" alt="이미지">
+                        </div>
+                        <div class="cont-item">
+                            <h5>메뉴3</h5>
+                            <img src="https://picsum.photos/200/300" alt="이미지">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 문제 2 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 02</strong> [확인] 버튼을 클릭 시 '&lt;p&gt;현재창의 주소(URL)값&lt;p&gt;'과
+                        '&lt;p&gt;현재의 시간값&lt;p&gt;'을 .result02 안에 출력하세요.(시간 포맷 변환은 안 해도 됨)</p>
+                    <div class="result result02"></div>
+                    <button class="button02">확인</button>
+                </div>
+
+                <!-- 문제 3 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 03</strong> [확인] 버튼을 클릭 시 체크된 단어를 얼럿창에 출력하세요.</p>
+                    <div style="margin-top: 30px;">
+
+                        <input type="radio" name="color" id="color-red">
+                        <label for="color-red">빨강</label>
+
+                        <input type="radio" name="color" id="color-green">
+                        <label for="color-green">초록</label>
+
+                        <input type="radio" name="color" id="color-blue">
+                        <label for="color-blue">파랑</label>
+                        <div>
+                            <radio></radio>
+                            <radio></radio>
+                            <radio></radio>
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <label for=""></label>
+                            <label for=""></label>
+                        </div>
+                        <button class="button03">확인</button>
+                    </div>
+                </div>
+
+                <!-- 문제 4 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 04</strong> 좌우 버튼을 클릭 시 슬라이드가 되도록 하세요.(슬라이더 라이브러리를 사용해도 됨)</p>
+                    <div style="display: flex; margin:30px 0;" class="slider">
+                        <button style="width: 50px;" class="btn_left">좌</button>
+                        <div style="display: flex; width: 500px;overflow: hidden;">
+                            <img src="../images/cat.png" alt="고양이">
+                            <img src="../images/cow.png" alt="송아지">
+                            <img src="../images/dog.png" alt="강아지">
+                        </div>
+                        <button style="width: 50px;" class="btn_right">우</button>
+                    </div>
+                </div>
+
+                <!-- 문제 5 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 05</strong> [확인] 버튼을 클릭 시 .result05 안의 첫 번째 요소로 cat.png를, 마지막 요소로
+                        dog.png를 삽입하세요. </p>
+                    <div class="result result05" style="overflow:auto;width: 500px;height:300px;">
+                        <img src="../images/cow.png" alt="송아지">
+                    </div>
+                    <button class="button05">확인</button>
+                </div>
+
+                <!-- 문제 6 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 06</strong> [확인] 버튼을 클릭 시 .result06_01의 width, height 값을
+                        .result06_02에 동일하게 적용하세요. </p>
+                    <div style="display: flex;justify-content: space-between;width: 1100px;margin: 30px 0;">
+                        <div class="result06_01" style="width: 500px;height: 300px;background: rgba(0,0,0,0.1);"></div>
+                        <div class="result06_02 result" style="margin: 0;"></div>
+                    </div>
+                    <button class="button06">확인</button>
+                </div>
+
+                <!-- 문제 7 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 07</strong> 아래의 목록을 아코디언 메뉴로 만드세요.(스타일은 자유롭게) </p>
+                    <div>
+                        <p>동물의 종</p>
+                        <div>
+                            <p>포유류</p>
+                            <ul>
+                                <li>강아지</li>
+                                <li>고양이</li>
+                                <li>송아지</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>파충류</p>
+                            <ul>
+                                <li>거북이</li>
+                                <li>도마뱀</li>
+                                <li>개구리</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>조류</p>
+                            <ul>
+                                <li>독수리</li>
+                                <li>부엉이</li>
+                                <li>기러기</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 문제 8 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 08</strong> 아래의 selectbox를 선택 시 해당 이름의 이미지를 .img-box에 노출시키세요. </p>
+                    <pre>준비된 이미지는 dog.png, cat.png, cow.png 이미지 폴더안에 존재 합니다.</pre>
+                    <select style="margin-bottom: 30px;" class="select_08">
+                        <option>selectbox</option>
+                        <option value="">강아지</option>
+                        <option value="">고양이</option>
+                        <option value="">송아지</option>
+                    </select>
+                    <div class="img-box" style="width: 500px;height: 300px;border: 1px solid #111;"></div>
+                </div>
+
+                <!-- 문제 9 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 09</strong> [확인] 버튼을 클릭 시 .text-box 안의 '그대여'라는 텍스트의 개수를 .result09
+                        안에 출력하세요. </p>
+                    <div class="text-box" style="margin-top: 30px;">
+                        그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이
+                        떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손
+                        잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던
+                        그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh
+                        yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는
+                        자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요
+                    </div>
+                    <div class="result result09"></div>
+                    <button class="button09">확인</button>
+                </div>
+
+                <!-- 문제 10 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 10</strong> [확인] 버튼을 클릭 시 메뉴의 버튼 수 만큼 cat.png 이미지를 .result10 안에
+                        출력하세요.(반복문을 사용할 것)</p>
+                    <div class="result result10" style="overflow:auto;width: 500px;height:400px;"></div>
+                    <button class="button10">확인</button>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <footer>
+            <button class="button-next" onclick="buttonNext('advanced')">다음</button>
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+
+</html>

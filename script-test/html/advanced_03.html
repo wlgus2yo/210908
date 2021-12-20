@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/advanced_03.js"></script>
+</head>
+
+<body>
+
+    <div class="container type2">
+
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>심화 03</small></h1>
+        </header>
+
+        <fieldset>
+            <legend>메뉴</legend>
+            <div class="tab-nav">
+                <button class="on">Test 01</button>
+                <button>Test 02</button>
+                <button>Test 03</button>
+                <button>Test 04</button>
+                <button>Test 05</button>
+                <button>Test 06</button>
+                <button>Test 07</button>
+                <button>Test 08</button>
+                <button>Test 09</button>
+                <button>Test 10</button>
+            </div>
+        </fieldset>
+
+        <fieldset class="tab-content">
+            <legend>다음 요구사항을 해결하세요.</legend>
+            <div class="inner">
+
+                <!-- 문제 1 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 01</strong> .button01 클릭 시 .result01의 상단(top)이 윈도우 상단(top)과 맞닿도록
+                        스크롤 이동(애니메이션 방식)시키세요.</p>
+                    <button class="button01">확인</button>
+                    <div class="result result01" style="width: 100%; height: 2000px;"></div>
+                </div>
+
+                <!-- 문제 2 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 02</strong> .button02 클릭 후 정확히 3초 후에 .result02 안에 'Hello' 텍스트를
+                        출력하세요.</p>
+                    <button class="button02">확인</button>
+                    <div class="result result02"></div>
+                </div>
+
+                <!-- 문제 3 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 03</strong> <a href="https://swiperjs.com/get-started"
+                            target="_blank">swiper.js</a> 라이브러리를 활용하여 .result03 안에 슬라이더(형태는 자유)를 구현하세요.(Navigation,
+                        Pagination 필수)</p>
+                    <div class="result03"></div>
+                </div>
+
+                <!-- 문제 4 -->
+
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 04</strong> 1. 각 range를 조정 했을 때 (위 부터 red,green,blue) 0~255의 값을
+                        .'색상'-val 값을 출력하세요. <br> 2. 각 range를 조정 했을 때 마다 .result04의 배경색 rgb(red,green,blue)이 변경되게 만드세요.
+                    </p>
+                    <div style="display: flex; justify-content: space-around; margin-top: 85px;">
+                        <div>
+                            <div style="display: flex; flex-flow: column; width: 300px;">
+                                <input type="range" id="range-red">
+                                <input type="range" id="range-green">
+                                <input type="range" id="range-blue">
+                            </div>
+                            <p>red : <span class="red-val"></span></p>
+                            <p>green : <span class="green-val"></span></p>
+                            <p>blue : <span class="blue-val"></span></p>
+                        </div>
+                        <div class="result result04" style="margin: 0; width: 400px; height: 400px;"></div>
+                    </div>
+                </div>
+
+                <!-- 문제 5 -->
+
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 05</strong></p>
+                    <style>
+                        table {
+                            text-align: center;
+                        }
+
+                        td {
+                            width: 100px;
+                            height: 100px;
+                            border: 1px solid #000;
+                        }
+
+                        .active {
+                            background-color: #a5e0f0;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>일</td>
+                                <td>월</td>
+                                <td>화</td>
+                                <td>수</td>
+                                <td>목</td>
+                                <td>금</td>
+                                <td>토</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7 <p>오늘의 일기</p>
+                                </td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20<p>오늘의 일기</p>
+                                </td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30<p>오늘의 일기</p>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="result result05"></div>
+                </div>
+                
+                <!-- 문제 6 -->
+
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 06</strong> 1번 버튼 - 1점, 2번 버튼 - 2점, 3번 버튼 - 3점
+                        버튼을 3번 눌러 합계 점수가 4점 이상 시 alart 꽝 6점 이상 시 통과 8점 일시 당첨
+                        연속적으로 같은 버튼 3번 누를 시 연속 3번 눌렀어요를 나오게 하세요 </p>
+                    <button class="button01">1번</button>
+                    <button class="button02">2번</button>
+                    <button class="button03">3번</button>
+
+                    <div class="restart">재시작</div>
+                </div>
+            </div>
+        </fieldset>
+
+        <footer>
+            <button class="button-prev" onclick="buttonPrev('advanced')">이전</button>
+            <button class="button-next" onclick="buttonNext('advanced')">다음</button>
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

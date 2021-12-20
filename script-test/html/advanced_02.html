@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/advanced_02.js"></script>
+</head>
+
+<body>
+    <div class="container type2">
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>심화 02</small></h1>
+        </header>
+        <fieldset>
+            <legend>메뉴</legend>
+            <div class="tab-nav">
+                <button class="on">Test 01</button>
+                <button>Test 02</button>
+                <button>Test 03</button>
+                <button>Test 04</button>
+                <button>Test 05</button>
+                <button>Test 06</button>
+                <button>Test 07</button>
+                <button>Test 08</button>
+                <button>Test 09</button>
+                <button>Test 10</button>
+            </div>
+        </fieldset>
+
+        <fieldset class="tab-content">
+            <legend>다음 요구사항을 해결하세요.</legend>
+            <div class="inner">
+
+                <!-- 문제 1 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 01</strong> 현재창의 넓이가 1000px 이하가 되면 .result01의 넓이가 300px, 배경색이
+                        붉은색으로 만들고 1000px 이상 이면 .result01의 넓이가 500px, 배경색이 녹색이 되게 만드세요.</p>
+                    <div class="result result01"></div>
+                </div>
+
+                <!-- 문제 2 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 02</strong> .input-text-02에 텍스트를 입력한 후 확인 버튼을 클릭 시 해당 텍스트가
+                        .result02에 표시되게 하세요.</p>
+                    <div class="result result02"></div>
+                    <input type="text" class="input-text-02">
+                    <button class="button02">확인</button>
+                </div>
+
+                <!-- 문제 3 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 03</strong> #textarea03의 글자 수를 최대 30자 이하로 제한하세요.</p>
+                    <textarea id="textarea03" cols="30" rows="10" style="resize: none;"></textarea>
+                </div>
+
+                <!-- 문제 4 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 04</strong> #textarea04의 글자 수를 최대 30자 이하로 제한 하고 .textnum의 앞 숫자에
+                        #textarea04의 텍스트 수를 카운트하여 표시하세요.</p>
+                    <textarea id="textarea04" cols="30" rows="10" style="resize: none;"></textarea>
+                    <p class="textnum"><strong>0</strong>/30</p>
+                </div>
+
+                <!-- 문제 5 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 05</strong> [확인] 버튼을 클릭 시 얼럿창으로 "hi"를 출력하고, 체크박스가 체크된 상태에서 확인 클릭 시
+                        하루동안 얼럿창을 띄우지 않도록 하세요.</p>
+                    <input type="checkbox" id="cookie">
+                    <label for="cookie">하루동안 얼럿창 보지 않기</label>
+                    <button class="button05">확인</button>
+                </div>
+
+                <!-- 문제 6 -->
+                <div class="tab-item" style="height: 3000px;">
+                    <p class="tab-title"><strong>Test 06</strong> 스크롤시 컬러바가 순차적으로 윈도우 상단에 고정되도록 하세요.(최종적으로는 3개의 컬러바가 상단에
+                        고정되어야 함)</p>
+                    <nav class="nav01" style="width: 100%;height: 50px;background-color: blueviolet; color: white;">컬러바
+                    </nav>
+                    <div style="height: 950px;"></div>
+                    <nav class="nav02" style="width: 100%;height: 50px;background-color: green; color: white;">컬러바</nav>
+                    <div style="height: 950px;"></div>
+                    <nav class="nav03" style="width: 100%;height: 50px;background-color: orange; color: white;">컬러바
+                    </nav>
+                    <div style="height: 950px;"></div>
+                </div>
+
+                <!-- 문제 7 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 07</strong> [확인] 버튼을 클릭 시 .result07 안에 구구단 3단과 8단을 출력하세요.(반복문 사용)
+                    </p>
+                    <div class="result result07" style="overflow: auto;"></div>
+                    <button class="button07">확인</button>
+                </div>
+
+                <!-- 문제 8 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 08</strong> [확인] 버튼을 클릭 시 .rsp-left, .rsp-right의 이미지가 랜덤으로 나오고
+                        얼럿창으로 "왼쪽이 이겼습니다.", "오른쪽이 이겼습니다.", "무승부 입니다."를 출력하세요. </p>
+                    <div style="display: flex;justify-content: space-around;align-items: center;width: 100%;">
+                        <div class="rsp-left">
+                            <img src="../images/paper.png" alt="보">
+                        </div>
+                        <p style="font-size: 5rem;">.vs</p>
+                        <div class="rsp-right">
+                            <img src="../images/rock.png" alt="바위">
+                        </div>
+                    </div>
+                    <button class="button08">확인</button>
+                </div>
+
+                <!-- 문제 9 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 09</strong> [확인] 버튼을 클릭 시 .text-box 안의 '그대여'라는 텍스트를 '너와'로 바꾸세요.
+                    </p>
+                    <div class="text-box" style="margin: 30px 0;">
+                        그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이
+                        떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손
+                        잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh yeah ) 몰랐던
+                        그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는 자장노래 어떤가요 ( oh
+                        yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요 그대여 그대여 그대여 그대여 그대여 오늘은 우리 같이 걸어요 이 거리를 밤에 들려오는
+                        자장노래 어떤가요 ( oh yeah ) 몰랐던 그대와 단 둘이 손 잡고 알 수 없는 이 떨림과 둘이 걸어요
+                    </div>
+                    <button class="button09">확인</button>
+                </div>
+
+                <!-- 문제 10 -->
+                <div class="tab-item">
+                    <p class="tab-title"><strong>Test 10</strong> [확인] 버튼을 클릭 시 아래 내용의 정답을 .result10에 출력하세요.</p>
+                    <p>푸들, 치와와, 말티즈, 파피용, 포메라니안, 푸들, 시추, 푸들, 포메라니안, 푸들, 시추<br>
+                        1. 푸들이 몇 번 반복 되나요?<br>
+                        2. 중복된 이름을 제거해서 출력하세요.<br>
+                        3. 중복된 이름을 제거 후 오름차순으로 정렬하여 출력하세요.</p>
+                    <div class="result result10" style="overflow:auto;width: 500px;height:400px;"></div>
+                    <button class="button10">확인</button>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <footer>
+            <button class="button-prev" onclick="buttonPrev('advanced')">이전</button>
+            <button class="button-next" onclick="buttonNext('advanced')">다음</button>
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

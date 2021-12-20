@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- script와 style은 자유롭게 작성하세요. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <link rel="shortcut icon" href="http://bstones.co.kr/wp-content/themes/bstones/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="js/basic_04.js"></script>
+</head>
+
+<body>
+
+    <div class="container type1">
+
+        <header>
+            <h1><a href="../index.html">Script Test</a> - <small>기초 04</small></h1>
+        </header>
+
+        <!-- 문제 1 -->
+        <fieldset>
+            <legend><strong>Test 01</strong> .elem01 포커스 시 .elem01의 배경색을 '핑크색'으로 바꾸세요.</legend>
+            <input type="text" class="elem01">
+        </fieldset>
+
+        <!-- 문제 2 -->
+        <fieldset>
+            <legend><strong>Test 02</strong> .elem02 마우스 호버 시 .elem02의 글자색을 '파랑색'으로, 마우스 아웃 시 글자색을 '노란색'으로 바꾸세요.
+            </legend>
+            <div class="elem02">Sint ex incididunt pariatur ut commodo ut dolor et ullamco. Irure in ipsum in Lorem non
+                velit sunt sunt proident labore esse deserunt proident. Ipsum amet velit et duis commodo qui dolor nisi
+                dolor et quis. Eu et ad mollit elit ullamco nostrud enim.</div>
+        </fieldset>
+
+        <!-- 문제 3 -->
+        <fieldset>
+            <legend><strong>Test 03</strong> .button03 마우스 호버 시 .elem03을 '애니메이트' 방식으로 우측으로 이동시키고, 마우스 아웃 시 원위치 시키세요.
+            </legend>
+            <button class="button03">버튼</button>
+            <div style="position: relative; height: 100px;">
+                <div class="elem03"
+                    style="width: 100px; height: 100px; background-color: olivedrab; position: absolute;"></div>
+            </div>
+        </fieldset>
+
+        <!-- 문제 4 -->
+        <fieldset>
+            <legend><strong>Test 04</strong> .button04 마우스 호버 시 .elem04를 '슬라이드토글' 방식으로 노출/비노출 처리하세요.</legend>
+            <button class="button04">버튼</button>
+            <div class="elem04" style="width: 100%; height: 100px; background-color: salmon; "></div>
+        </fieldset>
+
+        <!-- 문제 5 -->
+        <fieldset>
+            <legend><strong>Test 05</strong> .button05 클릭 시 .elem05의 '텍스트'를 콘솔창에 출력하세요.</legend>
+            <button class="button05">버튼</button>
+            <div class="elem05">Esse sunt eu amet pariatur laboris eiusmod sunt labore. Pariatur in sint tempor ullamco
+                ut ut. Excepteur ipsum velit consectetur sint laborum sint.</div>
+        </fieldset>
+
+        <!-- 문제 6 -->
+        <fieldset>
+            <legend><strong>Test 06</strong> .button06 클릭 시 .elem06 내부 '모든 요소들의 태그와 텍스트'를 콘솔창에 출력하세요.</legend>
+            <button class="button06">버튼</button>
+            <div class="elem06">
+                <h3>Pariatur nostrud anim tempor eiusmod nisi excepteur consectetur laboris ex pariatur ex minim.</h3>
+                <p>Nostrud eu excepteur laborum non fugiat exercitation id esse reprehenderit cillum consectetur sint.
+                    Mollit minim dolor ipsum duis velit consectetur aliqua sunt minim. Deserunt sint Lorem quis
+                    adipisicing do nulla proident dolore sint non irure duis elit consequat. Ullamco duis do sunt
+                    cupidatat ex consequat et ad quis sunt dolore eiusmod ut dolor. Do occaecat eiusmod elit esse Lorem
+                    laboris qui in id veniam.</p>
+            </div>
+        </fieldset>
+
+        <!-- 문제 7 -->
+        <fieldset>
+            <legend><strong>Test 07</strong> .button07 클릭 시 .elem07의 '값'을 얼럿창에 출력하세요.</legend>
+            <button class="button07">버튼</button>
+            <input type="text" class="elem07" value="Id commodo reprehenderit nisi ipsum ea ea id laborum">
+        </fieldset>
+
+        <!-- 문제 8 -->
+        <fieldset>
+            <legend><strong>Test 08</strong> .button08 클릭 시 .elem08의 '링크 값'을 콘솔창에 출력하세요.</legend>
+            <button class="button08">버튼</button>
+            <a href="https://www.example.com" class="elem08" target="_blank">링크</a>
+        </fieldset>
+
+        <!-- 문제 9 -->
+        <fieldset>
+            <legend><strong>Test 09</strong> .button09 클릭 시 현재 '윈도우 주소창의 URL'을 얼럿창에 출력하세요.</legend>
+            <button class="button09">버튼</button>
+        </fieldset>
+
+        <!-- 문제 10 -->
+        <fieldset>
+            <legend><strong>Test 10</strong> .button10 클릭 시 .elem10의 'height값'을 '300px'로 바꾸세요.</legend>
+            <button class="button10">버튼</button>
+            <div class="elem10" style="width: 200px; height: 100px; background-color: wheat"></div>
+        </fieldset>
+
+        <footer>
+            <button class="button-prev" onclick="buttonPrev('basic')">이전</button>
+            <!-- <button class="button-next" onclick="buttonNext('basic')">다음</button> -->
+            <h6></h6>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
