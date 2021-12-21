@@ -61,4 +61,8 @@ $(document).ready(function(){
     $(".resetMix").click(function(){
         $(".imgMix img").css({"left":"0", "top":"0"});
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 9e99e010291427b14e833f611fd7e01fad7feade
