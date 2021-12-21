@@ -1,0 +1,211 @@
+*{
+    margin:0; padding:0; list-style: none; text-decoration: none;
+}
+body{
+    font-family:"ROBOTO", 'NanumBarunGothic', serif;
+}
+header{
+
+}
+header h1{
+    text-align:center; padding:50px 0;
+}
+header h1 a{
+    display:inline-block;
+}
+header h1 a img{
+    display:block;
+}
+header nav{
+    border:1px solid #c8b7ad; border-width:1px 0;
+}
+header nav.sticky{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background-color:#fff;
+}
+
+.inner{
+    width:1260px; margin:0 auto;
+}
+header nav ul:after{
+    content:''; display:block; clear:both;
+}
+header nav ul li{
+    float:left; width:16.66%; text-align:center;
+    
+}
+header nav ul li a{
+    line-height:40px; display:block;
+    color:#3d3d3d; font-size:14px;
+}
+/* header nav ul li a .material-icons */
+header nav ul li:first-child a span{
+    line-height:40px; display:block;
+    color:#d7b39b; font-size:32px;
+}
+
+.main_sec_01{
+    padding-bottom:80px;
+}
+.main_sec_01 .main_visual{
+    margin-bottom:50px;
+}
+.main_sec_01 .main_visual img{
+    display:block;
+    width:100%;
+}
+.main_sec_01 ul:after{
+    content:''; display:block; 
+    clear:both;
+}
+.main_sec_01 ul li{
+    float:left;
+}
+.main_sec_01 ul li:first-child{
+    width:50%;
+}
+.main_sec_01 ul li:not(:first-child){
+    width:23%;
+}
+.main_sec_01 ul li:not(:last-child){
+    margin-right:2%;
+}
+.main_sec_01 ul li a{
+    display:block;
+}
+.main_sec_01 ul li a img{
+    display:block; width:100%;
+    height:280px;
+}
+.main_sec_02{
+    background-color:#efefef;
+}
+.main_sec_02 .inner{
+    padding:50px 0 40px;
+}
+.main_sec_02 h3{
+    text-align:center; font-size:22px; color:#3e3e3e;
+    margin-bottom:25px; font-weight:400;
+}
+.main_sec_02 .tab_menu{
+    text-align:center;
+    margin-bottom:10px;
+}
+.main_sec_02 .tab_menu li{
+    display:inline-block;
+}
+.main_sec_02 .tab_menu li a{
+    padding:0 10px;
+    color:#777;
+}
+.main_sec_02 .tab_menu li.on a{
+    color:#d7b39b; font-weight:600;
+}
+.main_sec_02 .tab_cont{
+}
+.main_sec_02 .tab_cont:after{
+    content:''; display:block; clear:both;
+}
+.main_sec_02 .tab_cont li{
+    float:left;
+    width:23%;
+    margin-right:2.66%;
+    position:relative;
+}
+.main_sec_02 .tab_cont li:last-child{
+    margin-right:0;
+}
+.main_sec_02 .tab_cont li img{
+    display: block; width:100%;
+}
+.main_sec_02 .tab_cont li:hover .description{
+    opacity:1;
+}
+.main_sec_02 .tab_cont li .description{
+    position:absolute;
+    left:0; bottom:0; width:100%;
+    background-color:rgba(0,0,0,0.6);
+    color:#fff;
+    padding:20px 15px; box-sizing:border-box;
+    opacity:0; transition-duration:0.7s;
+}
+.main_sec_02 .tab_cont li .description .name{
+    font-size:18px; margin-bottom:15px;
+}
+.main_sec_02 .tab_cont li .description .price{
+    font-size:15px; font-weight:600;
+}
+.main_sec_02 .tab_cont li .description .price span{
+    color:#e1808e; margin-right:5px;
+    text-decoration:line-through;
+}
+.main_sec_03{
+    padding:100px 0 150px;
+}
+.main_sec_03 h3,
+.main_sec_03 p{
+    text-align:center;
+}
+.main_sec_03 h3{
+    color:#3d3d3d; font-size:20px;
+    margin-bottom:30px;
+}
+.main_sec_03 p{
+    color:#777; font-size:18px;
+    margin-bottom:25px;
+}
+.main_sec_03 ul:after{
+    content:''; display:block; clear:both;
+}
+.main_sec_03 ul li{
+    float:left; 
+    width:23%;
+    margin-right:2.66%;
+    margin-bottom:50px;
+}
+.main_sec_03 ul li:nth-child(4) ~ li{
+    margin-bottom:0;
+    /* 4번 이후의 모든 li */
+}
+.main_sec_03 ul li:nth-child(n+5):nth-child(-n+8){
+    
+    /* 5번부터 8번까지 */
+}
+
+.main_sec_03 ul li:nth-child(4n){
+    margin-right:0;
+}
+.main_sec_03 ul li a{
+    display: block;
+}
+.main_sec_03 ul li a img{
+    width:100%; display:block;
+    /* margin-bottom:20px; */
+}
+.main_sec_03 ul li dl dt{
+    font-size:14px; color:#3d3d3d;
+    /* margin-bottom:20px; */
+    padding:20px 0; border-bottom:1px solid #e0e0e0;
+    margin-bottom:20px;
+}
+.main_sec_03 ul li dl dd{
+    color:#333; font-family:'NanumBarunGothic', serif;
+    font-size:12px;
+}
+.main_sec_03 ul li dl dd:first-of-type{
+    font-weight:600; margin-bottom:15px;
+}
+.main_sec_03 ul li dl dd .ori_price{
+    color:#e1808e; margin-right:8px;
+}
+.main_sec_03 ul li dl dd:last-of-type{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    height:41.25px;
+}
