@@ -1,0 +1,37 @@
+*{
+    margin:0; padding:0;
+}
+.swiper-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width:100%;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+    /* 폰트로 들어가 있기 때문에(material-icon, fontAwesome처럼) 폰트 관련 CSS 적용 가능*/
+    font-size:0;
+    /* text-indent:-9999px; */
+    /* content:''; */
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width:30px; height:30px;
+}
+.swiper-button-next{background:url("../img/arrow1.png") no-repeat center / contain; }
+.swiper-button-prev{background:url("../img/arrow2.png") no-repeat center / contain; }
+
+.swiper-pagination-bullet{
+    background:#000;
+    opacity:1;
+}
+.swiper-pagination-bullet-active{
+    background:#f00;
+}
+/* 
+    관리자도구를 확인하면서 진행
+    하단 페이지네이션에서 현재의 불릿은 빨간색,
+    평소의 불릿은 검정색으로 수정
+*/
