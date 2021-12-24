@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/13_bg_exam2.js"></script>
+    <style>
+        *{margin:0; padding:0;}
+        html, body, section{height:100%;}
+        section{
+            display:flex; justify-content: center; align-items: center; font-size:60px; color:#fff;
+            position:relative;
+        }
+        section:nth-child(1){background-color:darkslateblue;}
+        section:nth-child(2){background-color:black;}
+        section:nth-child(3){background-color:violet;}
+        section:nth-child(4){background-color:darkcyan;}
+        section:nth-child(5){background-color:darkgreen;}
+        section button{
+            position:absolute; bottom:50px; left:50%; 
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        SECTION1
+        <button>NEXT</button>
+    </section>
+    <section>
+        SECTION2
+    </section>
+    <section>
+        SECTION3
+    </section>
+    <section>
+        SECTION4
+    </section>
+    <section>
+        SECTION5
+    </section>
+</body>
+</html>
