@@ -10,6 +10,10 @@ $(document).ready(function(){
         },
         slidesPerView: 4,
         spaceBetween: 30,
-        spacePerGroup: 4,
+        slidesPerGroup: 4,
+        // Demo를 확인하면서 진행
+        // 한 화면당 4개씩 출력
+        // 버튼 클릭 또는 드래그시 
+        // 한번에 4개씩 넘어가도록 수정
     });
 });
