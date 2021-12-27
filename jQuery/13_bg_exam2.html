@@ -16,11 +16,15 @@
         }
         section:nth-child(1){background-color:darkslateblue;}
         section:nth-child(2){background-color:black;}
-        section:nth-child(3){background-color:violet;}
+        section:nth-child(3){
+            background:violet url("img/star_bg.png") repeat center / cover;
+        }
         section:nth-child(4){background-color:darkcyan;}
         section:nth-child(5){background-color:darkgreen;}
         section button{
             position:absolute; bottom:50px; left:50%; 
+            transform:translateY(50px);
+            opacity:0;
         }
 
     </style>
@@ -32,15 +36,19 @@
     </section>
     <section>
         SECTION2
+        <button>NEXT</button>
     </section>
     <section>
         SECTION3
+        <button>NEXT</button>
     </section>
     <section>
         SECTION4
+        <button>NEXT</button>
     </section>
     <section>
         SECTION5
     </section>
+    <section></section>
 </body>
 </html>
