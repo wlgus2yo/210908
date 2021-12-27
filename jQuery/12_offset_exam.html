@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset Exam</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/12_offset_exam.js"></script>
+    <style>
+        *{ margin:0; padding:0;}
+        html, body, section{height:100%;}
+        header{position:fixed;}
+        section{display:flex; justify-content: center; align-items: center;}
+        section:nth-of-type(1){background-color:darkslateblue;}
+        section:nth-of-type(2){background-color:blanchedalmond;}
+        section:nth-of-type(3){background-color:darkcyan;}
+        section:nth-of-type(4){background-color:darkgreen;}
+        section div{
+            height:300px; width:50%; background-color:black;
+            color:#fff; font-size:40px; text-align: center;
+            line-height: 300px;;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="###" data-offset="sec01">sec01</a></li>
+            <li><a href="###" data-offset="sec02">sec02</a></li>
+            <li><a href="###" data-offset="sec03">sec03</a></li>
+            <li><a href="###" data-offset="sec04">sec04</a></li>
+        </ul>
+    </header>
+    <section id="sec01">
+        <div>SECTION_01</div>
+    </section>
+    <section id="sec02">
+        <div>SECTION_02</div>
+    </section>
+    <section id="sec03">
+        <div>SECTION_03</div>
+    </section>
+    <section id="sec04">
+        <div>SECTION_04</div>
+    </section>
+</body>
+</html>
