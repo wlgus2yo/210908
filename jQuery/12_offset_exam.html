@@ -19,7 +19,14 @@
         section div{
             height:300px; width:50%; background-color:black;
             color:#fff; font-size:40px; text-align: center;
-            line-height: 300px;;
+            line-height: 300px;
+            transform:translateY(80px);
+            opacity:0;
+            transition-duration:0.7s;
+        }
+        section.active div{
+            transform:translateY(0);
+            opacity:1;
         }
     </style>
 </head>
