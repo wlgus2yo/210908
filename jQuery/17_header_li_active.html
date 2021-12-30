@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>높이값에 따른 li active</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/17_header_li_active.js"></script>
+    <style>
+        *{margin:0; padding:0; list-style: none;}
+        header{position:fixed; left:0; top:0; width:100%;}
+        header ul{display:flex; justify-content: space-around; background:#fff; line-height: 2;}
+        
+        header ul a{color:violet;}
+        header ul a.on{color:#f00;}
+        section{display: flex; justify-content: center; align-items: center; font-size: 40px;;}
+        section:nth-of-type(1){height:400px; background-color:red;}
+        section:nth-of-type(2){height:800px; background-color:blue;}
+        section:nth-of-type(3){height:1200px; background-color:magenta;}
+        section:nth-of-type(4){height:400px; background-color:darkcyan;}
+        section:nth-of-type(5){height:350px; background-color:rebeccapurple;}
+        section:nth-of-type(6){height:400px; background-color:saddlebrown;}
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#sec_01">sec_01</a></li>
+            <li><a href="#sec_02">sec_02</a></li>
+            <li><a href="#sec_03">sec_03</a></li>
+            <li><a href="#sec_04">sec_04</a></li>
+            <li><a href="#sec_05">sec_05</a></li>
+            <li><a href="#sec_06">sec_06</a></li>
+        </ul>
+    </header>
+    <section id="sec_01">sec_01</section>
+    <section id="sec_02">sec_02</section>
+    <section id="sec_03">sec_03</section>
+    <section id="sec_04">sec_04</section>
+    <section id="sec_05">sec_05</section>
+    <section id="sec_06">sec_06</section>
+</body>
+</html>
