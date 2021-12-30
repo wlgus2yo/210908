@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 슬라이더(플러그인)</title>
+    <script src="js/jQuery.min.js"></script> <!-- 제이쿼리 -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script><!-- 스와이퍼.js -->
+    <script src="js/16_responsive.slider.js"></script><!-- 우리가 작성할 js -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/><!-- 스와이퍼 css -->
+    <link rel="stylesheet" href="css/15_slider_swiper.css"><!-- 우리가 작성할 css -->
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/g1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g13.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g13.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g13.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/g8.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div style="width:100px; border:1px solid #000; aspect-ratio: 1/1;">
+        <!-- 1. aspect-ratio : 지원이 안되는 경우가 많음.-->
+    </div>
+
+    <div style="width:100px; border:1px solid #000;">
+        <div style="padding-top:100%; position:relative;">
+        <!-- 2. 내부에 div를 만들어서 padding-top으로 조절 -->
+            <div style="position:absolute; left:0; top:0; width:100%; height:100%; background:red;">
+                <!-- 내부에 content를 넣으려면 relative - absolute 조건을 만들어줘야함 -->
+            </div>
+        </div>
+    </div>
+    <div style="width:20%; border:1px solid #000;" id="square">
+        <!-- 3. 스크립트를 이용. -->
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        square();
+        $(window).resize(function(){
+            square();
+        });
+
+        function square(){
+            var $width = $("#square").width();
+            $("#square").css("height",$width+"px");
+        }
+    });
+</script>
