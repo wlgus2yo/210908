@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/8_header_ulol.js"></script>
+    <style>
+        *{margin:0; padding:0;}
+        header{display:flex; justify-content: space-between; align-items: center; position:fixed; left:0; top:0; width:100%;}
+        header ul,
+        header ol{list-style:none; margin:0; padding:0;}
+        header ul > li{display:inline-block; padding:0 10px; position:relative;}
+        header ul > li ol{position:absolute; left:0; top:100%; display:none;}
+        section{height:100vh;display: flex; justify-content: center; align-items: center; font-size: 60px; color:#fff; display:none;}
+        section:nth-of-type(1){background:red;}
+        section:nth-of-type(2){background:blue;}
+        section:nth-of-type(3){background:cyan;}
+        section:nth-of-type(4){background:green;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sec_01">MENU1</a>
+                    <ol>
+                        <li><a href="###">MENU1-1</a></li>
+                        <li><a href="###">MENU1-2</a></li>
+                        <li><a href="###">MENU1-3</a></li>
+                        <li><a href="###">MENU1-4</a></li>
+                        <li><a href="###">MENU1-5</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#sec_02">MENU2</a>
+                    <ol>
+                        <li><a href="###">MENU2-1</a></li>
+                        <li><a href="###">MENU2-2</a></li>
+                        <li><a href="###">MENU2-3</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#sec_03">MENU3</a>
+                    <ol>
+                        <li><a href="###">MENU3-1</a></li>
+                        <li><a href="###">MENU3-2</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#sec_04">MENU4</a>
+                    <ol>
+                        <li><a href="###">MENU4-1</a></li>
+                        <li><a href="###">MENU4-2</a></li>
+                        <li><a href="###">MENU4-3</a></li>
+                        <li><a href="###">MENU4-4</a></li>
+                        <li><a href="###">MENU4-5</a></li>
+                        <li><a href="###">MENU4-6</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sec_01">sec_01</section>
+    <section id="sec_02">sec_02</section>
+    <section id="sec_03">sec_03</section>
+    <section id="sec_04">sec_04</section>
+</body>
+</html>
