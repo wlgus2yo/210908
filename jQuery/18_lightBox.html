@@ -16,9 +16,13 @@
             position:fixed; left:0; top:0; 
             width:100%; height:100%; 
             background-color:rgba(0,0,0,0.8);
-            display:flex; justify-content: center; align-items: center;
+            display:none;
         }
-        #lightBox img{width:50%;}
+        #lightBox img{
+            width:50%;
+            position:absolute; left:50%; top:50%;
+            transform:translateX(-50%) translateY(-50%);
+        }
     </style>
 </head>
 <body>
