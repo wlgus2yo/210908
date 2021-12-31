@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내용 추가</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/11_etc.js"></script>
+    <style>
+        ul:after{content:''; display:block; clear:both;}
+        ul{padding:0; margin:0;}
+        ul li{float:left; width:22%; list-style:none; border:1px solid #000; box-sizing: border-box;}
+        ul li:not(:nth-child(4n)){margin-right:4%;}
+    </style>
+</head>
+<body>
+    <button id="print1">출력</button>
+    <div id="ex1">
+
+    </div>
+
+    <button id="print2">출력</button>
+    <ul id="ex2">
+
+    </ul>
+</body>
+</html>
